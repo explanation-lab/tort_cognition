@@ -10,9 +10,9 @@ Current approved Experiment 1 and Experiment 2 studies, each with adult and chil
 
 ## Preview
 
-Open `code/experiments/index.html` while serving this repository locally. On this computer: http://127.0.0.1:8766/code/experiments/index.html. Each audience has an `index.html` participant entry and a separate `pilot-preview.html` with researcher controls. Child `index.html` opens directly into the normal Welcome screen with narration on and no researcher panel, mute option or review launch screen. A browser that blocks autoplay requires an Enable sound click on that same Welcome screen; the narration waits rather than skipping. Adult `index.html` entries retain their participant behavior.
+Open `code/experiments/index.html` while serving this repository locally. On this computer: http://127.0.0.1:8766/code/experiments/index.html. Each audience has an `index.html` participant entry and a separate `pilot-preview.html` with researcher controls. Child `index.html` opens directly into the normal Welcome screen with narration on and no researcher panel, mute option, sound-enable button or review launch screen. Its startup assumes the host has already completed consent and enabled audio. Use `pilot-preview.html` for standalone local review. Adult `index.html` entries retain their participant behavior.
 
-Standalone child entries run the same behavioral task as the CHS build; platform consent, camera recording, storage and debrief are supplied by Lookit, not these HTML files. Researcher previews do not submit responses.
+Child entries run the same behavioral task as the CHS build. `build-chs.py` produces the JavaScript installed in Lookit's jsPsych editor; Lookit does not use the local HTML as the full consent/recording study. The build retains the existing platform consent/start/recording/debrief wrapper and inserts the current task. Experiment 1 targets study 6208; Experiment 2 is prepared locally only. Researcher previews do not submit responses.
 
 For a click-to-open collaborator ZIP with no server or installation, run the packaging tool described in `docs/MAINTENANCE.md`.
 

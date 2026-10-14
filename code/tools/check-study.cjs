@@ -262,7 +262,17 @@ for(const exp of [1,2]){
 for(const exp of [1,2]){
  const h=setup(exp,'children','fault_first','right');Object.assign(h.context,{initJsPsych:()=>({...h.psych,run(){},data:{get:()=>({values:()=>[]})}}),console:{log(){}},chsRecord:new Proxy({},{get:(o,k)=>k}),jsPsychHtmlButtonResponse:'html',jsPsychHtmlKeyboardResponse:'keyboard'});
  vm.runInContext(fs.readFileSync(__dirname+`/generated/experiment${exp}-chs-pilot.js`,'utf8'),h.context);
- assert.equal(vm.runInContext('chsTimeline.length',h.context),51);assert.equal(vm.runInContext('pilot.review',h.context),false);h.dom.window.close();
+ assert.equal(vm.runInContext('chsTimeline.length',h.context),51);
+ assert.equal(vm.runInContext('pilot.review',h.context),false);
+ const buildReport=JSON.parse(fs.readFileSync(__dirname+`/generated/experiment${exp}-chs-pilot.json`,'utf8'));
+ assert.equal(vm.runInContext('pilot.mute',h.context),buildReport.qa_only);
+ assert.deepEqual(JSON.parse(vm.runInContext('JSON.stringify(chsTimeline.slice(0,4).map(t=>t.type))',h.context)),['VideoConfigPlugin','VideoConsentPlugin','html','StartRecordPlugin']);
+ assert.equal(vm.runInContext('instructions.choices[0]',h.context),'Start ▶');
+ assert.equal(vm.runInContext('chsTimeline[4] === timeline[0]',h.context),true);
+ assert.equal(vm.runInContext('chsTimeline.at(-2).type',h.context),'StopRecordPlugin');
+ assert.equal(vm.runInContext('chsTimeline.at(-1).data.trial_type',h.context),'debrief');
+ assert(!fs.readFileSync(__dirname+`/generated/experiment${exp}-chs-pilot.js`,'utf8').includes('enable-study-sound'));
+ h.dom.window.close();
 }
 // Adult entry-point submission and demographics are tested with an inert service.
 for(const exp of [1,2])for(const review of [false,true]){
@@ -346,45 +356,31 @@ const forms=fs.readFileSync(root+'/code/shared/js/pilot-adult-forms.js','utf8');
 const audioDestinations=narration.flatMap(c=>c.destinations);
 const missingAudio=audioDestinations.filter(rel=>!fs.existsSync(path.join(root,rel)));
 const report={first_construct_demo:{conditions:['Exp 1 fault first','Exp 1 carelessness first','Exp 2 fault first','Exp 2 carelessness first'],both_spatial_orders:true,media_clock_fixtures:8,throttled_and_error_fixtures:8,opening_idle:true,no_child_autoplay:true,second_construct_no_demo:true},narration_files:{expected:audioDestinations.length,installed:audioDestinations.length-missingAudio.length,missing:missingAudio},matrix:results,randomization:{samples:500,fault_first:faultFirst,victim_left:left,unique_orders:orders.size},warmup_screens:{adults:8,children:10},task_screens:{adults_with_forms:44,children_without_CHS:45,children_with_CHS:51},pointer_tests:'Synthetic Pointer Events for mouse/touch/pen; physical touchscreen and live CHS verification remain separate.',audio:(missingAudio.length?`${missingAudio.length} final recording destinations absent; `:`All ${audioDestinations.length} final recording destinations present; `)+'QA mute flow and build gates tested; 24 cookie-explanation fixtures verify child-only identifiers, full-duration audio highlights without active-playback timers, slow silent/error/timeout placeholders and neutral completion; two buffering/resume/stall fixtures pass.',ui_refinements:'Undo absent in participant and review study displays; direct return works; aligned top portraits/current jar above three identical receiving areas; literal starting states, deterministic accumulation and identical snap/pulse feedback; blue scales use .08 + .92 × value/100 nonzero opacity and zero without fill; adult explanations have no demo; standard jsPsych horizontal progress restored; centered welcome and allocation markup restored from the preceding layout; receiving areas are identical fixed 180 × 180 neutral circles across welcome, warmup, gate and allocation, with no audience or screen size overrides, a compact centered 672 px container / 230 px center spacing, and up to 25 px radial drop tolerance capped to prevent overlap; first-explanation three centered full text blocks without headings and child pointer drags preserve a lot/little/none, record no responses; child gestures are gated by individual clip playback and completion, with an idle intro, segment-local silent/error fallback and no child autoplay sequence; 2.8/4 second appreciation minimum with narration completion verified.'};
-async function checkChildParticipantEntries(){
+function checkChildParticipantEntries(){
  const outcomes=[];
- for(const exp of [1,2])for(const blocked of [false,true])for(const storageBlocked of [false,true]){
+ for(const exp of [1,2]){
   const h=setup(exp,'children','fault_first','left',null,1,false,false),doc=h.doc;
   const html=fs.readFileSync(root+`/code/experiments/experiment${exp}/children/index.html`,'utf8');
-  assert(html.includes('jsPsych.run(timeline)'));
-  assert(!/pilot-review|pilot-entry|pilot-mute|Start local review|local review mode/i.test(html));
-  let allowed=!blocked,runTimeline=null;
-  h.context.Audio=function(src){
-   const audio=new h.dom.window.Audio(src);h.audios.push(audio);
-   audio.play=()=>{if(!allowed)return Promise.reject(Object.assign(new Error('Autoplay denied'),{name:'NotAllowedError'}));audio.dispatchEvent(new h.dom.window.Event('playing'));return Promise.resolve();};
-   return audio;
-  };
+  assert(!/pilot-review|pilot-entry|pilot-mute|pilot-child-entry|Start local review|local review mode|enable-study-sound/i.test(html));
+  assert(!/onAudioBlocked|dismissPermission|enable-study-sound/.test(engine));
+  let runTimeline=null;
   h.context.initJsPsych=()=>({...h.psych,run:t=>{runTimeline=t;t[0].screen(doc.querySelector('#target'),h.psych);},data:{get:()=>({values:()=>[]})}});
   h.context.console={log(){}};
-  if(storageBlocked)h.context.sessionStorage={getItem(){throw Error('Storage unavailable');},setItem(){throw Error('Storage unavailable');},removeItem(){throw Error('Storage unavailable');}};
-  vm.runInContext(fs.readFileSync(root+'/code/shared/js/pilot-child-entry.js','utf8'),h.context);
   vm.runInContext(fs.readFileSync(root+`/code/experiments/experiment${exp}/children/js/chs-task.js`,'utf8'),h.context);
-  vm.runInContext('jsPsych.run(timeline);',h.context);
-  for(let i=0;i<8;i++)await Promise.resolve();
+  const startup=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+  vm.runInContext(startup,h.context);
   assert.equal(runTimeline.length,45);assert.equal(runTimeline[0]._debugLabel,'Welcome');
   assert.equal(vm.runInContext('pilot.review',h.context),false);assert.equal(vm.runInContext('pilot.mute',h.context),false);
   assert.equal(doc.querySelector('h1').textContent,'Welcome!');assert.equal(h.audios.length,1);
-  assert.equal(h.finished.length,0);assert(!doc.querySelector('#pilot-review-panel'));
-  if(blocked){
-   assert.equal(h.timers.size,0,'Autoplay permission must not time out or skip the opening');
-   const button=doc.querySelector('#enable-study-sound');assert(button);
-   h.advanceClock(120000);h.tick();assert.equal(h.finished.length,0);
-   allowed=true;button.click();for(let i=0;i<8;i++)await Promise.resolve();
-   assert(!doc.querySelector('#enable-study-sound'));assert.equal(h.audios.length,1,'Resume the original clip, not a duplicate');
-  }else assert(!doc.querySelector('#enable-study-sound'));
+  assert.equal(h.finished.length,0);assert(!doc.querySelector('#pilot-review-panel'));assert(!doc.querySelector('#enable-study-sound'));
+  assert(h.audios[0].src.endsWith('audio/warmup_welcome.m4a'));
+  h.audios[0].dispatchEvent(new h.dom.window.Event('playing'));
   h.audios[0].dispatchEvent(new h.dom.window.Event('ended'));h.tick();h.tick();
   assert.equal(h.finished.length,1);assert.equal(h.finished[0].audio_failures.length,0);
-  outcomes.push({experiment:exp,autoplay_blocked:blocked,storage_blocked:storageBlocked,normal_welcome:true,review:false,mute:false,passed:true});
+  outcomes.push({experiment:exp,host_audio_already_enabled:true,automatic_start:true,normal_welcome:true,review:false,mute:false,no_sound_button:true,passed:true});
   h.dom.window.close();
  }
  return outcomes;
 }
-checkChildParticipantEntries().then(outcomes=>{
- report.child_participant_entries=outcomes;
- fs.writeFileSync(__dirname+'/generated/workspace-behavior.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
-}).catch(error=>{console.error(error);process.exitCode=1;});
+report.child_participant_entries=checkChildParticipantEntries();
+fs.writeFileSync(__dirname+'/generated/workspace-behavior.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
