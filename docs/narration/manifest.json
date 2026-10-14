@@ -1,0 +1,4125 @@
+{
+  "schema_version": 2,
+  "source_authority": "Current active child configurations + shared runtime + exact approved editable PowerPoint captions; old narration manifests are not input.",
+  "sources": {
+    "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+    "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+    "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+    "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+    "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+    "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+    "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+    "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+    "code/experiments/experiment1/children/js/chs-task.js": "0ec6139b2990034ab5bd8fd5e5d6ffeb2dd4e097081e0fd69f947c48316ca10d",
+    "code/experiments/experiment2/adults/slides/pilot-v3/control_squirrel.pptx": "b3f9df9259bfe1a846a56c7c6e88bbe4485343b2e624ee4a4bc2a8a7eaeb3b67",
+    "code/experiments/experiment2/adults/slides/pilot-v3/control_wind.pptx": "5e1f3cb3b6feaf65e7e3d1b1f26c28c33965468d0a07e2a632a94378ccbf4a15",
+    "code/experiments/experiment2/adults/slides/pilot-v3/intentional_hit.pptx": "624cce6b5a76f6381c0d2e592a4a3fa92820ed91307dff72e82268d27b1f5d61",
+    "code/experiments/experiment2/adults/slides/pilot-v3/intentional_throw.pptx": "61e8e7fa15c84d59c9b508f68d1193d2035413795dbeb6e5f028945c7bb2bb9e",
+    "code/experiments/experiment2/adults/slides/pilot-v3/negligence_phone.pptx": "9050145208b5979dcb945cc25b0ec35e223151b545b0d6436ddf980adeb29d5d",
+    "code/experiments/experiment2/adults/slides/pilot-v3/negligence_spill.pptx": "d3a121f0c048e027d596cc08a722e81a0112c5fc94b6a46cd2bdfba35ecef684",
+    "code/experiments/experiment2/adults/slides/pilot-v3/strict_liability_alligator.pptx": "200960dc75e37db65b8efae9baeebb6a62f91a9dcf592eab1cff687f44d5b68d",
+    "code/experiments/experiment2/adults/slides/pilot-v3/strict_liability_wolf.pptx": "d7892a21afe01582188ad6b8213132ef847899385616e24c3ea32c2bfd038628",
+    "code/experiments/experiment2/children/js/chs-task.js": "b88c57e92facc89b4f1a09ab1adb210d56a9952c983fef7b1ac01a8b7b27dc72",
+    "code/shared/js/pilot-runtime.js": "6478438f62bcd590b214391870a91dd0362652b000d946adf771a08c70f351af",
+    "docs/narration/demo-timing.json": "40d41c591848682cf1b8a8a7e857dd4ec52595358c064332b1f6f7477c6cd4eb"
+  },
+  "format": "AAC mono .m4a, 48 kHz, 128 kbps",
+  "silence_between_segments_seconds": 3,
+  "summary": {
+    "unique_clips": 116,
+    "instruction_clips": 37,
+    "story_clips": 79,
+    "story_slide_uses": 149,
+    "destinations": 223,
+    "words": 914,
+    "spoken_minutes_at_140_wpm": 6.5,
+    "spoken_minutes_at_110_wpm": 8.3,
+    "between_clip_silence_minutes": 5.8
+  },
+  "clips": [
+    {
+      "recording_index": 1,
+      "clip_key": "warmup_welcome",
+      "filename": "warmup_welcome.m4a",
+      "text": "Welcome! Thanks so much for playing our game! You’re going to watch some short stories about different people and answer a few questions about what happened. For some of the questions, you’ll show us what you think by moving cookies around the screen. Before the stories begin, let’s practice moving the cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "warmup_welcome",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/warmup_welcome.m4a",
+        "code/experiments/experiment2/children/audio/warmup_welcome.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "warmup_welcome",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "warmup_welcome",
+          "destination": "code/experiments/experiment1/children/audio/warmup_welcome.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "warmup_welcome",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "warmup_welcome",
+          "destination": "code/experiments/experiment2/children/audio/warmup_welcome.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 2,
+      "clip_key": "cookie_identify_claire",
+      "filename": "cookie_identify_claire.m4a",
+      "text": "This is Claire.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_identify_claire",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_identify_claire.m4a",
+        "code/experiments/experiment2/children/audio/cookie_identify_claire.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_identify_claire",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_claire",
+          "destination": "code/experiments/experiment1/children/audio/cookie_identify_claire.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_identify_claire",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_claire",
+          "destination": "code/experiments/experiment2/children/audio/cookie_identify_claire.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 3,
+      "clip_key": "cookie_identify_michael",
+      "filename": "cookie_identify_michael.m4a",
+      "text": "This is Michael. He has three cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_identify_michael",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_identify_michael.m4a",
+        "code/experiments/experiment2/children/audio/cookie_identify_michael.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_identify_michael",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_michael",
+          "destination": "code/experiments/experiment1/children/audio/cookie_identify_michael.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_identify_michael",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_michael",
+          "destination": "code/experiments/experiment2/children/audio/cookie_identify_michael.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 4,
+      "clip_key": "cookie_identify_jar",
+      "filename": "cookie_identify_jar.m4a",
+      "text": "This is the cookie jar.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_identify_jar",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_identify_jar.m4a",
+        "code/experiments/experiment2/children/audio/cookie_identify_jar.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_identify_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_jar",
+          "destination": "code/experiments/experiment1/children/audio/cookie_identify_jar.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_identify_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_identify_jar",
+          "destination": "code/experiments/experiment2/children/audio/cookie_identify_jar.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 5,
+      "clip_key": "cookie_explanation_opening",
+      "filename": "cookie_explanation_opening.m4a",
+      "text": "In our game, you can move cookies wherever you like.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_explanation_opening",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_explanation_opening.m4a",
+        "code/experiments/experiment2/children/audio/cookie_explanation_opening.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_explanation_opening",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_opening",
+          "destination": "code/experiments/experiment1/children/audio/cookie_explanation_opening.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_explanation_opening",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_opening",
+          "destination": "code/experiments/experiment2/children/audio/cookie_explanation_opening.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 6,
+      "clip_key": "cookie_explanation_person",
+      "filename": "cookie_explanation_person.m4a",
+      "text": "If you move cookies to another person, that person gets to keep them.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_explanation_person",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_explanation_person.m4a",
+        "code/experiments/experiment2/children/audio/cookie_explanation_person.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_explanation_person",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_person",
+          "destination": "code/experiments/experiment1/children/audio/cookie_explanation_person.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_explanation_person",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_person",
+          "destination": "code/experiments/experiment2/children/audio/cookie_explanation_person.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 7,
+      "clip_key": "cookie_explanation_jar",
+      "filename": "cookie_explanation_jar.m4a",
+      "text": "If you move cookies to the cookie jar, nobody gets them.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_explanation_jar",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_explanation_jar.m4a",
+        "code/experiments/experiment2/children/audio/cookie_explanation_jar.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_explanation_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_jar",
+          "destination": "code/experiments/experiment1/children/audio/cookie_explanation_jar.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_explanation_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_explanation_jar",
+          "destination": "code/experiments/experiment2/children/audio/cookie_explanation_jar.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 8,
+      "clip_key": "cookie_practice_jar",
+      "filename": "cookie_practice_jar.m4a",
+      "text": "Let’s try! Move some of Michael’s cookies to the cookie jar.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_practice_jar",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_practice_jar.m4a",
+        "code/experiments/experiment2/children/audio/cookie_practice_jar.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_practice_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_practice_jar",
+          "destination": "code/experiments/experiment1/children/audio/cookie_practice_jar.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_practice_jar",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_practice_jar",
+          "destination": "code/experiments/experiment2/children/audio/cookie_practice_jar.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 9,
+      "clip_key": "cookie_practice_person",
+      "filename": "cookie_practice_person.m4a",
+      "text": "Now move some of Michael’s cookies to Claire.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "cookie_practice_person",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/cookie_practice_person.m4a",
+        "code/experiments/experiment2/children/audio/cookie_practice_person.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "cookie_practice_person",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_practice_person",
+          "destination": "code/experiments/experiment1/children/audio/cookie_practice_person.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "cookie_practice_person",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "cookie_practice_person",
+          "destination": "code/experiments/experiment2/children/audio/cookie_practice_person.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 10,
+      "clip_key": "thank_you_practice",
+      "filename": "thank_you_practice.m4a",
+      "text": "Thank you!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "thank_you_practice",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/thank_you_practice.m4a",
+        "code/experiments/experiment2/children/audio/thank_you_practice.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "thank_you_practice",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_practice",
+          "destination": "code/experiments/experiment1/children/audio/thank_you_practice.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "thank_you_practice",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_practice",
+          "destination": "code/experiments/experiment2/children/audio/thank_you_practice.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 11,
+      "clip_key": "fault_explanation_intro",
+      "filename": "fault_explanation_intro.m4a",
+      "text": "In our game, you’ll be asked how much each person is at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_explanation_intro",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_explanation_intro.m4a",
+        "code/experiments/experiment2/children/audio/fault_explanation_intro.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_explanation_intro",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_intro",
+          "destination": "code/experiments/experiment1/children/audio/fault_explanation_intro.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_explanation_intro",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_intro",
+          "destination": "code/experiments/experiment2/children/audio/fault_explanation_intro.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 12,
+      "clip_key": "fault_explanation_large",
+      "filename": "fault_explanation_large.m4a",
+      "text": "If you think someone is a lot at fault, make a lot of their bar blue.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_explanation_large",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_explanation_large.m4a",
+        "code/experiments/experiment2/children/audio/fault_explanation_large.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_explanation_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_large",
+          "destination": "code/experiments/experiment1/children/audio/fault_explanation_large.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_explanation_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_large",
+          "destination": "code/experiments/experiment2/children/audio/fault_explanation_large.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 13,
+      "clip_key": "fault_explanation_small",
+      "filename": "fault_explanation_small.m4a",
+      "text": "If you think they are a little at fault, make a small part of their bar blue.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_explanation_small",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_explanation_small.m4a",
+        "code/experiments/experiment2/children/audio/fault_explanation_small.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_explanation_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_small",
+          "destination": "code/experiments/experiment1/children/audio/fault_explanation_small.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_explanation_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_small",
+          "destination": "code/experiments/experiment2/children/audio/fault_explanation_small.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 14,
+      "clip_key": "fault_explanation_zero",
+      "filename": "fault_explanation_zero.m4a",
+      "text": "If you think they are not at fault, click the little part at the beginning of their bar.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_explanation_zero",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_explanation_zero.m4a",
+        "code/experiments/experiment2/children/audio/fault_explanation_zero.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_explanation_zero",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_zero",
+          "destination": "code/experiments/experiment1/children/audio/fault_explanation_zero.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_explanation_zero",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_zero",
+          "destination": "code/experiments/experiment2/children/audio/fault_explanation_zero.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 15,
+      "clip_key": "rating_practice_try",
+      "filename": "rating_practice_try.m4a",
+      "text": "Now you try!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "rating_practice_try",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/rating_practice_try.m4a",
+        "code/experiments/experiment2/children/audio/rating_practice_try.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "rating_practice_try",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "rating_practice_try",
+          "destination": "code/experiments/experiment1/children/audio/rating_practice_try.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "rating_practice_try",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "rating_practice_try",
+          "destination": "code/experiments/experiment2/children/audio/rating_practice_try.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 16,
+      "clip_key": "fault_practice_large",
+      "filename": "fault_practice_large.m4a",
+      "text": "Show that Michael is a lot at fault and Claire is not at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_practice_large",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_practice_large.m4a",
+        "code/experiments/experiment2/children/audio/fault_practice_large.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_practice_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_large",
+          "destination": "code/experiments/experiment1/children/audio/fault_practice_large.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_practice_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_large",
+          "destination": "code/experiments/experiment2/children/audio/fault_practice_large.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 17,
+      "clip_key": "fault_practice_large_reversed",
+      "filename": "fault_practice_large_reversed.m4a",
+      "text": "Show that Claire is not at fault and Michael is a lot at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_practice_large_reversed",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_practice_large_reversed.m4a",
+        "code/experiments/experiment2/children/audio/fault_practice_large_reversed.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_practice_large_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_large_reversed",
+          "destination": "code/experiments/experiment1/children/audio/fault_practice_large_reversed.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_practice_large_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_large_reversed",
+          "destination": "code/experiments/experiment2/children/audio/fault_practice_large_reversed.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 18,
+      "clip_key": "fault_practice_small",
+      "filename": "fault_practice_small.m4a",
+      "text": "Show that Claire is a little at fault and Michael is not at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_practice_small",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_practice_small.m4a",
+        "code/experiments/experiment2/children/audio/fault_practice_small.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_practice_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_small",
+          "destination": "code/experiments/experiment1/children/audio/fault_practice_small.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_practice_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_small",
+          "destination": "code/experiments/experiment2/children/audio/fault_practice_small.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 19,
+      "clip_key": "fault_practice_small_reversed",
+      "filename": "fault_practice_small_reversed.m4a",
+      "text": "Show that Michael is not at fault and Claire is a little at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_practice_small_reversed",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_practice_small_reversed.m4a",
+        "code/experiments/experiment2/children/audio/fault_practice_small_reversed.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_practice_small_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_small_reversed",
+          "destination": "code/experiments/experiment1/children/audio/fault_practice_small_reversed.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_practice_small_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_practice_small_reversed",
+          "destination": "code/experiments/experiment2/children/audio/fault_practice_small_reversed.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 20,
+      "clip_key": "carelessness_explanation_second",
+      "filename": "carelessness_explanation_second.m4a",
+      "text": "You’ll also use the same bars to show how careless each person was. A bigger bar means more careless.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_explanation_second",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_explanation_second.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_explanation_second.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_explanation_second",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_second",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_explanation_second.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_explanation_second",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_second",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_explanation_second.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 21,
+      "clip_key": "carelessness_explanation_intro",
+      "filename": "carelessness_explanation_intro.m4a",
+      "text": "In our game, you’ll be asked how careless each person was.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_explanation_intro",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_explanation_intro.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_explanation_intro.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_explanation_intro",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_intro",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_explanation_intro.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_explanation_intro",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_intro",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_explanation_intro.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 22,
+      "clip_key": "carelessness_explanation_large",
+      "filename": "carelessness_explanation_large.m4a",
+      "text": "If you think someone was very careless, make a lot of their bar blue.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_explanation_large",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_explanation_large.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_explanation_large.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_explanation_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_large",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_explanation_large.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_explanation_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_large",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_explanation_large.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 23,
+      "clip_key": "carelessness_explanation_small",
+      "filename": "carelessness_explanation_small.m4a",
+      "text": "If you think they were a little careless, make a small part of their bar blue.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_explanation_small",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_explanation_small.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_explanation_small.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_explanation_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_small",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_explanation_small.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_explanation_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_small",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_explanation_small.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 24,
+      "clip_key": "carelessness_explanation_zero",
+      "filename": "carelessness_explanation_zero.m4a",
+      "text": "If you think they were not careless, click the little part at the beginning of their bar.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_explanation_zero",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_explanation_zero.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_explanation_zero.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_explanation_zero",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_zero",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_explanation_zero.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_explanation_zero",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_explanation_zero",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_explanation_zero.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 25,
+      "clip_key": "carelessness_practice_large",
+      "filename": "carelessness_practice_large.m4a",
+      "text": "Show that Michael was very careless and Claire was not careless.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_practice_large",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_practice_large.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_practice_large.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_practice_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_large",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_practice_large.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_practice_large",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_large",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_practice_large.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 26,
+      "clip_key": "carelessness_practice_large_reversed",
+      "filename": "carelessness_practice_large_reversed.m4a",
+      "text": "Show that Claire was not careless and Michael was very careless.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_practice_large_reversed",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_practice_large_reversed.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_practice_large_reversed.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_practice_large_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_large_reversed",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_practice_large_reversed.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_practice_large_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_large_reversed",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_practice_large_reversed.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 27,
+      "clip_key": "carelessness_practice_small",
+      "filename": "carelessness_practice_small.m4a",
+      "text": "Show that Claire was a little careless and Michael was not careless.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_practice_small",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_practice_small.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_practice_small.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_practice_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_small",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_practice_small.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_practice_small",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_small",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_practice_small.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 28,
+      "clip_key": "carelessness_practice_small_reversed",
+      "filename": "carelessness_practice_small_reversed.m4a",
+      "text": "Show that Michael was not careless and Claire was a little careless.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "carelessness_practice_small_reversed",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/carelessness_practice_small_reversed.m4a",
+        "code/experiments/experiment2/children/audio/carelessness_practice_small_reversed.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "carelessness_practice_small_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_small_reversed",
+          "destination": "code/experiments/experiment1/children/audio/carelessness_practice_small_reversed.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "carelessness_practice_small_reversed",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "carelessness_practice_small_reversed",
+          "destination": "code/experiments/experiment2/children/audio/carelessness_practice_small_reversed.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 29,
+      "clip_key": "fault_explanation_second",
+      "filename": "fault_explanation_second.m4a",
+      "text": "You’ll also use the same bars to show how much each person is at fault. A bigger bar means more at fault.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "fault_explanation_second",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/fault_explanation_second.m4a",
+        "code/experiments/experiment2/children/audio/fault_explanation_second.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "fault_explanation_second",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_second",
+          "destination": "code/experiments/experiment1/children/audio/fault_explanation_second.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "fault_explanation_second",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "fault_explanation_second",
+          "destination": "code/experiments/experiment2/children/audio/fault_explanation_second.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 30,
+      "clip_key": "ready",
+      "filename": "ready.m4a",
+      "text": "Thank you! Now let’s see the stories.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "ready",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/ready.m4a",
+        "code/experiments/experiment2/children/audio/ready.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "ready",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "ready",
+          "destination": "code/experiments/experiment1/children/audio/ready.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "ready",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "ready",
+          "destination": "code/experiments/experiment2/children/audio/ready.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 31,
+      "clip_key": "main_cookie_question",
+      "filename": "main_cookie_question.m4a",
+      "text": "Now that you saw what happened, should any of the cookies be moved?",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "main_cookie_question",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/main_cookie_question.m4a",
+        "code/experiments/experiment2/children/audio/main_cookie_question.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "main_cookie_question",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_cookie_question",
+          "destination": "code/experiments/experiment1/children/audio/main_cookie_question.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "main_cookie_question",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_cookie_question",
+          "destination": "code/experiments/experiment2/children/audio/main_cookie_question.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 32,
+      "clip_key": "main_move_instruction",
+      "filename": "main_move_instruction.m4a",
+      "text": "Move the cookies wherever you think they should go.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "main_move_instruction",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/main_move_instruction.m4a",
+        "code/experiments/experiment2/children/audio/main_move_instruction.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "main_move_instruction",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_move_instruction",
+          "destination": "code/experiments/experiment1/children/audio/main_move_instruction.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "main_move_instruction",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_move_instruction",
+          "destination": "code/experiments/experiment2/children/audio/main_move_instruction.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 33,
+      "clip_key": "main_fault",
+      "filename": "main_fault.m4a",
+      "text": "Now that you saw what happened, how much do you think each person is at fault?",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "main_fault",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/main_fault.m4a",
+        "code/experiments/experiment2/children/audio/main_fault.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "main_fault",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_fault",
+          "destination": "code/experiments/experiment1/children/audio/main_fault.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "main_fault",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_fault",
+          "destination": "code/experiments/experiment2/children/audio/main_fault.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 34,
+      "clip_key": "main_carelessness",
+      "filename": "main_carelessness.m4a",
+      "text": "Now that you saw what happened, how careless do you think each person was?",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "main_carelessness",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/main_carelessness.m4a",
+        "code/experiments/experiment2/children/audio/main_carelessness.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "main_carelessness",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_carelessness",
+          "destination": "code/experiments/experiment1/children/audio/main_carelessness.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "main_carelessness",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "main_carelessness",
+          "destination": "code/experiments/experiment2/children/audio/main_carelessness.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 35,
+      "clip_key": "thank_you_case_1",
+      "filename": "thank_you_case_1.m4a",
+      "text": "Thank you for helping!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "thank_you_case_1",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/thank_you_case_1.m4a",
+        "code/experiments/experiment2/children/audio/thank_you_case_1.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "thank_you_case_1",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_1",
+          "destination": "code/experiments/experiment1/children/audio/thank_you_case_1.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "thank_you_case_1",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_1",
+          "destination": "code/experiments/experiment2/children/audio/thank_you_case_1.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 36,
+      "clip_key": "thank_you_case_5",
+      "filename": "thank_you_case_5.m4a",
+      "text": "Thank you! There are a few more stories.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "thank_you_case_5",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/thank_you_case_5.m4a",
+        "code/experiments/experiment2/children/audio/thank_you_case_5.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "thank_you_case_5",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_5",
+          "destination": "code/experiments/experiment1/children/audio/thank_you_case_5.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "thank_you_case_5",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_5",
+          "destination": "code/experiments/experiment2/children/audio/thank_you_case_5.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 37,
+      "clip_key": "thank_you_case_8",
+      "filename": "thank_you_case_8.m4a",
+      "text": "Thank you so much for helping us!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "thank_you_case_8",
+      "scenario_key": null,
+      "slide_number": null,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/thank_you_case_8.m4a",
+        "code/experiments/experiment2/children/audio/thank_you_case_8.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "thank_you_case_8",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_8",
+          "destination": "code/experiments/experiment1/children/audio/thank_you_case_8.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "thank_you_case_8",
+          "scenario_key": null,
+          "slide_number": null,
+          "reference_key": "thank_you_case_8",
+          "destination": "code/experiments/experiment2/children/audio/thank_you_case_8.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 38,
+      "clip_key": "negligence_spill_01",
+      "filename": "negligence_spill_01.m4a",
+      "text": "This is Finn.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 1,
+          "reference_key": "negligence_spill_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 1,
+          "reference_key": "negligence_spill_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 39,
+      "clip_key": "negligence_spill_02",
+      "filename": "negligence_spill_02.m4a",
+      "text": "Finn has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 2,
+          "reference_key": "negligence_spill_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 2,
+          "reference_key": "negligence_spill_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 40,
+      "clip_key": "negligence_spill_03",
+      "filename": "negligence_spill_03.m4a",
+      "text": "This is Cleo.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 3,
+          "reference_key": "negligence_spill_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 3,
+          "reference_key": "negligence_spill_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 41,
+      "clip_key": "negligence_spill_04",
+      "filename": "negligence_spill_04.m4a",
+      "text": "Cleo has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 4,
+          "reference_key": "negligence_spill_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 4,
+          "reference_key": "negligence_spill_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 42,
+      "clip_key": "negligence_spill_05",
+      "filename": "negligence_spill_05.m4a",
+      "text": "Finn spills water.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 5,
+          "reference_key": "negligence_spill_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 5,
+          "reference_key": "negligence_spill_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 43,
+      "clip_key": "negligence_spill_06",
+      "filename": "negligence_spill_06.m4a",
+      "text": "Finn doesn’t clean it up and walks away.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a",
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 6,
+          "reference_key": "negligence_spill_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a"
+        },
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 7,
+          "reference_key": "negligence_spill_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 6,
+          "reference_key": "negligence_spill_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 7,
+          "reference_key": "negligence_spill_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 44,
+      "clip_key": "negligence_spill_08",
+      "filename": "negligence_spill_08.m4a",
+      "text": "Cleo walks in.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 8,
+          "reference_key": "negligence_spill_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 8,
+          "reference_key": "negligence_spill_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 45,
+      "clip_key": "negligence_spill_09",
+      "filename": "negligence_spill_09.m4a",
+      "text": "Oh no! Cleo slips on the water!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 9,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_09.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_10.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 9,
+          "reference_key": "negligence_spill_09",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_09.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 10,
+          "reference_key": "negligence_spill_10",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_10.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 46,
+      "clip_key": "negligence_spill_10",
+      "filename": "negligence_spill_10.m4a",
+      "text": "2 of Cleo’s cookies fall!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 10,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_10.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_11.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 10,
+          "reference_key": "negligence_spill_10",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_10.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 11,
+          "reference_key": "negligence_spill_11",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_11.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 47,
+      "clip_key": "negligence_spill_11",
+      "filename": "negligence_spill_11.m4a",
+      "text": "Finn still has 8 cookies. Cleo now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 11,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_spill_11.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_12.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 11,
+          "reference_key": "negligence_spill_11",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_11.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 12,
+          "reference_key": "negligence_spill_12",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_12.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 48,
+      "clip_key": "intentional_hit_01",
+      "filename": "intentional_hit_01.m4a",
+      "text": "This is Milo.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 1,
+          "reference_key": "intentional_hit_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 1,
+          "reference_key": "intentional_hit_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 49,
+      "clip_key": "intentional_hit_02",
+      "filename": "intentional_hit_02.m4a",
+      "text": "Milo has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 2,
+          "reference_key": "intentional_hit_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 2,
+          "reference_key": "intentional_hit_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 50,
+      "clip_key": "intentional_hit_03",
+      "filename": "intentional_hit_03.m4a",
+      "text": "This is Sasha.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 3,
+          "reference_key": "intentional_hit_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 3,
+          "reference_key": "intentional_hit_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 51,
+      "clip_key": "intentional_hit_04",
+      "filename": "intentional_hit_04.m4a",
+      "text": "Sasha has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 4,
+          "reference_key": "intentional_hit_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 4,
+          "reference_key": "intentional_hit_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 52,
+      "clip_key": "intentional_hit_05",
+      "filename": "intentional_hit_05.m4a",
+      "text": "Milo is angry.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 5,
+          "reference_key": "intentional_hit_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 7,
+          "reference_key": "intentional_hit_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 53,
+      "clip_key": "intentional_hit_06",
+      "filename": "intentional_hit_06.m4a",
+      "text": "He walks over.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 6,
+          "reference_key": "intentional_hit_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 8,
+          "reference_key": "intentional_hit_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 54,
+      "clip_key": "intentional_hit_07",
+      "filename": "intentional_hit_07.m4a",
+      "text": "And hits 2 of Sasha’s cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 7,
+          "reference_key": "intentional_hit_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 9,
+          "reference_key": "intentional_hit_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 55,
+      "clip_key": "intentional_hit_08",
+      "filename": "intentional_hit_08.m4a",
+      "text": "Milo still has 8 cookies. Sasha now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_hit_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_10.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 8,
+          "reference_key": "intentional_hit_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_hit_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 10,
+          "reference_key": "intentional_hit_10",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_10.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 56,
+      "clip_key": "intentional_throw_01",
+      "filename": "intentional_throw_01.m4a",
+      "text": "This is Zoe.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 1,
+          "reference_key": "intentional_throw_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 1,
+          "reference_key": "intentional_throw_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 57,
+      "clip_key": "intentional_throw_02",
+      "filename": "intentional_throw_02.m4a",
+      "text": "Zoe has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 2,
+          "reference_key": "intentional_throw_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 2,
+          "reference_key": "intentional_throw_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 58,
+      "clip_key": "intentional_throw_03",
+      "filename": "intentional_throw_03.m4a",
+      "text": "This is Rex.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 3,
+          "reference_key": "intentional_throw_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 3,
+          "reference_key": "intentional_throw_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 59,
+      "clip_key": "intentional_throw_04",
+      "filename": "intentional_throw_04.m4a",
+      "text": "Rex has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 4,
+          "reference_key": "intentional_throw_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 4,
+          "reference_key": "intentional_throw_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 60,
+      "clip_key": "intentional_throw_05",
+      "filename": "intentional_throw_05.m4a",
+      "text": "Zoe wants Rex to have fewer cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 5,
+          "reference_key": "intentional_throw_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 5,
+          "reference_key": "intentional_throw_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 61,
+      "clip_key": "intentional_throw_06",
+      "filename": "intentional_throw_06.m4a",
+      "text": "Oh no! Zoe throws 2 of Rex’s cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 6,
+          "reference_key": "intentional_throw_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 8,
+          "reference_key": "intentional_throw_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 62,
+      "clip_key": "intentional_throw_07",
+      "filename": "intentional_throw_07.m4a",
+      "text": "Zoe still has 8 cookies. Rex now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_intentional_throw_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 7,
+          "reference_key": "intentional_throw_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_intentional_throw_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 9,
+          "reference_key": "intentional_throw_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 63,
+      "clip_key": "negligence_phone_01",
+      "filename": "negligence_phone_01.m4a",
+      "text": "This is Kai.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 1,
+          "reference_key": "negligence_phone_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 1,
+          "reference_key": "negligence_phone_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 64,
+      "clip_key": "negligence_phone_02",
+      "filename": "negligence_phone_02.m4a",
+      "text": "Kai has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 2,
+          "reference_key": "negligence_phone_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 2,
+          "reference_key": "negligence_phone_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 65,
+      "clip_key": "negligence_phone_03",
+      "filename": "negligence_phone_03.m4a",
+      "text": "This is Ruby.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 3,
+          "reference_key": "negligence_phone_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 3,
+          "reference_key": "negligence_phone_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 66,
+      "clip_key": "negligence_phone_04",
+      "filename": "negligence_phone_04.m4a",
+      "text": "Ruby has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 4,
+          "reference_key": "negligence_phone_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 4,
+          "reference_key": "negligence_phone_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 67,
+      "clip_key": "negligence_phone_05",
+      "filename": "negligence_phone_05.m4a",
+      "text": "Kai is walking and staring at his phone.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 5,
+          "reference_key": "negligence_phone_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 5,
+          "reference_key": "negligence_phone_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 68,
+      "clip_key": "negligence_phone_07",
+      "filename": "negligence_phone_07.m4a",
+      "text": "Oh no! Kai bumps into Ruby!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 7,
+          "reference_key": "negligence_phone_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 7,
+          "reference_key": "negligence_phone_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 69,
+      "clip_key": "negligence_phone_08",
+      "filename": "negligence_phone_08.m4a",
+      "text": "2 of Ruby’s cookies fall!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 8,
+          "reference_key": "negligence_phone_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 8,
+          "reference_key": "negligence_phone_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 70,
+      "clip_key": "negligence_phone_09",
+      "filename": "negligence_phone_09.m4a",
+      "text": "Kai still has 8 cookies. Ruby now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 9,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_negligence_phone_09.m4a",
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 9,
+          "reference_key": "negligence_phone_09",
+          "destination": "code/experiments/experiment1/children/audio/v3_negligence_phone_09.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 9,
+          "reference_key": "negligence_phone_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 71,
+      "clip_key": "strict_liability_alligator_01",
+      "filename": "strict_liability_alligator_01.m4a",
+      "text": "This is Sam.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 1,
+          "reference_key": "strict_liability_alligator_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 1,
+          "reference_key": "strict_liability_alligator_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 72,
+      "clip_key": "strict_liability_alligator_02",
+      "filename": "strict_liability_alligator_02.m4a",
+      "text": "Sam has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 2,
+          "reference_key": "strict_liability_alligator_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 2,
+          "reference_key": "strict_liability_alligator_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 73,
+      "clip_key": "strict_liability_alligator_03",
+      "filename": "strict_liability_alligator_03.m4a",
+      "text": "Sam has an alligator.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 3,
+          "reference_key": "strict_liability_alligator_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 3,
+          "reference_key": "strict_liability_alligator_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 74,
+      "clip_key": "strict_liability_alligator_04",
+      "filename": "strict_liability_alligator_04.m4a",
+      "text": "This is Ella.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 4,
+          "reference_key": "strict_liability_alligator_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 4,
+          "reference_key": "strict_liability_alligator_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 75,
+      "clip_key": "strict_liability_alligator_05",
+      "filename": "strict_liability_alligator_05.m4a",
+      "text": "Ella has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 5,
+          "reference_key": "strict_liability_alligator_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 5,
+          "reference_key": "strict_liability_alligator_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 76,
+      "clip_key": "strict_liability_alligator_06",
+      "filename": "strict_liability_alligator_06.m4a",
+      "text": "Sam puts his alligator inside the house.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 6,
+          "reference_key": "strict_liability_alligator_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 6,
+          "reference_key": "strict_liability_alligator_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_06.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 77,
+      "clip_key": "strict_liability_alligator_07",
+      "filename": "strict_liability_alligator_07.m4a",
+      "text": "Sam locks the door and checks the lock.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 7,
+          "reference_key": "strict_liability_alligator_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 7,
+          "reference_key": "strict_liability_alligator_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 78,
+      "clip_key": "strict_liability_alligator_08",
+      "filename": "strict_liability_alligator_08.m4a",
+      "text": "Oh no! The alligator breaks out of the house!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 8,
+          "reference_key": "strict_liability_alligator_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 9,
+          "reference_key": "strict_liability_alligator_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 79,
+      "clip_key": "strict_liability_alligator_09",
+      "filename": "strict_liability_alligator_09.m4a",
+      "text": "The alligator eats 2 of Ella’s cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 9,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_09.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_10.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 9,
+          "reference_key": "strict_liability_alligator_09",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_09.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 10,
+          "reference_key": "strict_liability_alligator_10",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_10.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 80,
+      "clip_key": "strict_liability_alligator_10",
+      "filename": "strict_liability_alligator_10.m4a",
+      "text": "Sam still has 8 cookies. Ella now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 10,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_10.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_11.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 10,
+          "reference_key": "strict_liability_alligator_10",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_alligator_10.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 11,
+          "reference_key": "strict_liability_alligator_11",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_11.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 81,
+      "clip_key": "strict_liability_wolf_01",
+      "filename": "strict_liability_wolf_01.m4a",
+      "text": "This is Catherine.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 1,
+          "reference_key": "strict_liability_wolf_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 1,
+          "reference_key": "strict_liability_wolf_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 82,
+      "clip_key": "strict_liability_wolf_02",
+      "filename": "strict_liability_wolf_02.m4a",
+      "text": "Catherine has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 2,
+          "reference_key": "strict_liability_wolf_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 2,
+          "reference_key": "strict_liability_wolf_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 83,
+      "clip_key": "strict_liability_wolf_03",
+      "filename": "strict_liability_wolf_03.m4a",
+      "text": "Catherine has a pet wolf.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 3,
+          "reference_key": "strict_liability_wolf_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 3,
+          "reference_key": "strict_liability_wolf_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 84,
+      "clip_key": "strict_liability_wolf_04",
+      "filename": "strict_liability_wolf_04.m4a",
+      "text": "This is Andy.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 4,
+          "reference_key": "strict_liability_wolf_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 4,
+          "reference_key": "strict_liability_wolf_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 85,
+      "clip_key": "strict_liability_wolf_05",
+      "filename": "strict_liability_wolf_05.m4a",
+      "text": "Andy has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 5,
+          "reference_key": "strict_liability_wolf_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 5,
+          "reference_key": "strict_liability_wolf_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 86,
+      "clip_key": "strict_liability_wolf_06",
+      "filename": "strict_liability_wolf_06.m4a",
+      "text": "Catherine puts her wolf inside the garage.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 6,
+          "reference_key": "strict_liability_wolf_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 6,
+          "reference_key": "strict_liability_wolf_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_06.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 87,
+      "clip_key": "strict_liability_wolf_07",
+      "filename": "strict_liability_wolf_07.m4a",
+      "text": "Catherine locks the door and checks the lock.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 7,
+          "reference_key": "strict_liability_wolf_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 7,
+          "reference_key": "strict_liability_wolf_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 88,
+      "clip_key": "strict_liability_wolf_08",
+      "filename": "strict_liability_wolf_08.m4a",
+      "text": "Oh no! The wolf breaks out of the garage!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 8,
+          "reference_key": "strict_liability_wolf_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 9,
+          "reference_key": "strict_liability_wolf_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 89,
+      "clip_key": "strict_liability_wolf_09",
+      "filename": "strict_liability_wolf_09.m4a",
+      "text": "The wolf eats 2 of Andy’s cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 9,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_09.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_10.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 9,
+          "reference_key": "strict_liability_wolf_09",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_09.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 10,
+          "reference_key": "strict_liability_wolf_10",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_10.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 90,
+      "clip_key": "strict_liability_wolf_10",
+      "filename": "strict_liability_wolf_10.m4a",
+      "text": "Catherine still has 8 cookies. Andy now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 10,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_10.m4a",
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_11.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 10,
+          "reference_key": "strict_liability_wolf_10",
+          "destination": "code/experiments/experiment1/children/audio/v3_strict_liability_wolf_10.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 11,
+          "reference_key": "strict_liability_wolf_11",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_11.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 91,
+      "clip_key": "control_wind_01",
+      "filename": "control_wind_01.m4a",
+      "text": "This is Katie.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 1,
+          "reference_key": "control_wind_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 3,
+          "reference_key": "control_wind_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 92,
+      "clip_key": "control_wind_02",
+      "filename": "control_wind_02.m4a",
+      "text": "Katie has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 2,
+          "reference_key": "control_wind_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 4,
+          "reference_key": "control_wind_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 93,
+      "clip_key": "control_wind_03",
+      "filename": "control_wind_03.m4a",
+      "text": "This is Tony.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 3,
+          "reference_key": "control_wind_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 1,
+          "reference_key": "control_wind_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 94,
+      "clip_key": "control_wind_04",
+      "filename": "control_wind_04.m4a",
+      "text": "Tony has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 4,
+          "reference_key": "control_wind_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 2,
+          "reference_key": "control_wind_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 95,
+      "clip_key": "control_wind_05",
+      "filename": "control_wind_05.m4a",
+      "text": "Katie and Tony are having a picnic.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 5,
+          "reference_key": "control_wind_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 5,
+          "reference_key": "control_wind_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 96,
+      "clip_key": "control_wind_06",
+      "filename": "control_wind_06.m4a",
+      "text": "Oh no! A gust of wind blows.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 6,
+          "reference_key": "control_wind_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 8,
+          "reference_key": "control_wind_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 97,
+      "clip_key": "control_wind_07",
+      "filename": "control_wind_07.m4a",
+      "text": "2 of Katie’s cookies blow away!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 7,
+          "reference_key": "control_wind_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 9,
+          "reference_key": "control_wind_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_09.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 98,
+      "clip_key": "control_wind_08",
+      "filename": "control_wind_08.m4a",
+      "text": "Tony still has 8 cookies. Katie now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_wind_08.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_wind_10.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 8,
+          "reference_key": "control_wind_08",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_wind_08.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 10,
+          "reference_key": "control_wind_10",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_10.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 99,
+      "clip_key": "control_squirrel_01",
+      "filename": "control_squirrel_01.m4a",
+      "text": "This is Nora.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 1,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_01.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_01.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 1,
+          "reference_key": "control_squirrel_01",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_01.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 1,
+          "reference_key": "control_squirrel_01",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_01.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 100,
+      "clip_key": "control_squirrel_02",
+      "filename": "control_squirrel_02.m4a",
+      "text": "Nora has 8 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 2,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_02.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_02.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 2,
+          "reference_key": "control_squirrel_02",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_02.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 2,
+          "reference_key": "control_squirrel_02",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_02.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 101,
+      "clip_key": "control_squirrel_03",
+      "filename": "control_squirrel_03.m4a",
+      "text": "This is Eric.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 3,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_03.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_03.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 3,
+          "reference_key": "control_squirrel_03",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_03.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 3,
+          "reference_key": "control_squirrel_03",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_03.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 102,
+      "clip_key": "control_squirrel_04",
+      "filename": "control_squirrel_04.m4a",
+      "text": "Eric has 2 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 4,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_04.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_04.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 4,
+          "reference_key": "control_squirrel_04",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_04.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 4,
+          "reference_key": "control_squirrel_04",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_04.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 103,
+      "clip_key": "control_squirrel_05",
+      "filename": "control_squirrel_05.m4a",
+      "text": "Eric is tying his shoelaces.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_05.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 5,
+          "reference_key": "control_squirrel_05",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_05.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 5,
+          "reference_key": "control_squirrel_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_05.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 104,
+      "clip_key": "control_squirrel_06",
+      "filename": "control_squirrel_06.m4a",
+      "text": "Oh no! A squirrel eats 2 of Eric’s cookies!",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_06.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 6,
+          "reference_key": "control_squirrel_06",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_06.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 7,
+          "reference_key": "control_squirrel_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_07.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 105,
+      "clip_key": "control_squirrel_07",
+      "filename": "control_squirrel_07.m4a",
+      "text": "Nora still has 8 cookies. Eric now has 0 cookies.",
+      "experiments": [
+        1,
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment1/children/audio/v3_control_squirrel_07.m4a",
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 1,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 7,
+          "reference_key": "control_squirrel_07",
+          "destination": "code/experiments/experiment1/children/audio/v3_control_squirrel_07.m4a"
+        },
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 8,
+          "reference_key": "control_squirrel_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_08.m4a"
+        }
+      ],
+      "shared": true
+    },
+    {
+      "recording_index": 106,
+      "clip_key": "exp2_negligence_spill_09",
+      "filename": "exp2_negligence_spill_09.m4a",
+      "text": "Cleo was not looking where she was going.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_spill",
+      "slide_number": 9,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_09.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_spill",
+          "slide_number": 9,
+          "reference_key": "negligence_spill_09",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_09.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 107,
+      "clip_key": "exp2_intentional_hit_05",
+      "filename": "exp2_intentional_hit_05.m4a",
+      "text": "Sasha puts her cookies on the ground.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 5,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_05.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 5,
+          "reference_key": "intentional_hit_05",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_05.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 108,
+      "clip_key": "exp2_intentional_hit_06",
+      "filename": "exp2_intentional_hit_06.m4a",
+      "text": "Sasha walks away from her cookies.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_hit",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_intentional_hit_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_hit",
+          "slide_number": 6,
+          "reference_key": "intentional_hit_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_hit_06.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 109,
+      "clip_key": "exp2_intentional_throw_06",
+      "filename": "exp2_intentional_throw_06.m4a",
+      "text": "Rex puts his cookies on the ground.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 6,
+          "reference_key": "intentional_throw_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_06.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 110,
+      "clip_key": "exp2_intentional_throw_07",
+      "filename": "exp2_intentional_throw_07.m4a",
+      "text": "Rex walks away.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "intentional_throw",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_intentional_throw_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "intentional_throw",
+          "slide_number": 7,
+          "reference_key": "intentional_throw_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_intentional_throw_07.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 111,
+      "clip_key": "exp2_negligence_phone_06",
+      "filename": "exp2_negligence_phone_06.m4a",
+      "text": "Ruby is also staring at her phone.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "negligence_phone",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_negligence_phone_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "negligence_phone",
+          "slide_number": 6,
+          "reference_key": "negligence_phone_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_negligence_phone_06.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 112,
+      "clip_key": "exp2_strict_liability_alligator_08",
+      "filename": "exp2_strict_liability_alligator_08.m4a",
+      "text": "Ella puts her cookies on the ground and walks away.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_alligator",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_alligator",
+          "slide_number": 8,
+          "reference_key": "strict_liability_alligator_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_alligator_08.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 113,
+      "clip_key": "exp2_strict_liability_wolf_08",
+      "filename": "exp2_strict_liability_wolf_08.m4a",
+      "text": "Andy puts his cookies on the ground and walks away.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "strict_liability_wolf",
+      "slide_number": 8,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_08.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "strict_liability_wolf",
+          "slide_number": 8,
+          "reference_key": "strict_liability_wolf_08",
+          "destination": "code/experiments/experiment2/children/audio/v3_strict_liability_wolf_08.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 114,
+      "clip_key": "exp2_control_wind_06",
+      "filename": "exp2_control_wind_06.m4a",
+      "text": "Katie stands up and leaves her cookies on the blanket.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_control_wind_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 6,
+          "reference_key": "control_wind_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_06.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 115,
+      "clip_key": "exp2_control_wind_07",
+      "filename": "exp2_control_wind_07.m4a",
+      "text": "Katie walks away.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_wind",
+      "slide_number": 7,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_control_wind_07.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_wind",
+          "slide_number": 7,
+          "reference_key": "control_wind_07",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_wind_07.m4a"
+        }
+      ],
+      "shared": false
+    },
+    {
+      "recording_index": 116,
+      "clip_key": "exp2_control_squirrel_06",
+      "filename": "exp2_control_squirrel_06.m4a",
+      "text": "Eric walks away from his cookies.",
+      "experiments": [
+        2
+      ],
+      "screen": "story",
+      "scenario_key": "control_squirrel",
+      "slide_number": 6,
+      "destinations": [
+        "code/experiments/experiment2/children/audio/v3_control_squirrel_06.m4a"
+      ],
+      "uses": [
+        {
+          "experiment": 2,
+          "screen": "story",
+          "scenario_key": "control_squirrel",
+          "slide_number": 6,
+          "reference_key": "control_squirrel_06",
+          "destination": "code/experiments/experiment2/children/audio/v3_control_squirrel_06.m4a"
+        }
+      ],
+      "shared": false
+    }
+  ]
+}

@@ -1,40 +1,23 @@
-# Research project title
+# Tort cognition
 
-Replace this title and describe the research question, motivation and scientific contribution. This is a flexible starting point for new Explanation Lab projects; change the structure when the science requires it. Existing projects do not need to adopt these folder names.
+Current approved Experiment 1 and Experiment 2 studies, each with adult and child versions. The studies use eight scenarios, 8/2 starting story counts, continuous fault and carelessness ratings, high/little practice, and study-wide destination counterbalancing. Child narration and the synchronized first-construct demo are included.
 
-## Studies and experiments
+- `code/experiments/`: current study entries, images, child audio and editable PowerPoints.
+- `code/shared/`: common task runtime, adult forms, local review panel and required libraries.
+- `code/tools/`: current configuration, Lookit build, PowerPoint export, narration, verification and review-package tools.
+- `docs/`: current scenario/narration sources and concise testing/deployment instructions.
+- `data/` and `figures/`: reserved for the research outputs; no participant data is included.
 
-No experiments, data or results are supplied by this template. Describe each actual study, its design and the corresponding source/materials once they exist. Separate current studies from planned work and older versions. Use experiment-by-experiment subdirectories where useful.
+## Preview
 
-## Repository structure
+Open `code/experiments/index.html` while serving this repository locally. On this computer: http://127.0.0.1:8766/code/experiments/index.html. Each `pilot-preview.html` provides researcher controls; child audio is on unless Mute / visual QA is selected. Child previews do not perform platform consent, recording or submission. Adult `index.html` entries retain their participant behavior.
 
-```text
-README.md              Durable scientific description and reproducibility entry points
-PROJECT_STATUS.md      Current operational state and continuity
-code/
-  R/                   R analysis and figure generation
-  experiments/         Experiment implementations and materials
-data/                 De-identified analysis data
-docs/                 Browser-renderable experiments or generated web output
-figures/              Plots, diagrams, experimental screenshots and paper figures
-```
+For a click-to-open collaborator ZIP with no server or installation, run the packaging tool described in `docs/MAINTENANCE.md`.
 
-`data/`, `docs/` and `figures/` are repository-root folders. Add Python or manuscript folders only when the project actually uses them. Keep `docs/` for browser-renderable output, not general notes. Explain any project-specific organization here.
+The current editable decks are under `code/experiments/experimentN/adults/slides/pilot-v3/`. Both audiences use the corresponding story images; retained asset bytes and wording are unchanged.
 
-## Running experiments and reproducing analyses
+## Preservation
 
-Add commands, software/package versions, inputs and expected outputs for the implementations that actually exist. Distinguish processing raw data from reproducing analyses on an already processed dataset. Record known reproduction limits rather than inventing missing steps.
+Historical studies, September exports, audits, development screenshots, recording masters and previous delivery packages are preserved outside this repository at `/Users/davidrose/Documents/tort_cognition_archive/2026-10-14-pre-cleanup/`. That archive includes a checksum-verified full snapshot and a verified Git history bundle. Existing local baseline tags and historical branches remain unchanged.
 
-## Scientific resources
-
-Add verified preregistration, OSF, rendered experiment and rendered R-analysis links when available. There are no configured scientific resources in this template. A draft is not a preregistration; planned work is not a completed result.
-
-## Contributors
-
-Record confirmed contributions and authorship as appropriate. Add a CRediT statement when useful for a mature or publication repository; no roles or authorship are assigned by this template.
-
-## Data and access
-
-Commit only appropriately de-identified analysis data. Never commit participant-identifiable data, identifiable raw CHS exports, login/session information, payment or gift-card codes, credentials, tokens or private keys. Keep approved restricted source data outside GitHub. Review files and history before copying a repository or making it public.
-
-Use [PROJECT_STATUS.md](PROJECT_STATUS.md) for active tasks, ownership, blockers and handoffs. Keep this README focused on durable scientific documentation.
+This cleanup has not pushed, deployed or changed any live study.

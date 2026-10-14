@@ -1,30 +1,12 @@
-# Local operating-system and editor files
 .DS_Store
 Thumbs.db
-*~
-
-# Local R state and caches (keep scripts and reproducible environments)
-.Rhistory
-.RData
-.Ruserdata
-.Rproj.user/
-
-# Optional Python environments and caches
 __pycache__/
 *.py[cod]
 .venv/
-venv/
-
-# Local credentials and restricted working areas
+node_modules/
+/code/tools/generated/
 .env
 .env.*
-!.env.example
-*.pem
-*.key
-credentials.json
-service-account*.json
 /data/raw/
 /data/private/
 /data/identifiable/
-
-# These patterns are a convenience, not a privacy audit. Review every commit.

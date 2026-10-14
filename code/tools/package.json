@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "description": "Local study verification; not participant code",
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  },
+  "scripts": {
+    "test": "node check-study.cjs",
+    "check:narration": "node check-narration.cjs"
+  }
+}

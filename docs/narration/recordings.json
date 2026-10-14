@@ -1,0 +1,592 @@
+{
+  "format": "AAC mono M4A, 48 kHz",
+  "unique_clips": 116,
+  "approved_spoken_difference": {
+    "line": 20,
+    "expected_text": "Sam puts his alligator inside the house.",
+    "approved_recording": "Sam put his alligator inside the house.",
+    "user_approval": "line 20 is fine as is."
+  },
+  "clips": [
+    {
+      "clip_key": "warmup_welcome",
+      "text": "Welcome! Thanks so much for playing our game! You’re going to watch some short stories about different people and answer a few questions about what happened. For some of the questions, you’ll show us what you think by moving cookies around the screen. Before the stories begin, let’s practice moving the cookies!",
+      "sha256": "ecadc8473fc9ebca72e67c770cd72f467bc81f59076273b077d1a3f55807c655"
+    },
+    {
+      "clip_key": "cookie_identify_claire",
+      "text": "This is Claire.",
+      "sha256": "fd028fe75e9a91fa707a10929b4c691db0d07cd5ebb0d3083f135d97882ce129"
+    },
+    {
+      "clip_key": "cookie_identify_michael",
+      "text": "This is Michael. He has three cookies.",
+      "sha256": "eae5334a5b455dc769c7eaa0bd2edef6c44ca6dd6f960829ee65d8d832165ce7"
+    },
+    {
+      "clip_key": "cookie_identify_jar",
+      "text": "This is the cookie jar.",
+      "sha256": "6ec1028fe4f8a44d98b168f9ce1c94685c74b14d06bd6b9aa3a935a96570e136"
+    },
+    {
+      "clip_key": "cookie_explanation_opening",
+      "text": "In our game, you can move cookies wherever you like.",
+      "sha256": "9d155cd72ffc09869899c65e8b570e37c0a854f05487819fb012da32a608b704"
+    },
+    {
+      "clip_key": "cookie_explanation_person",
+      "text": "If you move cookies to another person, that person gets to keep them.",
+      "sha256": "f442707f746b45c55cc7084290da1e5c0787f1ec92c96ea2826423be5ba4d60f"
+    },
+    {
+      "clip_key": "cookie_explanation_jar",
+      "text": "If you move cookies to the cookie jar, nobody gets them.",
+      "sha256": "9aa46a8ce7e0dcc3c6274252c68ce50eb9da3e11fe89acb9cbddd0504a88da1b"
+    },
+    {
+      "clip_key": "cookie_practice_jar",
+      "text": "Let’s try! Move some of Michael’s cookies to the cookie jar.",
+      "sha256": "df56d7698f62fb0ac888585d4ea6ad0f5ba352b086260d78ce5db24784b1992d"
+    },
+    {
+      "clip_key": "cookie_practice_person",
+      "text": "Now move some of Michael’s cookies to Claire.",
+      "sha256": "038e4270c56e102ae739d69cad148cdb229bcd3b91e72593524505446b97fb43"
+    },
+    {
+      "clip_key": "thank_you_practice",
+      "text": "Thank you!",
+      "sha256": "2a9119ea8258d7123f9c3fe16298428aff9ffa7c707cfc5f2b982f81e7c7ab35"
+    },
+    {
+      "clip_key": "fault_explanation_intro",
+      "text": "In our game, you’ll be asked how much each person is at fault.",
+      "sha256": "d03ec0adc59c0a63624173e4edbc9b1176053868ef1fe80d2a0908d55482e911"
+    },
+    {
+      "clip_key": "fault_explanation_large",
+      "text": "If you think someone is a lot at fault, make a lot of their bar blue.",
+      "sha256": "5eae336a0b3c9c9294a772b3ac90af15f3e10f3b83f1d3e51242367c54f7a3cb"
+    },
+    {
+      "clip_key": "fault_explanation_small",
+      "text": "If you think they are a little at fault, make a small part of their bar blue.",
+      "sha256": "30c590601cf90af9b99141c664bb774e9a6d7103be3fae1c6d161889a0a68dee"
+    },
+    {
+      "clip_key": "fault_explanation_zero",
+      "text": "If you think they are not at fault, click the little part at the beginning of their bar.",
+      "sha256": "bed6824c70a86693f99f6c59689d51a91971cef707996cff5b302b3057f0a9eb"
+    },
+    {
+      "clip_key": "rating_practice_try",
+      "text": "Now you try!",
+      "sha256": "522d0e29a7b637ffdee4b541c311354626e1850e74b2c5b7143a47a85c076a9d"
+    },
+    {
+      "clip_key": "fault_practice_large",
+      "text": "Show that Michael is a lot at fault and Claire is not at fault.",
+      "sha256": "ffb56bd89dff22fd82e85b00a4aae4c71862592025162e207b7e7e7354b55508"
+    },
+    {
+      "clip_key": "fault_practice_large_reversed",
+      "text": "Show that Claire is not at fault and Michael is a lot at fault.",
+      "sha256": "ed460a9bf46940c9df5dc42560d485c9e8a343ba53b82be16e376017477291d2"
+    },
+    {
+      "clip_key": "fault_practice_small",
+      "text": "Show that Claire is a little at fault and Michael is not at fault.",
+      "sha256": "f3d90511f7be8b22a5529c0693bad06c6082cf4f05faa51d35ea656128f4dae8"
+    },
+    {
+      "clip_key": "fault_practice_small_reversed",
+      "text": "Show that Michael is not at fault and Claire is a little at fault.",
+      "sha256": "9da0c4466dbc1dc5ddb7914c60603038d2cdf47cd5e233d6b1237ecb6dd8d5ab"
+    },
+    {
+      "clip_key": "fault_explanation_second",
+      "text": "You’ll also use the same bars to show how much each person is at fault. A bigger bar means more at fault.",
+      "sha256": "7a23094a696bc55a96947eb17de94aad101484b538a229f2652c7bd89a8e91ef"
+    },
+    {
+      "clip_key": "ready",
+      "text": "Thank you! Now let’s see the stories.",
+      "sha256": "a1870435d92cdbf21f13412db8650111130b033aba4a49a6a0b1aacf43e29e7e"
+    },
+    {
+      "clip_key": "main_cookie_question",
+      "text": "Now that you saw what happened, should any of the cookies be moved?",
+      "sha256": "17bc3ccdc18fd7cc019b7a296445d5748c58b3779644bdbf9f65049f5fb730c9"
+    },
+    {
+      "clip_key": "main_move_instruction",
+      "text": "Move the cookies wherever you think they should go.",
+      "sha256": "aecb97dc7320728269544f576ffa1a98b83d4b52910f06d7c8d141f275d8e937"
+    },
+    {
+      "clip_key": "main_fault",
+      "text": "Now that you saw what happened, how much do you think each person is at fault?",
+      "sha256": "0660ef9ef793cd4c51d042e070d2319c1cfe354d51b5854b61020aac18a70c00"
+    },
+    {
+      "clip_key": "thank_you_case_1",
+      "text": "Thank you for helping!",
+      "sha256": "00b57291d5a07ea8bea3b545ba77d2bfba799cf0445d0f07cd338dd4dfde7e35"
+    },
+    {
+      "clip_key": "thank_you_case_5",
+      "text": "Thank you! There are a few more stories.",
+      "sha256": "cd143a65dc023ffc313b6877144ddad16ee3663609aa6e8e5292e2c8d0a94ced"
+    },
+    {
+      "clip_key": "thank_you_case_8",
+      "text": "Thank you so much for helping us!",
+      "sha256": "aff72dd4bc547177574c07b42d5b85f2973d69901379d0c301c95cf970e8d05d"
+    },
+    {
+      "clip_key": "negligence_spill_01",
+      "text": "This is Finn.",
+      "sha256": "879565faa12c4f8dd63d9317391e2d75fc60924ecc288c71bc70a536ac0ec161"
+    },
+    {
+      "clip_key": "negligence_spill_03",
+      "text": "This is Cleo.",
+      "sha256": "cab3ba11c2bbf50cd78ff6356e1029e6b69bd4c003069e606060482aead92fbd"
+    },
+    {
+      "clip_key": "negligence_spill_04",
+      "text": "Cleo has 2 cookies.",
+      "sha256": "f1325684476ade4b2d04d9c80efbc1ac9b66090af84e28910dc1db3d416c7b85"
+    },
+    {
+      "clip_key": "negligence_spill_05",
+      "text": "Finn spills water.",
+      "sha256": "d7194155301c0faad4407093a0548d464bafab3c5ae6b17d6e3dfda0f7378547"
+    },
+    {
+      "clip_key": "negligence_spill_06",
+      "text": "Finn doesn’t clean it up and walks away.",
+      "sha256": "1d8a7d3b29eefb41e54dba73bfd93ded47fb9bd42ebbb0d15b71499bd5322c58"
+    },
+    {
+      "clip_key": "negligence_spill_08",
+      "text": "Cleo walks in.",
+      "sha256": "c8a8626f70c1a980a4f90e10739ef995cb419fca9c87d96f78d35d157002a5cc"
+    },
+    {
+      "clip_key": "negligence_spill_09",
+      "text": "Oh no! Cleo slips on the water!",
+      "sha256": "a7ccfab43beb3a2250d5251ef23d418226c3ef9f8370f87d50540d60db0b4de7"
+    },
+    {
+      "clip_key": "negligence_spill_10",
+      "text": "2 of Cleo’s cookies fall!",
+      "sha256": "08b3ac42b036b00e7482f150a4067b301821275ed10eca17f8421e1d2626de4e"
+    },
+    {
+      "clip_key": "intentional_hit_01",
+      "text": "This is Milo.",
+      "sha256": "c6a09fea6c541ed806bf9683c4d823849b2c18a55aa06bc3a459c85ff03d81e9"
+    },
+    {
+      "clip_key": "intentional_hit_03",
+      "text": "This is Sasha.",
+      "sha256": "38b672f809bc6ecab501d7d20302694a07ce7909f3372de54e2f32696140d164"
+    },
+    {
+      "clip_key": "intentional_hit_04",
+      "text": "Sasha has 2 cookies.",
+      "sha256": "4d074ef50aad6c7f9719fc0c3a506066c269b5c8d57779f234aaeb60f42303ab"
+    },
+    {
+      "clip_key": "intentional_hit_05",
+      "text": "Milo is angry.",
+      "sha256": "42defff7379729092ba3ac329a0fed3c4243d56900ae8e3d994cedf815f75d21"
+    },
+    {
+      "clip_key": "intentional_hit_06",
+      "text": "He walks over.",
+      "sha256": "ce92cfe2c6517a1ee4a440786c4f4fac2c5c94514e5c3238fb910f95e988a68a"
+    },
+    {
+      "clip_key": "intentional_hit_07",
+      "text": "And hits 2 of Sasha’s cookies!",
+      "sha256": "439979e5a63fffb3503ca58f5262338c6664e643760602ccd4da7949c6dcd3a1"
+    },
+    {
+      "clip_key": "intentional_throw_01",
+      "text": "This is Zoe.",
+      "sha256": "14f4892d06715bd8bedfa9bc57d90c61b5e8b0cc0f77ec2332d97fd4b6dc829e"
+    },
+    {
+      "clip_key": "intentional_throw_03",
+      "text": "This is Rex.",
+      "sha256": "9fcd1f371454bfbea5aa46b12d16721f73a06e56b0587a8f95f39463558585d6"
+    },
+    {
+      "clip_key": "intentional_throw_04",
+      "text": "Rex has 2 cookies.",
+      "sha256": "35c53e1d47d95d05f7a1df0fa758357e146a3dd501d5341b2655ea3a94ab86cf"
+    },
+    {
+      "clip_key": "intentional_throw_05",
+      "text": "Zoe wants Rex to have fewer cookies.",
+      "sha256": "ad7906c34296bab1cd5d890666cf30e4372508f25bc036c4274e738a41cc67d8"
+    },
+    {
+      "clip_key": "intentional_throw_06",
+      "text": "Oh no! Zoe throws 2 of Rex’s cookies!",
+      "sha256": "22ef346fc5685a6a240502032318659e4bfdd7cab5f7c25539984609d1e705d3"
+    },
+    {
+      "clip_key": "negligence_phone_01",
+      "text": "This is Kai.",
+      "sha256": "7f6bc5d3ef9f81ea4e0a984a4cd02dec20a9ce68448c051f116fa4624bd3f84a"
+    },
+    {
+      "clip_key": "negligence_phone_03",
+      "text": "This is Ruby.",
+      "sha256": "bae95f3e27ca38814bfc4e3c25e25f5984d4c51654fcb775e03f446752f52fac"
+    },
+    {
+      "clip_key": "negligence_phone_04",
+      "text": "Ruby has 2 cookies.",
+      "sha256": "02b4302ef9f81ebbdc81bddf07acdddb7abb8a3b060e0c3fa99f912edf15f8a7"
+    },
+    {
+      "clip_key": "negligence_phone_05",
+      "text": "Kai is walking and staring at his phone.",
+      "sha256": "7b50e54ecbb052175388967483287d3ff542441df0339e26963f6d26c2145d4d"
+    },
+    {
+      "clip_key": "negligence_phone_07",
+      "text": "Oh no! Kai bumps into Ruby!",
+      "sha256": "979a44af0a232a9b590f8f9714a6a0435fd4482b140f8c054863b730ae9853fe"
+    },
+    {
+      "clip_key": "negligence_phone_08",
+      "text": "2 of Ruby’s cookies fall!",
+      "sha256": "660dd9b813e985b622c95b7ea1c7bb06c90f82c0be582370e83cd68de9b8f60c"
+    },
+    {
+      "clip_key": "strict_liability_alligator_01",
+      "text": "This is Sam.",
+      "sha256": "5dc7adf0f0e768661430b423eca3e1d79e54d962d2b68ae59ea7d9cbea46116c"
+    },
+    {
+      "clip_key": "strict_liability_alligator_03",
+      "text": "Sam has an alligator.",
+      "sha256": "734b5e8a15d5a88c6da003ae6814a0c9841811d2a884eaa67711e4819c838929"
+    },
+    {
+      "clip_key": "strict_liability_alligator_04",
+      "text": "This is Ella.",
+      "sha256": "720ea30a7f3e2b50f222eea91c17c47ff75c219a2d47c0258f3a702ff8ba984e"
+    },
+    {
+      "clip_key": "strict_liability_alligator_05",
+      "text": "Ella has 2 cookies.",
+      "sha256": "166a0ec04204db2cc66deaf1670f268e050bbff2c428fa242cebd4c0f56006be"
+    },
+    {
+      "clip_key": "strict_liability_alligator_09",
+      "text": "The alligator eats 2 of Ella’s cookies!",
+      "sha256": "461d63ca937327d94c547a670aba88466faf0595a1660fee9575b814153d1ef0"
+    },
+    {
+      "clip_key": "strict_liability_wolf_01",
+      "text": "This is Catherine.",
+      "sha256": "2bc02019ae5182540a9e57aaff91fd8184bbca7a548169e7769a853338f99f19"
+    },
+    {
+      "clip_key": "strict_liability_wolf_03",
+      "text": "Catherine has a pet wolf.",
+      "sha256": "f68fb30a136503573592f022f106d7ace8d4a310763e25bde0a6771512bd18cb"
+    },
+    {
+      "clip_key": "strict_liability_wolf_04",
+      "text": "This is Andy.",
+      "sha256": "f3d104563476fc78f664f18a7b87059747229155afa9bca570da239960112169"
+    },
+    {
+      "clip_key": "strict_liability_wolf_05",
+      "text": "Andy has 2 cookies.",
+      "sha256": "a90f8537e71ca436a13bbfa357c29c0cc9d541f9d1e5d1945311e6f62499534f"
+    },
+    {
+      "clip_key": "strict_liability_wolf_09",
+      "text": "The wolf eats 2 of Andy’s cookies!",
+      "sha256": "975068a66bd760c52df42ecce77021dc693be1317bf971f051fc340d0bef1818"
+    },
+    {
+      "clip_key": "control_wind_01",
+      "text": "This is Katie.",
+      "sha256": "7bd811445214a7d3955059d5e6ffe00bae401ae451a3bb40860250d8f2ef7070"
+    },
+    {
+      "clip_key": "control_wind_02",
+      "text": "Katie has 2 cookies.",
+      "sha256": "097442e918f7dfc196caf42ce20484ba0c8ae5e6ec13f534b751cfc0e94b7bdb"
+    },
+    {
+      "clip_key": "control_wind_03",
+      "text": "This is Tony.",
+      "sha256": "a8b3e50d357bee438e253d41604014b47c1b7a9c4968b9b3128b830a546f9d5f"
+    },
+    {
+      "clip_key": "control_wind_05",
+      "text": "Katie and Tony are having a picnic.",
+      "sha256": "561df6646866f724e191f5e99b14aeda3f4e068aa9652a691e0162172686c778"
+    },
+    {
+      "clip_key": "control_wind_06",
+      "text": "Oh no! A gust of wind blows.",
+      "sha256": "af1093c59f5451c1190fa3ccf7157ff50b53a25958a2676d0cd1d2b481852289"
+    },
+    {
+      "clip_key": "control_wind_07",
+      "text": "2 of Katie’s cookies blow away!",
+      "sha256": "77a076fedcc49bb7afd74ff0cb1a6c36b0dbc22093eb92cc1684cde7f79a9aae"
+    },
+    {
+      "clip_key": "control_squirrel_01",
+      "text": "This is Nora.",
+      "sha256": "03f6b4d675c0f0ca16327cb05d1c5702351e119d5d141b4b8c8b19fa50b946e3"
+    },
+    {
+      "clip_key": "control_squirrel_03",
+      "text": "This is Eric.",
+      "sha256": "b7d1e8171f64239d957a6c19c119a0cb9f4323b5c56fd16de49f6125fe95be7a"
+    },
+    {
+      "clip_key": "control_squirrel_04",
+      "text": "Eric has 2 cookies.",
+      "sha256": "575732d6f37e251c8cb3a8ecaa2d4ce262de44bf2f94c6df0baee6cc86bffc27"
+    },
+    {
+      "clip_key": "control_squirrel_05",
+      "text": "Eric is tying his shoelaces.",
+      "sha256": "b4b85a4d79365c90df935d1f0419ba45a7a3ea60e54efbb8476ece7ff25fea24"
+    },
+    {
+      "clip_key": "control_squirrel_06",
+      "text": "Oh no! A squirrel eats 2 of Eric’s cookies!",
+      "sha256": "ee4281d643490b21c6ac7317743e1804937804f27730047ecbc621e5e73c791c"
+    },
+    {
+      "clip_key": "exp2_negligence_spill_09",
+      "text": "Cleo was not looking where she was going.",
+      "sha256": "919db8295ff11a26c3dce41071a3f759adb49d9a4ed24c983233e98a0cced772"
+    },
+    {
+      "clip_key": "exp2_intentional_hit_05",
+      "text": "Sasha puts her cookies on the ground.",
+      "sha256": "772ef70bf3ec41c0ad9afe3037dc838e5c9eeaadaef5ab05d7cfc754deb04ff8"
+    },
+    {
+      "clip_key": "exp2_intentional_hit_06",
+      "text": "Sasha walks away from her cookies.",
+      "sha256": "3424da064f9491ff3e342a8b692359e19afc98bdd2545dfb55e922bc91f1a831"
+    },
+    {
+      "clip_key": "exp2_intentional_throw_06",
+      "text": "Rex puts his cookies on the ground.",
+      "sha256": "f35a231cde6d8370508e56bef0e421b2e3f3d6ea41e76096a2207e7a6f4df367"
+    },
+    {
+      "clip_key": "exp2_intentional_throw_07",
+      "text": "Rex walks away.",
+      "sha256": "477daf50621feb01199d468d53ba1ab65dfe5441139e0629e5db2e8c1047eaed"
+    },
+    {
+      "clip_key": "exp2_negligence_phone_06",
+      "text": "Ruby is also staring at her phone.",
+      "sha256": "367dfd82cfc6cbedd36e49edf7d4906bf3ead0593ea6d4e89c7fd2472ab12ac4"
+    },
+    {
+      "clip_key": "exp2_strict_liability_alligator_08",
+      "text": "Ella puts her cookies on the ground and walks away.",
+      "sha256": "d712d6fbc5df26955b13d2300ee0be1a77f25ab27d87e97f9990d35f7744cf26"
+    },
+    {
+      "clip_key": "exp2_strict_liability_wolf_08",
+      "text": "Andy puts his cookies on the ground and walks away.",
+      "sha256": "6986f10e3783acf584c88a3a33e7595502f23e82d4c0b58d838c2b6f914bcf58"
+    },
+    {
+      "clip_key": "exp2_control_wind_06",
+      "text": "Katie stands up and leaves her cookies on the blanket.",
+      "sha256": "032a3baaf3ee7f0530b855c22a19aba84703014d24e34ab3e9b4bea7f8451cdb"
+    },
+    {
+      "clip_key": "exp2_control_wind_07",
+      "text": "Katie walks away.",
+      "sha256": "7d37622c1ce43ef7c755129d2b2e2b49b671455f78e44e499bbc05e22c0aa66a"
+    },
+    {
+      "clip_key": "exp2_control_squirrel_06",
+      "text": "Eric walks away from his cookies.",
+      "sha256": "220ffc9f1225ebe8dd72eaa9299afac5f22fb3268d93c8b6c0c3b98e831deb1f"
+    },
+    {
+      "clip_key": "carelessness_explanation_second",
+      "text": "You’ll also use the same bars to show how careless each person was. A bigger bar means more careless.",
+      "sha256": "ecd15a7e1c60983cd2b1853e44ef2f4b5f590aa713555bf5b5909b8a52a90af9"
+    },
+    {
+      "clip_key": "carelessness_explanation_intro",
+      "text": "In our game, you’ll be asked how careless each person was.",
+      "sha256": "5c2edf4deab23cbbf759ae23ed2d2cd8cbcea2d9f703eaf56eb65b76a762f95f"
+    },
+    {
+      "clip_key": "carelessness_explanation_large",
+      "text": "If you think someone was very careless, make a lot of their bar blue.",
+      "sha256": "344ba03c0a5412d5535c6c5d0e0991915f23e88393c3adfd8cecf905b94c359c"
+    },
+    {
+      "clip_key": "carelessness_explanation_small",
+      "text": "If you think they were a little careless, make a small part of their bar blue.",
+      "sha256": "c3e22942f8aa204d4d11ce048e9a7158ab92ef79438bbad128175bc8130fecf2"
+    },
+    {
+      "clip_key": "carelessness_explanation_zero",
+      "text": "If you think they were not careless, click the little part at the beginning of their bar.",
+      "sha256": "c0e05e6eef17d00ec4e1e9ae9fe2bc128f02a90d067c7430ac98e1053aa86c51"
+    },
+    {
+      "clip_key": "carelessness_practice_large",
+      "text": "Show that Michael was very careless and Claire was not careless.",
+      "sha256": "3568a13095ba7db66d2e5f4074e18d155bf15edda28144d0518ec33e6361946f"
+    },
+    {
+      "clip_key": "carelessness_practice_large_reversed",
+      "text": "Show that Claire was not careless and Michael was very careless.",
+      "sha256": "2aff69d8d454c3f4ec10984381c325c83dff45bea038b970d12b5589b040ae5b"
+    },
+    {
+      "clip_key": "carelessness_practice_small",
+      "text": "Show that Claire was a little careless and Michael was not careless.",
+      "sha256": "800e31c8878b4e47d9cb601139fd0a3c0956e6a9d2a1e9e3c11078fb0d13ca32"
+    },
+    {
+      "clip_key": "carelessness_practice_small_reversed",
+      "text": "Show that Michael was not careless and Claire was a little careless.",
+      "sha256": "29283afbadd9bd637fff7df5c56297893b649f0dec5f195f742a7b3b94f568a7"
+    },
+    {
+      "clip_key": "main_carelessness",
+      "text": "Now that you saw what happened, how careless do you think each person was?",
+      "sha256": "4131352143564b13aa7fa7a863f7a78af0d01e43c549a367d446c3445fb7ac92"
+    },
+    {
+      "clip_key": "negligence_spill_02",
+      "text": "Finn has 8 cookies.",
+      "sha256": "af05146d13bb240b760860f992a25a7d56c8875f8946fce796f3c4fd36d90b14"
+    },
+    {
+      "clip_key": "negligence_spill_11",
+      "text": "Finn still has 8 cookies. Cleo now has 0 cookies.",
+      "sha256": "dba9e326c028958dd297ad7b3e2ebbac3925b8e4f927be01b12a901da84a4b37"
+    },
+    {
+      "clip_key": "intentional_hit_02",
+      "text": "Milo has 8 cookies.",
+      "sha256": "7c24c2f94846e92a4c46831467dbcc890e1e27eaf8015f6b7efd107c20bf8a92"
+    },
+    {
+      "clip_key": "intentional_hit_08",
+      "text": "Milo still has 8 cookies. Sasha now has 0 cookies.",
+      "sha256": "7c7f78c024a764ea94e604ba775e1f29d0300c52f048b8dd4264b23acf24251f"
+    },
+    {
+      "clip_key": "intentional_throw_02",
+      "text": "Zoe has 8 cookies.",
+      "sha256": "516a388790e55570c524552edf7d8f1130e2ea2429ef928bd770daf9bcbc9fd3"
+    },
+    {
+      "clip_key": "intentional_throw_07",
+      "text": "Zoe still has 8 cookies. Rex now has 0 cookies.",
+      "sha256": "106a8a3f8b59a4e8d4de9d040822aa61e79307049b5b9f178c304cbb07516f07"
+    },
+    {
+      "clip_key": "negligence_phone_02",
+      "text": "Kai has 8 cookies.",
+      "sha256": "f823b9364c8532c24d0982939d3665ddfa0f03ec0d5fedda2c592d1a0ad5ac08"
+    },
+    {
+      "clip_key": "negligence_phone_09",
+      "text": "Kai still has 8 cookies. Ruby now has 0 cookies.",
+      "sha256": "f1da6851e195d51582341fdfad0884ce93c47a3ccf46d47476311ba965f9c553"
+    },
+    {
+      "clip_key": "strict_liability_alligator_02",
+      "text": "Sam has 8 cookies.",
+      "sha256": "a8faafdd9ad6b837b2ed206c86efc80ccebc106ceff48d8d27d93c1b2675f005"
+    },
+    {
+      "clip_key": "strict_liability_alligator_06",
+      "text": "Sam puts his alligator inside the house.",
+      "sha256": "62a84e277b4338095df4b021e8bcfc5807407cb2dcc47c20650a315d89431bd2"
+    },
+    {
+      "clip_key": "strict_liability_alligator_07",
+      "text": "Sam locks the door and checks the lock.",
+      "sha256": "ece736889831046ff543171f5b08752b487a246d69a8a2b89f5e50e0191a9e76"
+    },
+    {
+      "clip_key": "strict_liability_alligator_08",
+      "text": "Oh no! The alligator breaks out of the house!",
+      "sha256": "ae51e0a3973eca3f7ce2d609379f7a984c9b977d8804a9dc73c365bff407d958"
+    },
+    {
+      "clip_key": "strict_liability_alligator_10",
+      "text": "Sam still has 8 cookies. Ella now has 0 cookies.",
+      "sha256": "255d49ba629e7c312d32aec9d676af1a83192ef7adbd6b27493fb5d11b8e14c9"
+    },
+    {
+      "clip_key": "strict_liability_wolf_02",
+      "text": "Catherine has 8 cookies.",
+      "sha256": "342590930dea4a5f2e9d63c2cda9983390b8d35055ce5e35646b3e95a66adda2"
+    },
+    {
+      "clip_key": "strict_liability_wolf_06",
+      "text": "Catherine puts her wolf inside the garage.",
+      "sha256": "6fde62431a6c271dfa6fc2eb3143d0cade75e7af12aac1524069c9ff8409088c"
+    },
+    {
+      "clip_key": "strict_liability_wolf_07",
+      "text": "Catherine locks the door and checks the lock.",
+      "sha256": "10959c9031df28d6c5b7250056262361b3c7dc2af45aece9212fb6725a5a41aa"
+    },
+    {
+      "clip_key": "strict_liability_wolf_08",
+      "text": "Oh no! The wolf breaks out of the garage!",
+      "sha256": "01ab4d61ed6b0dae74ba7f0624d54af33b9e46b0ff629987a8e8d9dcda6f48c1"
+    },
+    {
+      "clip_key": "strict_liability_wolf_10",
+      "text": "Catherine still has 8 cookies. Andy now has 0 cookies.",
+      "sha256": "06a20c898b636468c63deb8ac07cec82934a6940127c4897a23b62bcc6ddd961"
+    },
+    {
+      "clip_key": "control_wind_04",
+      "text": "Tony has 8 cookies.",
+      "sha256": "3bc6fcf9a85e6de2689f6a6ad7fd0b13fa50114c0432adbe13c893341f3afa78"
+    },
+    {
+      "clip_key": "control_wind_08",
+      "text": "Tony still has 8 cookies. Katie now has 0 cookies.",
+      "sha256": "f26296e4831f3e99df37e1668587d0a2ead7f745ec77e678e3913f653ae2a74c"
+    },
+    {
+      "clip_key": "control_squirrel_02",
+      "text": "Nora has 8 cookies.",
+      "sha256": "ffcd6404112e306b06aa4c16590288af512f5a9aa781f3d51d89d7a1cbfecaad"
+    },
+    {
+      "clip_key": "control_squirrel_07",
+      "text": "Nora still has 8 cookies. Eric now has 0 cookies.",
+      "sha256": "c922bf0d932c86b3c04f5a82ae9c91723d3d562a402b2439adb3470a3a64f643"
+    }
+  ]
+}

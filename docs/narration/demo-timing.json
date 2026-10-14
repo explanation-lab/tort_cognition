@@ -1,0 +1,44 @@
+{
+  "fault_explanation_large": {
+    "press": 4.82,
+    "motion_start": 5.02,
+    "motion_end": 8.4,
+    "duration": 8.981,
+    "audio_sha256": "5eae336a0b3c9c9294a772b3ac90af15f3e10f3b83f1d3e51242367c54f7a3cb"
+  },
+  "fault_explanation_small": {
+    "press": 5.2,
+    "motion_start": 5.4,
+    "motion_end": 9.36,
+    "duration": 9.963,
+    "audio_sha256": "30c590601cf90af9b99141c664bb774e9a6d7103be3fae1c6d161889a0a68dee"
+  },
+  "fault_explanation_zero": {
+    "press": 4.06,
+    "motion_start": 4.26,
+    "motion_end": 4.51,
+    "duration": 9.003,
+    "audio_sha256": "bed6824c70a86693f99f6c59689d51a91971cef707996cff5b302b3057f0a9eb"
+  },
+  "carelessness_explanation_large": {
+    "press": 2.88,
+    "motion_start": 3.08,
+    "motion_end": 6.16,
+    "duration": 6.72,
+    "audio_sha256": "344ba03c0a5412d5535c6c5d0e0991915f23e88393c3adfd8cecf905b94c359c"
+  },
+  "carelessness_explanation_small": {
+    "press": 3.98,
+    "motion_start": 4.18,
+    "motion_end": 7.2,
+    "duration": 7.744,
+    "audio_sha256": "c3e22942f8aa204d4d11ce048e9a7158ab92ef79438bbad128175bc8130fecf2"
+  },
+  "carelessness_explanation_zero": {
+    "press": 3.44,
+    "motion_start": 3.64,
+    "motion_end": 3.89,
+    "duration": 7.403,
+    "audio_sha256": "c0e05e6eef17d00ec4e1e9ae9fe2bc128f02a90d067c7430ac98e1053aa86c51"
+  }
+}
