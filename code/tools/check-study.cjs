@@ -223,18 +223,37 @@ for(const exp of [1,2])for(const audience of ['adults','children']){
  }
  h.dom.window.close();
 }
-// Kai's movement continuation stays visible without narrating its repeated
-// caption again. Other captions (including Ruby's Exp 2 line) remain narrated.
-for(const exp of [1,2])for(const judgment of ['fault_first','carelessness_first'])for(const side of ['left','right']){
- const h=setup(exp,'children',judgment,side,null,1,false),s=h.pilot.scenarios.find(s=>s.scenario_key==='negligence_phone');
+// Main child ratings can finish while the question is still playing. The
+// existing trial cleanup must stop that audio and discard late callbacks.
+for(const exp of [1,2])for(const judgment of ['fault_first','carelessness_first'])for(const side of ['left','right'])for(const construct of ['fault','carelessness']){
+ const h=setup(exp,'children',judgment,side,null,1,false);
+ const t=h.pilot.timeline.find(t=>t.data.scenario_key&&t.data.phase===construct);
+ t.screen(h.doc.querySelector('#target'),h.psych);
+ const a=h.audios.at(-1);let pauses=0;a.pause=()=>{pauses++;};
+ const button=h.doc.querySelector('#rating-continue');assert(button.hidden&&button.disabled);
+ for(const event of ['pointerdown','pointerup'])h.event(h.doc.querySelector('#rating-p-track'),event,63);
+ assert(button.hidden&&button.disabled,'One bar cannot reveal Continue');
+ for(const event of ['pointerdown','pointerup'])h.event(h.doc.querySelector('#rating-v-track'),event,17);
+ assert(!button.hidden&&!button.disabled,'Both deliberate ratings must allow early Continue');
+ assert.equal(h.finished.length,0);button.click();assert.equal(h.finished.length,1);
+ assert(pauses>0,'Early Continue must stop the question audio');assert.equal(h.timers.size,0);
+ assert.equal(h.finished[0][construct+'_rating_p'],63);assert.equal(h.finished[0][construct+'_rating_v'],17);
+ a.dispatchEvent(new h.dom.window.Event('ended'));h.tick();assert.equal(h.finished.length,1);assert.equal(h.timers.size,0);
+ h.dom.window.close();
+}
+// Movement continuations stay visible without narrating a repeated caption.
+// Other captions (including Ruby's Exp 2 line) remain narrated.
+for(const exp of [1,2])for(const judgment of ['fault_first','carelessness_first'])for(const side of ['left','right'])for(const scenario of ['negligence_phone','negligence_spill']){
+ const h=setup(exp,'children',judgment,side,null,1,false),s=h.pilot.scenarios.find(s=>s.scenario_key===scenario);
  const story=h.pilot.timeline.find(t=>t.data.scenario_key===s.scenario_key&&t.data.phase==='story');
  const take=ms=>{const timer=[...h.timers].find(([id])=>h.timerDelays.get(id)===ms);assert(timer,'Missing story dwell timer '+ms);h.timers.delete(timer[0]);timer[1]();};
  const playedPaths=[];story.screen(h.doc.querySelector('#target'),h.psych);
  for(const slide of s.slides){
   assert(h.doc.querySelector('.story-image').src.endsWith(slide.image));
   if(slide.narration_repeat_of){
-   assert.equal(exp,1);assert.equal(slide.slide_number,6);assert.equal(h.audios.length,5);
-   assert.equal(h.doc.querySelector('.story-image').alt,'Kai is walking and staring at his phone.');
+   assert.equal(slide.slide_number,scenario==='negligence_phone'?6:7);
+   assert.equal(h.audios.length,slide.slide_number-1);
+   assert.equal(h.doc.querySelector('.story-image').alt,s.slides[slide.narration_repeat_of-1].text);
    h.advanceClock(1000);assert(h.doc.querySelector('.story-image').src.endsWith(slide.image));
    take(2700); // Same 2.4-second clip duration + existing 300 ms transition.
   }else{
@@ -243,8 +262,13 @@ for(const exp of [1,2])for(const judgment of ['fault_first','carelessness_first'
    a.dispatchEvent(new h.dom.window.Event('ended'));take(300);
   }
  }
- assert.equal(playedPaths.filter(src=>src.endsWith('negligence_phone_05.m4a')).length,1);
- assert.equal(playedPaths.filter(src=>src.endsWith('negligence_phone_06.m4a')).length,exp===1?0:1);
+ if(scenario==='negligence_phone'){
+  assert.equal(playedPaths.filter(src=>src.endsWith('negligence_phone_05.m4a')).length,1);
+  assert.equal(playedPaths.filter(src=>src.endsWith('negligence_phone_06.m4a')).length,exp===1?0:1);
+ }else{
+  assert.equal(playedPaths.filter(src=>src.endsWith('negligence_spill_06.m4a')).length,1);
+  assert.equal(playedPaths.filter(src=>src.endsWith('negligence_spill_07.m4a')).length,0);
+ }
  assert.equal(h.finished.length,1);assert.equal(h.finished[0].story_slide_rts.length,s.slides.length);
  h.dom.window.close();
 }
@@ -271,6 +295,8 @@ for(const exp of [1,2]){
  assert.equal(vm.runInContext('chsTimeline[4] === timeline[0]',h.context),true);
  assert.equal(vm.runInContext('chsTimeline.at(-2).type',h.context),'StopRecordPlugin');
  assert.equal(vm.runInContext('chsTimeline.at(-1).data.trial_type',h.context),'debrief');
+ assert(vm.runInContext('debrief_page.stimulus',h.context).includes('mailto:cornell.explanation.lab@gmail.com'));
+ assert(!vm.runInContext('debrief_page.stimulus',h.context).includes('sbn44@cornell.edu'));
  assert(!fs.readFileSync(__dirname+`/generated/experiment${exp}-chs-pilot.js`,'utf8').includes('enable-study-sound'));
  // The Exit button ends the last trial; CHS owns saving/uploads/navigation.
  // A fixed redirect here can race the platform's asynchronous completion.
@@ -349,7 +375,11 @@ for(const exp of [1,2])for(const audience of ['adults','children']){
  assert(source.includes('show_progress_bar:true'));assert(!source.includes('pilot.updateProgress'));
 }
 // Manifest, runtime asset integrity, exact captions and generated code exclusions.
-for(const exp of [1,2]){const adultJar=fs.readFileSync(root+`/code/experiments/experiment${exp}/adults/images/pilot_cookie_jar_empty.png`),childJar=fs.readFileSync(root+`/code/experiments/experiment${exp}/children/images/pilot_cookie_jar_empty.png`);assert(adultJar.equals(childJar));}
+for(const exp of [1,2]){
+ const adultJar=fs.readFileSync(root+`/code/experiments/experiment${exp}/adults/images/pilot_cookie_jar_empty.png`),childJar=fs.readFileSync(root+`/code/experiments/experiment${exp}/children/images/pilot_cookie_jar_empty.png`);
+ assert(childJar.length<adultJar.length);assert(childJar.readUInt32BE(16)<=448&&childJar.readUInt32BE(20)<=448);
+ assert(childJar.equals(fs.readFileSync(root+'/code/experiments/experiment1/children/images/pilot_cookie_jar_empty.png')));
+}
 const narration=JSON.parse(fs.readFileSync(root+'/docs/narration/manifest.json')).clips;assert.equal(new Set(narration.map(c=>c.text)).size,narration.length);
 for(const s of scenarios)for(const slide of s.slides){
  assert(fs.existsSync(root+`/code/experiments/experiment${s.experiment}/adults/`+slide.image));assert(fs.existsSync(root+`/code/experiments/experiment${s.experiment}/children/`+slide.image));

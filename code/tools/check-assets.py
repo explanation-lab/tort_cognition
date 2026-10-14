@@ -56,6 +56,10 @@ for e in [1,2]:
         refs.update('images/'+s[k]for s in config['scenarios']for k in ['p_img','v_img'])
         for rel in refs:
             assert(base/rel).is_file(),rel;assets.add(str((base/rel).relative_to(R)))
+        if audience=='children':
+            assert config['imageVersions']=={rel:sha(base/rel)[:12]for rel in sorted(refs)}
+            assert sum((base/rel).stat().st_size for rel in refs)<3*1024*1024,'Destination identifiers are too large for slow connections'
+            assert all(max(struct.unpack('>II',(base/rel).read_bytes()[16:24]))<=448 for rel in refs)
         assert config['texts']==json.loads((R/'docs/narration/source.json').read_text())
         assert config['demoTiming']==json.loads((R/'docs/narration/demo-timing.json').read_text())
         conditions.append(f'Experiment {e} {audience}')

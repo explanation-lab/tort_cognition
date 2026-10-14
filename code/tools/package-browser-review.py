@@ -34,6 +34,7 @@ def build():
             source = (origin / 'js' / config_name).read_text()
             config = json.loads(source.split('const PILOT_CONFIG = ', 1)[1].split(';\nconst pilot', 1)[0])
             assets = {'images/michael.png', 'images/claire.png', 'images/pilot_cookie_jar_empty.png'}
+            portraits = assets | {'images/' + scenario[key] for scenario in config['scenarios'] for key in ['p_img', 'v_img']}
             for scenario in config['scenarios']:
                 assets.update(['images/' + scenario['p_img'], 'images/' + scenario['v_img'], scenario['reminder_image']])
                 assets.update(slide['image'] for slide in scenario['slides'])
@@ -51,7 +52,12 @@ def build():
                 destination = OUT / f'exp{experiment}/assets' / relative
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 if destination in packaged_assets:
-                    assert destination.read_bytes() == data, f'Conflicting adult/child asset {relative}'
+                    if child and relative in portraits:
+                        # The shared review bundle uses the smaller, same-artwork
+                        # child identifiers; active adult sources are untouched.
+                        destination.write_bytes(data)
+                    else:
+                        assert destination.read_bytes() == data, f'Conflicting adult/child asset {relative}'
                 else:
                     destination.write_bytes(data)
                     packaged_assets.add(destination)

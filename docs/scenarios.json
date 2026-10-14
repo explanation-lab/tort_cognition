@@ -58,7 +58,8 @@
           "slide_number": 7,
           "image": "images/v3/negligence_spill_07.png",
           "audio": "audio/v3_negligence_spill_07.m4a",
-          "text": "Finn doesn’t clean it up and walks away."
+          "text": "Finn doesn’t clean it up and walks away.",
+          "narration_repeat_of": 6
         },
         {
           "slide_number": 8,
@@ -859,7 +860,8 @@
           "slide_number": 7,
           "image": "images/v3/negligence_spill_07.png",
           "audio": "audio/v3_negligence_spill_07.m4a",
-          "text": "Finn doesn’t clean it up and walks away."
+          "text": "Finn doesn’t clean it up and walks away.",
+          "narration_repeat_of": 6
         },
         {
           "slide_number": 8,

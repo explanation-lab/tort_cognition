@@ -11,6 +11,9 @@ def generate():
   for audience in ['adults','children']:
    # The same scenario configuration is used by adults and CHS children.
    config={'experiment':e,'audience':audience,'assetRoot':'','scenarios':[{k:v for k,v in s.items()if k not in ['deck','deck_sha256','experiment']}for s in scenarios if s['experiment']==e],'texts':texts,'clips':clips[str(e)],'demoTiming':timing}
+   if audience=='children':
+    names={'michael.png','claire.png','pilot_cookie_jar_empty.png'}|{s[k]for s in scenarios if s['experiment']==e for k in ['p_img','v_img']}
+    config['imageVersions']={'images/'+name:hashlib.sha256((R/f'code/experiments/experiment{e}/children/images'/name).read_bytes()).hexdigest()[:12]for name in sorted(names)}
    text='// Generated configuration; regenerate with code/tools/generate-pilot.py.\nconst PILOT_CONFIG = '+json.dumps(config,ensure_ascii=False,indent=2)+';\n'
    text+='const pilot = TortPilot.create({...PILOT_CONFIG, ...(globalThis.TORT_LOCAL_OPTIONS || {})});\n'
    if audience=='children':

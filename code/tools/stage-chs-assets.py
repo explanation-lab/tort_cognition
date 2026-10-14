@@ -24,8 +24,18 @@ def stage():
             shutil.copyfile(source, target)
             records.append({'path': str(relative), 'bytes': source.stat().st_size,
                             'sha256': hashlib.sha256(source.read_bytes()).hexdigest()})
-    if len(records) != 195:
-        raise ValueError(f'Expected 195 approved media files, found {len(records)}')
+    expected = {'images/michael.png', 'images/claire.png', 'images/pilot_cookie_jar_empty.png'}
+    scenarios = json.loads((ROOT / 'docs/scenarios.json').read_text())['scenarios']
+    for scenario in scenarios:
+        if scenario['experiment'] != 1:
+            continue
+        expected.update(['images/' + scenario['p_img'], 'images/' + scenario['v_img'], scenario['reminder_image']])
+        expected.update(slide['image'] for slide in scenario['slides'])
+    prefix = str(SOURCE.relative_to(ROOT)) + '/'
+    clips = json.loads((ROOT / 'docs/narration/manifest.json').read_text())['clips']
+    expected.update(dest[len(prefix):] for clip in clips for dest in clip['destinations'] if dest.startswith(prefix))
+    if {str(Path(record['path']).relative_to(SOURCE.relative_to(ROOT))) for record in records} != expected:
+        raise ValueError('Staged media differ from the current approved references')
     (OUTPUT / '.nojekyll').touch()
     (OUTPUT / 'media-manifest.json').write_text(json.dumps({'study': 6208, 'experiment': 1, 'files': records}, indent=2) + '\n')
     print(json.dumps({'files': len(records), 'bytes': sum(r['bytes'] for r in records), 'output': str(OUTPUT)}))

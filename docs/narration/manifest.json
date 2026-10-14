@@ -10,7 +10,7 @@
     "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
     "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
     "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
-    "code/experiments/experiment1/children/js/chs-task.js": "0ec6139b2990034ab5bd8fd5e5d6ffeb2dd4e097081e0fd69f947c48316ca10d",
+    "code/experiments/experiment1/children/js/chs-task.js": "6f03c67008adb9730fd7783cf8befcdc54a5b9ad40776bf3a92f23f9f96ed6f0",
     "code/experiments/experiment2/adults/slides/pilot-v3/control_squirrel.pptx": "b3f9df9259bfe1a846a56c7c6e88bbe4485343b2e624ee4a4bc2a8a7eaeb3b67",
     "code/experiments/experiment2/adults/slides/pilot-v3/control_wind.pptx": "5e1f3cb3b6feaf65e7e3d1b1f26c28c33965468d0a07e2a632a94378ccbf4a15",
     "code/experiments/experiment2/adults/slides/pilot-v3/intentional_hit.pptx": "624cce6b5a76f6381c0d2e592a4a3fa92820ed91307dff72e82268d27b1f5d61",
@@ -19,8 +19,8 @@
     "code/experiments/experiment2/adults/slides/pilot-v3/negligence_spill.pptx": "d3a121f0c048e027d596cc08a722e81a0112c5fc94b6a46cd2bdfba35ecef684",
     "code/experiments/experiment2/adults/slides/pilot-v3/strict_liability_alligator.pptx": "200960dc75e37db65b8efae9baeebb6a62f91a9dcf592eab1cff687f44d5b68d",
     "code/experiments/experiment2/adults/slides/pilot-v3/strict_liability_wolf.pptx": "d7892a21afe01582188ad6b8213132ef847899385616e24c3ea32c2bfd038628",
-    "code/experiments/experiment2/children/js/chs-task.js": "b88c57e92facc89b4f1a09ab1adb210d56a9952c983fef7b1ac01a8b7b27dc72",
-    "code/shared/js/pilot-runtime.js": "e4df89af586ac6930751df328c5e3758db781f41eb898bc1e0364e120d59b624",
+    "code/experiments/experiment2/children/js/chs-task.js": "173e1270b9810e34008880253aa44ca559d5b196e07bd122ab02f019553cc8bd",
+    "code/shared/js/pilot-runtime.js": "a3c232d0eb1cc091191a307b0d2076e8025b4973bcd3e0b285c04332bb5b9864",
     "docs/narration/demo-timing.json": "40d41c591848682cf1b8a8a7e857dd4ec52595358c064332b1f6f7477c6cd4eb"
   },
   "format": "AAC mono .m4a, 48 kHz, 128 kbps",
@@ -29,8 +29,8 @@
     "unique_clips": 116,
     "instruction_clips": 37,
     "story_clips": 79,
-    "story_slide_uses": 149,
-    "destinations": 223,
+    "story_slide_uses": 147,
+    "destinations": 221,
     "words": 914,
     "spoken_minutes_at_140_wpm": 6.5,
     "spoken_minutes_at_110_wpm": 8.3,
@@ -1563,9 +1563,7 @@
       "slide_number": 6,
       "destinations": [
         "code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a",
-        "code/experiments/experiment1/children/audio/v3_negligence_spill_07.m4a",
-        "code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a",
-        "code/experiments/experiment2/children/audio/v3_negligence_spill_07.m4a"
+        "code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a"
       ],
       "uses": [
         {
@@ -1577,28 +1575,12 @@
           "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a"
         },
         {
-          "experiment": 1,
-          "screen": "story",
-          "scenario_key": "negligence_spill",
-          "slide_number": 7,
-          "reference_key": "negligence_spill_07",
-          "destination": "code/experiments/experiment1/children/audio/v3_negligence_spill_07.m4a"
-        },
-        {
           "experiment": 2,
           "screen": "story",
           "scenario_key": "negligence_spill",
           "slide_number": 6,
           "reference_key": "negligence_spill_06",
           "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a"
-        },
-        {
-          "experiment": 2,
-          "screen": "story",
-          "scenario_key": "negligence_spill",
-          "slide_number": 7,
-          "reference_key": "negligence_spill_07",
-          "destination": "code/experiments/experiment2/children/audio/v3_negligence_spill_07.m4a"
         }
       ],
       "shared": true

@@ -60,7 +60,8 @@ const PILOT_CONFIG = {
           "slide_number": 7,
           "image": "images/v3/negligence_spill_07.png",
           "audio": "audio/v3_negligence_spill_07.m4a",
-          "text": "Finn doesn’t clean it up and walks away."
+          "text": "Finn doesn’t clean it up and walks away.",
+          "narration_repeat_of": 6
         },
         {
           "slide_number": 8,
@@ -927,7 +928,6 @@ const PILOT_CONFIG = {
     "negligence_spill_04": "audio/v3_negligence_spill_04.m4a",
     "negligence_spill_05": "audio/v3_negligence_spill_05.m4a",
     "negligence_spill_06": "audio/v3_negligence_spill_06.m4a",
-    "negligence_spill_07": "audio/v3_negligence_spill_07.m4a",
     "negligence_spill_08": "audio/v3_negligence_spill_08.m4a",
     "negligence_spill_09": "audio/v3_negligence_spill_09.m4a",
     "negligence_spill_10": "audio/v3_negligence_spill_10.m4a",

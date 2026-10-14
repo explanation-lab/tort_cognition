@@ -521,8 +521,8 @@ No outstanding squirrel/alligator wording or role inconsistencies. Both experime
 *Recording notes — do not read aloud*
 - Clip key: `negligence_spill_06`
 - Used in: Both experiments; screen/use: `story`; shared: yes.
-- Contexts: Experiment 1: negligence_spill, slide 6; Experiment 1: negligence_spill, slide 7; Experiment 2: negligence_spill, slide 6; Experiment 2: negligence_spill, slide 7.
-- Final destinations: `code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a`, `code/experiments/experiment1/children/audio/v3_negligence_spill_07.m4a`, `code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a`, `code/experiments/experiment2/children/audio/v3_negligence_spill_07.m4a`
+- Contexts: Experiment 1: negligence_spill, slide 6; Experiment 2: negligence_spill, slide 6.
+- Final destinations: `code/experiments/experiment1/children/audio/v3_negligence_spill_06.m4a`, `code/experiments/experiment2/children/audio/v3_negligence_spill_06.m4a`
 
 ## Clip 044 — negligence_spill_08.m4a
 

@@ -60,7 +60,8 @@ const PILOT_CONFIG = {
           "slide_number": 7,
           "image": "images/v3/negligence_spill_07.png",
           "audio": "audio/v3_negligence_spill_07.m4a",
-          "text": "Finn doesn’t clean it up and walks away."
+          "text": "Finn doesn’t clean it up and walks away.",
+          "narration_repeat_of": 6
         },
         {
           "slide_number": 8,
@@ -927,7 +928,6 @@ const PILOT_CONFIG = {
     "negligence_spill_04": "audio/v3_negligence_spill_04.m4a",
     "negligence_spill_05": "audio/v3_negligence_spill_05.m4a",
     "negligence_spill_06": "audio/v3_negligence_spill_06.m4a",
-    "negligence_spill_07": "audio/v3_negligence_spill_07.m4a",
     "negligence_spill_08": "audio/v3_negligence_spill_08.m4a",
     "negligence_spill_09": "audio/v3_negligence_spill_09.m4a",
     "negligence_spill_10": "audio/v3_negligence_spill_10.m4a",
@@ -1045,6 +1045,27 @@ const PILOT_CONFIG = {
       "duration": 7.403,
       "audio_sha256": "c0e05e6eef17d00ec4e1e9ae9fe2bc128f02a90d067c7430ac98e1053aa86c51"
     }
+  },
+  "imageVersions": {
+    "images/Milo.png": "ff0f544fe79e",
+    "images/Ruby.png": "da19c4e5ebfc",
+    "images/Sasha.png": "011b4d4a9490",
+    "images/andy.png": "68be355a6b59",
+    "images/catherine.png": "9193c5a9c130",
+    "images/claire.png": "c0294a3e2f3e",
+    "images/cleo_neutral.png": "8f4fad34f4e7",
+    "images/ella.png": "ed763df8d47b",
+    "images/eric.png": "c095be989c18",
+    "images/finn_neutral.png": "d7a358fc16ed",
+    "images/kai.png": "240d31bd2ab8",
+    "images/katie.png": "e6eb96ee67de",
+    "images/michael.png": "4fd6c34ddf2b",
+    "images/nora.png": "cbc7780c3d92",
+    "images/pilot_cookie_jar_empty.png": "e328f87809b8",
+    "images/rex.png": "fab9a8ae3763",
+    "images/sam.png": "e3440e22b24b",
+    "images/tony.png": "b836c8b925bb",
+    "images/zoe.png": "1bb933000104"
   }
 };
 const pilot = TortPilot.create({...PILOT_CONFIG, ...(globalThis.TORT_LOCAL_OPTIONS || {})});

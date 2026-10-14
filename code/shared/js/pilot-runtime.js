@@ -73,7 +73,7 @@ var TortPilot = (() => {
   function addStyles() { if (!document.getElementById('pilot-styles')) { const s = document.createElement('style'); s.id = 'pilot-styles'; s.textContent = css; document.head.appendChild(s); } }
   function create(options) {
     addStyles();
-    const {experiment, audience, scenarios, texts, clips, demoTiming = {}, assetRoot = '', review = false, mute = false} = options;
+    const {experiment, audience, scenarios, texts, clips, demoTiming = {}, imageVersions = {}, assetRoot = '', review = false, mute = false} = options;
     const child = audience === 'children';
     const prefix = `tort_pilot_v3_exp${experiment}_${audience}_`;
     const judgmentOrder = stored(prefix+'judgment_order', () => Math.random() < .5 ? 'fault_first' : 'carelessness_first', v => ['fault_first','carelessness_first'].includes(v));
@@ -85,7 +85,19 @@ var TortPilot = (() => {
     const ratingOrder = victimSide === 'left' ? ['v','p'] : ['p','v'];
     const assignments = {judgment_order:judgmentOrder, victim_side:victimSide, trash_on_left:victimSide==='right', character_order:characterOrder.join(','), scenario_presentation_order:order.join(','), experiment, audience, study_version:'pilot_v3_carelessness', outcome:'zero'};
     const completed = new Map();
-    const path = name => assetRoot+name;
+    const path = name => assetRoot+name+(child&&imageVersions[name]?'?v='+imageVersions[name]:'');
+    const imageCache = new Map();
+    function preloadImages(names) {
+      for(const name of names){
+        const src=path(name);if(imageCache.has(src))continue;
+        const image=new Image();image.decoding='async';
+        image.onload=()=>{if(image.decode)image.decode().catch(()=>{});};
+        imageCache.set(src,image);image.src=src;
+      }
+    }
+    // Warm the small destination identifiers while the host runs consent/setup,
+    // and keep decoded images available for later allocation/rating screens.
+    if(child)preloadImages(['images/michael.png','images/claire.png','images/pilot_cookie_jar_empty.png',...ordered.flatMap(s=>['images/'+s.p_img,'images/'+s.v_img])]);
     const warm = {p_name:'Michael',v_name:'Claire',p_img:'michael.png',v_img:'claire.png',p_after:3};
     function metadata(s, position, phase, practice = false) {
       return {...assignments, is_practice:practice, review_mode:review, valid_participant_data:!review,
@@ -333,14 +345,15 @@ var TortPilot = (() => {
         const explanationKeys=['intro','large','small','zero'].map(part=>`${construct}_explanation_${part}`);
         const sentence=k=>`<span data-narration-key="${k}">${escape(texts[k])}</span>`;
         const explanationBody=explanation&&!second?`<div class="scale-explanation"><div class="scale-instructions"><p>${sentence(explanationKeys[0])}</p><p>${sentence(explanationKeys[1])} ${sentence(explanationKeys[2])}</p><p>${sentence(explanationKeys[3])}</p></div></div>`:`<p class="prompt">${child&&practice?sentence('rating_practice_try')+' ':''}${sentence(key)}</p>`;
-        frame(ctx,`${practice||explanation?'':reminder(s)}${explanationBody}${barsHTML(s,!explanation)}<button id="rating-continue" disabled ${child&&(practice||explanation)?'hidden':''}>Continue</button><p class="status" id="rating-status" aria-live="polite"></p>`,'rating-response');
+        frame(ctx,`${practice||explanation?'':reminder(s)}${explanationBody}${barsHTML(s,!explanation)}<button id="rating-continue" disabled ${child?'hidden':''}>Continue</button><p class="status" id="rating-status" aria-live="polite"></p>`,'rating-response');
         const demo=child&&explanation&&!second?demonstrateBar(ctx):null;
-        const values={p:0,v:0},touched={p:false,v:false};const btn=ctx.display.querySelector('#rating-continue');let ready=!child||(mute&&!(explanation&&!second)),drag=null;
+        const values={p:0,v:0},touched={p:false,v:false};const btn=ctx.display.querySelector('#rating-continue');let ready=!child||(!practice&&!explanation)||(mute&&!(explanation&&!second)),drag=null;
         function valid(){if(explanation)return ready;if(!ready||!touched.p||!touched.v)return false;if(!practice)return true;
           return practice==='large'?values.p>=70&&values.v<=5:practice==='small'?values.v>=15&&values.v<=45&&values.p<=5:values.p<=5&&values.v<=5;
         }
         let autoPending=false;
         function check(){btn.disabled=!valid();
+          if(child&&!practice&&!explanation)btn.hidden=!(touched.p&&touched.v);
           if(child&&(practice||explanation)&&valid()&&!drag&&!autoPending){autoPending=true;ctx.later(()=>{autoPending=false;if(valid()&&!drag)btn.click();},300);}
         }
         const complete=()=>{ready=true;check();};
@@ -390,6 +403,7 @@ var TortPilot = (() => {
     }
     function story(s,position) {
       return trial(`${s.scenario_key}: story`,metadata(s,position,'story'),ctx=>{
+        if(child)preloadImages(['images/'+s.p_img,'images/'+s.v_img,'images/pilot_cookie_jar_empty.png',s.reminder_image]);
         let index=0,stop=()=>{},slideStarted=performance.now();const slideRTs=[],narrationDurations=new Map();
         function next(){slideRTs.push(Math.round(performance.now()-slideStarted));if(index===s.slides.length-1)ctx.finish({story_slide_rts:slideRTs});else{index++;show();}}
         function show(){stop();slideStarted=performance.now();const slide=s.slides[index];
