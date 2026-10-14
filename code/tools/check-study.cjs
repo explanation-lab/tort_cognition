@@ -382,5 +382,49 @@ function checkChildParticipantEntries(){
  }
  return outcomes;
 }
+async function checkAudioPermissionWait(){
+ const outcomes=[];
+ for(const exp of [1,2])for(const phase of ['welcome','explanation','story'])for(const input of ['pointer','keyboard']){
+  const h=setup(exp,'children','fault_first','left',null,1,false,false),doc=h.doc;
+  let allowed=false,plays=0;
+  h.context.Audio=function(src){
+   const audio=new h.dom.window.Audio(src);h.audios.push(audio);
+   audio.play=()=>{plays++;if(!allowed)return Promise.reject(Object.assign(new Error('Browser requires a gesture'),{name:'NotAllowedError'}));audio.dispatchEvent(new h.dom.window.Event('playing'));return Promise.resolve();};
+   return audio;
+  };
+  const trial=phase==='welcome'?h.pilot.warmup[0]:phase==='explanation'?h.pilot.warmup.find(t=>t._debugLabel==='fault: explanation'):h.pilot.timeline.find(t=>t.data.phase==='story');
+  trial.screen(doc.querySelector('#target'),h.psych);
+  for(let i=0;i<8;i++)await Promise.resolve();
+  const opening=doc.querySelector('.pilot').textContent;
+  assert(doc.querySelector('.audio-status'));assert(!doc.querySelector('#enable-study-sound'));
+  assert.equal(h.timers.size,0,'A permission wait must cancel the loading timeout');
+  h.audios[0].dispatchEvent(new h.dom.window.Event('waiting'));h.audios[0].dispatchEvent(new h.dom.window.Event('stalled'));
+  h.advanceClock(120000);h.tick();
+  assert.equal(h.finished.length,0);assert.equal(h.audios.length,1);assert.equal(doc.querySelector('.pilot').textContent,opening);
+  if(phase==='explanation'){assert(doc.querySelector('.bar-demo-pointer').hidden);assert.equal(doc.querySelector('#rating-p-wrap').style.width,'0%');}
+  allowed=true;
+  doc.dispatchEvent(input==='pointer'?new h.dom.window.Event('pointerdown',{bubbles:true}):new h.dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
+  for(let i=0;i<8;i++)await Promise.resolve();
+  assert(!doc.querySelector('.audio-status'));assert.equal(h.audios.length,1);assert.equal(plays,2,'Retry the same recording');assert.equal(h.finished.length,0);
+  h.audios[0].dispatchEvent(new h.dom.window.Event('ended'));h.tick();h.tick();
+  if(phase==='welcome'){assert.equal(h.finished.length,1);assert.equal(h.finished[0].audio_failures.length,0);}
+  else assert.equal(h.audios.length,2,'Only advance to the next clip after audio ends');
+  outcomes.push({experiment:exp,phase,input,held_without_skipping:true,same_clip_resumed:true,passed:true});
+  h.dom.window.close();
+ }
+ // Cancelling a screen must remove its permission listeners and retry notice.
+ for(const exp of [1,2]){
+  const h=setup(exp,'children','fault_first','left',null,1,false,false);let plays=0;
+  h.context.Audio=function(src){const a=new h.dom.window.Audio(src);a.play=()=>{plays++;return Promise.reject(Object.assign(new Error('Blocked'),{name:'NotAllowedError'}));};return a;};
+  h.pilot.timeline.find(t=>t.data.scenario_key&&t.data.phase==='cookies').screen(h.doc.querySelector('#target'),h.psych);
+  for(let i=0;i<8;i++)await Promise.resolve();assert(h.doc.querySelector('.audio-status'));
+  h.doc.querySelector('#gate-no').click();assert.equal(h.finished.length,1);assert(!h.doc.querySelector('.audio-status'));
+  h.doc.dispatchEvent(new h.dom.window.Event('pointerdown',{bubbles:true}));assert.equal(plays,1);h.dom.window.close();
+ }
+ return outcomes;
+}
 report.child_participant_entries=checkChildParticipantEntries();
-fs.writeFileSync(__dirname+'/generated/workspace-behavior.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+checkAudioPermissionWait().then(outcomes=>{
+ report.audio_permission_wait=outcomes;
+ fs.writeFileSync(__dirname+'/generated/workspace-behavior.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+}).catch(error=>{console.error(error);process.exitCode=1;});

@@ -109,23 +109,54 @@ var TortPilot = (() => {
         draw(ctx);
       }};
     }
+    // A browser permission rejection is not a missing recording. Hold the
+    // same clip until a real user gesture, without adding a button or trial.
+    function playNarration(ctx, audio, fail, onBlocked, onAttempt) {
+      let cancelled=false, notice=null;
+      const clear=()=>{
+        document.removeEventListener('pointerdown',retry,true);
+        document.removeEventListener('keydown',retry,true);
+        if(notice){notice.remove();notice=null;}
+      };
+      const retry=event=>{
+        if(event.type==='keydown'&&!['Enter',' '].includes(event.key))return;
+        clear();attempt();
+      };
+      const attempt=()=>{
+        if(cancelled)return;
+        onAttempt();
+        audio.play().catch(error=>{
+          if(cancelled)return;
+          if(error?.name!=='NotAllowedError'){fail();return;}
+          onBlocked();clear();
+          notice=document.createElement('p');notice.className='audio-status';notice.setAttribute('role','status');
+          notice.textContent='Click anywhere to play the narration.';
+          (ctx.display.querySelector('.pilot')||ctx.display).append(notice);
+          document.addEventListener('pointerdown',retry,true);
+          document.addEventListener('keydown',retry,true);
+        });
+      };
+      const stop=()=>{cancelled=true;clear();};
+      ctx.cleanup(stop);attempt();return stop;
+    }
     function speak(ctx, key, after = () => {}, hold = 0, onStart = () => {}) {
-      let done = false, began = false, audio, watchdog;
+      let done = false, began = false, audio, watchdog, permissionBlocked=false, stopPlayback=()=>{};
       const start = (fallback = false) => {if(done||began)return;began=true;onStart(fallback,audio);};
       // Missing/blocked audio still runs the visual phase before advancing.
-      const complete = () => { if(done) return; start(true); done=true; clearTimeout(watchdog); if(audio) audio.pause(); ctx.later(after,hold); };
+      const complete = () => { if(done) return; start(true); done=true; clearTimeout(watchdog); stopPlayback(); if(audio) audio.pause(); ctx.later(after,hold); };
       if (!child || mute) { ctx.later(complete,0); return () => {done=true;}; }
       audio = new Audio(path(clips[key] || `audio/${key}.m4a`)); audio.preload='auto';
       const fail = () => {if(done)return;ctx.audioFailures.push(key);complete();};
-      const watch = () => {clearTimeout(watchdog);watchdog=ctx.later(fail,Math.max(15000,(texts[key] || '').length*90+10000));};
+      const watch = () => {clearTimeout(watchdog);if(!permissionBlocked)watchdog=ctx.later(fail,Math.max(15000,(texts[key] || '').length*90+10000));};
       ctx.listen(audio,'playing',()=>{clearTimeout(watchdog);start();});
       ctx.listen(audio,'waiting',watch);ctx.listen(audio,'stalled',watch);
       ctx.listen(audio,'ended',complete); ctx.listen(audio,'error',fail);
       // Bound loading/buffering failures, never a clip that is actively playing.
-      watch();
       ctx.cleanup(() => {done=true;audio.pause();audio.removeAttribute('src');audio.load();});
-      audio.play().catch(fail);
-      return () => {done=true;audio.pause();};
+      stopPlayback=playNarration(ctx,audio,fail,
+        ()=>{permissionBlocked=true;clearTimeout(watchdog);},
+        ()=>{permissionBlocked=false;watch();});
+      return () => {done=true;clearTimeout(watchdog);stopPlayback();audio.pause();};
     }
     function frame(ctx, body, classes='') {ctx.display.innerHTML=`<section class="pilot ${classes}">${body}</section>`;}
     function reminder(s) {return s.reminder_image ? `<img class="reminder" src="${path(s.reminder_image)}" alt="Final story slide">` : '';}
@@ -372,11 +403,14 @@ var TortPilot = (() => {
             const duration=narrationDurations.get(slide.narration_repeat_of)||Math.max(3000,previous.text.length*65);
             ctx.later(next,duration+300);
           }
-          else {let audio=new Audio(path(slide.audio)),done=false;audio.preload='auto';
-            const advance=()=>{if(done)return;done=true;const seconds=Number.isFinite(audio.duration)&&audio.duration>0?audio.duration:audio.currentTime;const duration=Number.isFinite(seconds)&&seconds>0?seconds*1000:Math.max(3000,slide.text.length*65);narrationDurations.set(slide.slide_number,duration);audio.pause();ctx.later(next,300);};
+          else {let audio=new Audio(path(slide.audio)),done=false,watchdog,stopPlayback=()=>{};audio.preload='auto';
+            const advance=()=>{if(done)return;done=true;clearTimeout(watchdog);stopPlayback();const seconds=Number.isFinite(audio.duration)&&audio.duration>0?audio.duration:audio.currentTime;const duration=Number.isFinite(seconds)&&seconds>0?seconds*1000:Math.max(3000,slide.text.length*65);narrationDurations.set(slide.slide_number,duration);audio.pause();ctx.later(next,300);};
             const fallback=()=>{if(done)return;ctx.audioFailures.push(`${s.scenario_key}_${index+1}`);ctx.later(advance,Math.max(3000,slide.text.length*65));};
-            ctx.listen(audio,'ended',advance);ctx.listen(audio,'error',fallback);ctx.later(fallback,Math.max(15000,slide.text.length*100+10000));
-            stop=()=>{done=true;audio.pause();audio.removeAttribute('src');audio.load();};ctx.cleanup(stop);audio.play().catch(fallback);
+            ctx.listen(audio,'ended',advance);ctx.listen(audio,'error',fallback);
+            stop=()=>{done=true;clearTimeout(watchdog);stopPlayback();audio.pause();audio.removeAttribute('src');audio.load();};ctx.cleanup(stop);
+            stopPlayback=playNarration(ctx,audio,fallback,
+              ()=>clearTimeout(watchdog),
+              ()=>{clearTimeout(watchdog);watchdog=ctx.later(fallback,Math.max(15000,slide.text.length*100+10000));});
           }
         }
         show();
