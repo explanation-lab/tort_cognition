@@ -44,7 +44,28 @@ if(!pilot.review)jsPsych.run(timeline);
    (R/f'code/experiments/experiment{e}/{audience}/js/{name}').write_text(text)
    # Version the active local assets together. Reloaded preview pages must not
    # pair a cached pre-segmentation runtime with current narration/configuration.
-   pages=['pilot-preview.html']+(['index.html']if audience=='adults'else[])
+   if audience=='children':
+    # Open directly into the participant task. The only optional button is an
+    # in-screen browser audio permission retry; it adds no timeline screen.
+    (R/f'code/experiments/experiment{e}/children/index.html').write_text(f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Experiment {e} — children</title>
+  <link rel="stylesheet" href="../../../shared/css/jspsych-7.3.4.css">
+  <script src="../../../shared/js/jspsych-7.3.4.js"></script>
+  <script src="../../../shared/js/plugin-html-button-response-1.1.3.js"></script>
+  <script src="../../../shared/js/pilot-runtime.js"></script>
+  <script src="../../../shared/js/pilot-child-entry.js"></script>
+</head>
+<body>
+  <script src="js/chs-task.js"></script>
+  <script>jsPsych.run(timeline);</script>
+</body>
+</html>
+''')
+   pages=['pilot-preview.html','index.html']
    for page in pages:
     html_path=R/f'code/experiments/experiment{e}/{audience}/{page}'
     def version(match):
@@ -52,7 +73,7 @@ if(!pilot.review)jsPsych.run(timeline);
      asset=html_path.parent/src
      digest=hashlib.sha256(asset.read_bytes()).hexdigest()[:12]
      return f'<script src="{src}?v={digest}"></script>'
-    html_path.write_text(re.sub(r'<script src="([^\"]*(?:pilot-runtime|pilot-adult-forms|pilot-review|experiment|chs-task)\.js)(?:\?[^\"]*)?"></script>',version,html_path.read_text()))
+    html_path.write_text(re.sub(r'<script src="([^\"]*(?:pilot-runtime|pilot-adult-forms|pilot-review|pilot-child-entry|experiment|chs-task)\.js)(?:\?[^\"]*)?"></script>',version,html_path.read_text()))
  # The entry HTML itself can be cached independently of its versioned scripts.
  # Give each launcher link the current entry-page fingerprint, so an old
  # cached page cannot bypass the shared runtime/configuration versions above.
@@ -61,5 +82,5 @@ if(!pilot.review)jsPsych.run(timeline);
   relative=match[1]
   digest=hashlib.sha256((R/'code/experiments'/relative).read_bytes()).hexdigest()[:12]
   return f'href="{relative}?v={digest}"'
- launcher.write_text(re.sub(r'href="(experiment[12]/(?:children|adults)/pilot-preview\.html)(?:\?[^\"]*)?"',version_entry,launcher.read_text()))
+ launcher.write_text(re.sub(r'href="(experiment[12]/(?:children|adults)/(?:pilot-preview|index)\.html)(?:\?[^\"]*)?"',version_entry,launcher.read_text()))
 if __name__=='__main__':generate()

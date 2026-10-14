@@ -10,7 +10,9 @@ Current approved Experiment 1 and Experiment 2 studies, each with adult and chil
 
 ## Preview
 
-Open `code/experiments/index.html` while serving this repository locally. On this computer: http://127.0.0.1:8766/code/experiments/index.html. Each `pilot-preview.html` provides researcher controls; child audio is on unless Mute / visual QA is selected. Child previews do not perform platform consent, recording or submission. Adult `index.html` entries retain their participant behavior.
+Open `code/experiments/index.html` while serving this repository locally. On this computer: http://127.0.0.1:8766/code/experiments/index.html. Each audience has an `index.html` participant entry and a separate `pilot-preview.html` with researcher controls. Child `index.html` opens directly into the normal Welcome screen with narration on and no researcher panel, mute option or review launch screen. A browser that blocks autoplay requires an Enable sound click on that same Welcome screen; the narration waits rather than skipping. Adult `index.html` entries retain their participant behavior.
+
+Standalone child entries run the same behavioral task as the CHS build; platform consent, camera recording, storage and debrief are supplied by Lookit, not these HTML files. Researcher previews do not submit responses.
 
 For a click-to-open collaborator ZIP with no server or installation, run the packaging tool described in `docs/MAINTENANCE.md`.
 

@@ -12,7 +12,10 @@ var TortPilot = (() => {
   function stored(key, generate, valid) {
     try { const v = JSON.parse(sessionStorage.getItem(key)); if (valid(v)) return v; } catch (_) { /* fresh assignment */ }
     const v = generate();
-    sessionStorage.setItem(key, JSON.stringify(v));
+    try { sessionStorage.setItem(key, JSON.stringify(v)); } catch (_) {
+      // Direct file/private-browser entries may not permit persistent storage.
+      // This task instance still keeps all three assignments for its full run.
+    }
     return v;
   }
   class ScreenPlugin {
@@ -111,9 +114,10 @@ var TortPilot = (() => {
     }
     function speak(ctx, key, after = () => {}, hold = 0, onStart = () => {}) {
       let done = false, began = false, audio, watchdog;
+      let dismissPermission = () => {};
       const start = (fallback = false) => {if(done||began)return;began=true;onStart(fallback,audio);};
       // Missing/blocked audio still runs the visual phase before advancing.
-      const complete = () => { if(done) return; start(true); done=true; clearTimeout(watchdog); if(audio) audio.pause(); ctx.later(after,hold); };
+      const complete = () => { if(done) return; start(true); done=true; clearTimeout(watchdog); dismissPermission(); if(audio) audio.pause(); ctx.later(after,hold); };
       if (!child || mute) { ctx.later(complete,0); return () => {done=true;}; }
       audio = new Audio(path(clips[key] || `audio/${key}.m4a`)); audio.preload='auto';
       const fail = () => {if(done)return;ctx.audioFailures.push(key);complete();};
@@ -124,8 +128,23 @@ var TortPilot = (() => {
       // Bound loading/buffering failures, never a clip that is actively playing.
       watch();
       ctx.cleanup(() => {done=true;audio.pause();audio.removeAttribute('src');audio.load();});
-      audio.play().catch(fail);
-      return () => {done=true;audio.pause();};
+      // Standalone participant entries can wait for a required browser gesture.
+      // CHS and researcher previews retain their existing playback/error handling.
+      ctx.cleanup(() => dismissPermission());
+      const play = () => audio.play().then(() => dismissPermission()).catch(error => {
+        if (done) return;
+        if (error?.name === 'NotAllowedError' && typeof options.onAudioBlocked === 'function') {
+          clearTimeout(watchdog);
+          dismissPermission();
+          dismissPermission = options.onAudioBlocked(ctx.display, () => {
+            if (done) return Promise.resolve();
+            watch();
+            return play();
+          });
+        } else fail();
+      });
+      play();
+      return () => {done=true;audio.pause();dismissPermission();};
     }
     function frame(ctx, body, classes='') {ctx.display.innerHTML=`<section class="pilot ${classes}">${body}</section>`;}
     function reminder(s) {return s.reminder_image ? `<img class="reminder" src="${path(s.reminder_image)}" alt="Final story slide">` : '';}
