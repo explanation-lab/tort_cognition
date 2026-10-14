@@ -102,9 +102,9 @@ const debrief_page = {
         if (exitBtn) {
             exitBtn.addEventListener('click', function() {
                 jsPsych.finishTrial();
-                setTimeout(function() {
-                    window.location.href = "https://childrenhelpingscience.com/studies/history/";
-                }, 800);
+                // CHS saves the completed response and awaits recording uploads,
+                // then redirects using the study's existing Exit URL.
+                // A local navigation timer here could interrupt that save.
             });
         }
     },

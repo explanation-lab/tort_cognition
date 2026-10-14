@@ -272,6 +272,13 @@ for(const exp of [1,2]){
  assert.equal(vm.runInContext('chsTimeline.at(-2).type',h.context),'StopRecordPlugin');
  assert.equal(vm.runInContext('chsTimeline.at(-1).data.trial_type',h.context),'debrief');
  assert(!fs.readFileSync(__dirname+`/generated/experiment${exp}-chs-pilot.js`,'utf8').includes('enable-study-sound'));
+ // The Exit button ends the last trial; CHS owns saving/uploads/navigation.
+ // A fixed redirect here can race the platform's asynchronous completion.
+ const debrief=vm.runInContext('debrief_page',h.context);
+ h.doc.body.innerHTML=debrief.stimulus;debrief.on_load();
+ h.doc.querySelector('#exit-btn').click();
+ assert.equal(h.finished.length,1);
+ assert.equal(h.timers.size,0,'Debrief must not schedule navigation before CHS finishes saving');
  h.dom.window.close();
 }
 // Adult entry-point submission and demographics are tested with an inert service.
