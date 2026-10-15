@@ -2,6 +2,8 @@
 
 Current approved Experiment 1 and Experiment 2 studies, each with adult and child versions. The studies use eight scenarios, 8/2 starting story counts, continuous fault and carelessness ratings, high/little practice, and study-wide destination counterbalancing. Child narration and the synchronized first-construct demo are included.
 
+The adult between-subjects pilot is in `code/experiments/experiment1/adults/between-subjects/`. The Console assigns `victim_not_careless` (Experiment 1) or `victim_careless` (Experiment 2); each participant receives eight scenarios from one material set. The planned pilot is 25 adults per condition, $1.50 for approximately five minutes. Its participant entry requires a Console launch link; `pilot-preview.html` provides independent local review. `experiment1/adults/single-condition/` preserves named entries for the standalone Experiment 1 version without duplicating its images or scripts.
+
 - `code/experiments/`: current study entries, images, child audio and editable PowerPoints.
 - `code/shared/`: common task runtime, adult forms, local review panel and required libraries.
 - `code/tools/`: current configuration, Lookit build, PowerPoint export, narration, verification and review-package tools.

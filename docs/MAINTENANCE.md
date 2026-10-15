@@ -9,6 +9,7 @@ python3 code/tools/generate-pilot.py
 python3 code/tools/build-chs.py --experiment 1 --asset-base http://127.0.0.1:8766/code/experiments/experiment1/children/ --qa
 python3 code/tools/build-chs.py --experiment 2 --asset-base http://127.0.0.1:8766/code/experiments/experiment2/children/ --qa
 node code/tools/check-study.cjs
+node code/tools/check-adult-between.cjs
 node code/tools/check-narration.cjs
 python3 code/tools/generate-narration.py
 python3 code/tools/check-assets.py
@@ -20,3 +21,5 @@ Node verification needs jsdom 26.1.0 (`npm install --prefix code/tools`), or `TO
 `export-slides.mjs` re-exports approved decks at 960×540 and checks their manifest hashes. Use `--experiment N --scenario KEY` to scope an export. The deck and manifest must be synchronized before exporting changed captions.
 
 Generated builds, reports and collaborator ZIPs stay in ignored `code/tools/generated/`; they are not source files. Packaging includes four browser-openable review entries, child audio on, researcher panels expanded, and all current editable story decks. Review copies cannot submit participant responses.
+
+For the adult between-subjects entry, `generate-adult-between.py` regenerates the two configurations and named single-condition entries. After changing that entry, freeze the current Console client and regenerate its official setup manifest with `node --experimental-strip-types code/tools/build-adult-console.mjs /path/to/explanation-lab-study-console`. The Pages workflow stages the adult pilot alongside byte-identical Experiment 1 child media. The main branch and Lookit study are separate release decisions.

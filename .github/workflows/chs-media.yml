@@ -1,4 +1,4 @@
-name: Host approved Experiment 1 child media
+name: Host approved child media and adult pilot
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/configure-pages@v5
-      - name: Stage approved media only
+      - name: Stage approved child media and adult pilot
         run: python3 code/tools/stage-chs-assets.py
       - uses: actions/upload-pages-artifact@v4
         with:

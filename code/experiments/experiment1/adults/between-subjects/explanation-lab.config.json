@@ -1,0 +1,38 @@
+{
+  "format": "explanation-lab-study-config",
+  "manifestVersion": "1.2.0",
+  "schemaVersion": "2.0.0",
+  "convertedAt": "2026-10-15T15:26:06.008Z",
+  "sourceZip": "adult-between-native-source.zip",
+  "jsPsychVersion": "7.3.4",
+  "experimentVersion": "adult-between-1.0.0",
+  "clientVersion": "1.5.1",
+  "assignmentType": "between_participant",
+  "launchAssignmentParameter": "condition",
+  "launchConditions": [
+    "victim_not_careless",
+    "victim_careless"
+  ],
+  "conditions": [
+    "victim_not_careless",
+    "victim_careless"
+  ],
+  "internalFactors": [
+    "harm_type",
+    "judgment_order",
+    "scenario_id",
+    "victim_side"
+  ],
+  "internalConditionCells": [],
+  "demographicsConfirmed": true,
+  "demographicFields": [
+    "age",
+    "gender",
+    "race",
+    "ethnicity",
+    "state"
+  ],
+  "conversionOutcome": "ready",
+  "packageFingerprint": "2c758659b64f72af4e78af9f4a2b00ee49fa0652c0f2fdfacc47c413b57f5204",
+  "originalBackupPaths": []
+}

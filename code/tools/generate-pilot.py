@@ -85,4 +85,7 @@ if(!pilot.review)jsPsych.run(timeline);
   digest=hashlib.sha256((R/'code/experiments'/relative).read_bytes()).hexdigest()[:12]
   return f'href="{relative}?v={digest}"'
  launcher.write_text(re.sub(r'href="(experiment[12]/(?:children|adults)/(?:pilot-preview|index)\.html)(?:\?[^\"]*)?"',version_entry,launcher.read_text()))
+ # Named adult entries reuse the same current story sources and assets.
+ import runpy
+ runpy.run_path(str(R/'code/tools/generate-adult-between.py'))['generate']()
 if __name__=='__main__':generate()
