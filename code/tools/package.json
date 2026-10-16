@@ -7,6 +7,7 @@
   "scripts": {
     "test": "node check-study.cjs",
     "check:narration": "node check-narration.cjs",
-    "test:adult-between": "node check-adult-between.cjs"
+    "test:adult-between": "node check-adult-between.cjs",
+    "test:adult-consent": "node check-adult-consent.cjs"
   }
 }

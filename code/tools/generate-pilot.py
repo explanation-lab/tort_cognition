@@ -88,4 +88,5 @@ if(!pilot.review)jsPsych.run(timeline);
  # Named adult entries reuse the same current story sources and assets.
  import runpy
  runpy.run_path(str(R/'code/tools/generate-adult-between.py'))['generate']()
+ runpy.run_path(str(R/'code/tools/generate-adult-consent.py'))['generate']()
 if __name__=='__main__':generate()

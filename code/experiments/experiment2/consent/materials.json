@@ -1,0 +1,62 @@
+{
+  "study_version": "adult-consent-1.0.0",
+  "experiment": 2,
+  "base_material_experiment": 1,
+  "base_material_condition": "victim_not_careless",
+  "condition_assignment": "between_participant",
+  "responses": {
+    "consent": "I’m okay with that.",
+    "no_consent": "I’m not okay with that."
+  },
+  "cases": [
+    {
+      "scenario_key": "negligence_spill",
+      "insert_after_base_slide": 5,
+      "knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
+      "background_base_slide": 8
+    },
+    {
+      "scenario_key": "intentional_hit",
+      "insert_after_base_slide": 6,
+      "knowledge_text": "I know you’re going to knock my cookies onto the ground.",
+      "background_base_slide": 6
+    },
+    {
+      "scenario_key": "intentional_throw",
+      "insert_after_base_slide": 5,
+      "knowledge_text": "I know you’re going to throw my cookies away.",
+      "background_base_slide": 5
+    },
+    {
+      "scenario_key": "negligence_phone",
+      "insert_after_base_slide": 5,
+      "knowledge_text": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
+      "background_base_slide": 5
+    },
+    {
+      "scenario_key": "strict_liability_alligator",
+      "insert_after_base_slide": 7,
+      "knowledge_text": "I know your alligator could escape from the house and eat my cookies.",
+      "background_base_slide": 7
+    },
+    {
+      "scenario_key": "strict_liability_wolf",
+      "insert_after_base_slide": 7,
+      "knowledge_text": "I know your wolf could escape from the garage and eat my cookies.",
+      "background_base_slide": 7
+    },
+    {
+      "scenario_key": "control_wind",
+      "insert_after_base_slide": 5,
+      "knowledge_text": "I know the wind could blow my cookies away.",
+      "background_base_slide": 5
+    },
+    {
+      "scenario_key": "control_squirrel",
+      "insert_after_base_slide": 4,
+      "knowledge_text": "I know a squirrel could eat my cookies.",
+      "background_base_slide": 5
+    }
+  ],
+  "artwork_status": "copied_scene_draft_for_review"
+}

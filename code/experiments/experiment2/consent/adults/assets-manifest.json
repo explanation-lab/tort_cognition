@@ -1,0 +1,1717 @@
+{
+  "study_version": "adult-consent-1.0.0",
+  "source_materials": "../materials.json",
+  "artwork_status": "copied_scene_draft_for_review",
+  "slide_size": {
+    "width": 1280,
+    "height": 720
+  },
+  "decks": {
+    "consent-negligence_spill": {
+      "path": "slides/consent/negligence_spill.pptx",
+      "condition": "consent",
+      "scenario_key": "negligence_spill",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx",
+      "source_deck_sha256": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+      "sha256": "323b0d9b3b2c0d5ee6434a7173e7088ef309ba16ef56d06794dde186144debc1",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/negligence_spill_01.png",
+          "text": "This is Finn."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/negligence_spill_02.png",
+          "text": "Finn has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/negligence_spill_03.png",
+          "text": "This is Cleo."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/negligence_spill_04.png",
+          "text": "Cleo has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/negligence_spill_05.png",
+          "text": "Finn spills water."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "negligence_spill",
+          "slide_role": "knowledge",
+          "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+          "image": "images/negligence_spill_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "negligence_spill",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/negligence_spill_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/negligence_spill_06.png",
+          "text": "Finn doesn’t clean it up and walks away."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/negligence_spill_07.png",
+          "text": "Finn doesn’t clean it up and walks away."
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/negligence_spill_08.png",
+          "text": "Cleo walks in."
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/negligence_spill_09.png",
+          "text": "Oh no! Cleo slips on the water!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/negligence_spill_10.png",
+          "text": "2 of Cleo’s cookies fall!"
+        },
+        {
+          "slide_number": 13,
+          "base_slide_number": 11,
+          "image": "images/v3/negligence_spill_11.png",
+          "text": "Finn still has 8 cookies. Cleo now has 0 cookies."
+        }
+      ]
+    },
+    "consent-intentional_hit": {
+      "path": "slides/consent/intentional_hit.pptx",
+      "condition": "consent",
+      "scenario_key": "intentional_hit",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx",
+      "source_deck_sha256": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+      "sha256": "d1d013e64b0a89d48bba671bbf8a4128bb8c53e6df464b1f89966670fcfdd7ee",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/intentional_hit_01.png",
+          "text": "This is Milo."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/intentional_hit_02.png",
+          "text": "Milo has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/intentional_hit_03.png",
+          "text": "This is Sasha."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/intentional_hit_04.png",
+          "text": "Sasha has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/intentional_hit_05.png",
+          "text": "Milo is angry."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/intentional_hit_06.png",
+          "text": "He walks over."
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "intentional_hit",
+          "slide_role": "knowledge",
+          "statement": "I know you’re going to knock my cookies onto the ground.",
+          "image": "images/intentional_hit_shared_knowledge.png"
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "intentional_hit",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/intentional_hit_consent_response.png"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/intentional_hit_07.png",
+          "text": "And hits 2 of Sasha’s cookies!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/intentional_hit_08.png",
+          "text": "Milo still has 8 cookies. Sasha now has 0 cookies."
+        }
+      ]
+    },
+    "consent-intentional_throw": {
+      "path": "slides/consent/intentional_throw.pptx",
+      "condition": "consent",
+      "scenario_key": "intentional_throw",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx",
+      "source_deck_sha256": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+      "sha256": "ea6954c0a17180043f800f86007448a385ce8370bf754a019dcbab6b54bcaed9",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/intentional_throw_01.png",
+          "text": "This is Zoe."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/intentional_throw_02.png",
+          "text": "Zoe has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/intentional_throw_03.png",
+          "text": "This is Rex."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/intentional_throw_04.png",
+          "text": "Rex has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/intentional_throw_05.png",
+          "text": "Zoe wants Rex to have fewer cookies."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "intentional_throw",
+          "slide_role": "knowledge",
+          "statement": "I know you’re going to throw my cookies away.",
+          "image": "images/intentional_throw_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "intentional_throw",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/intentional_throw_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/intentional_throw_06.png",
+          "text": "Oh no! Zoe throws 2 of Rex’s cookies!"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/intentional_throw_07.png",
+          "text": "Zoe still has 8 cookies. Rex now has 0 cookies."
+        }
+      ]
+    },
+    "consent-negligence_phone": {
+      "path": "slides/consent/negligence_phone.pptx",
+      "condition": "consent",
+      "scenario_key": "negligence_phone",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx",
+      "source_deck_sha256": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+      "sha256": "2d892f03092596f436a5c307247f403e584831fd8507f2462c9f72f4f4344082",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/negligence_phone_01.png",
+          "text": "This is Kai."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/negligence_phone_02.png",
+          "text": "Kai has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/negligence_phone_03.png",
+          "text": "This is Ruby."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/negligence_phone_04.png",
+          "text": "Ruby has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/negligence_phone_05.png",
+          "text": "Kai is walking and staring at his phone."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "negligence_phone",
+          "slide_role": "knowledge",
+          "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
+          "image": "images/negligence_phone_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "negligence_phone",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/negligence_phone_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/negligence_phone_06.png",
+          "text": "Kai is walking and staring at his phone."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/negligence_phone_07.png",
+          "text": "Oh no! Kai bumps into Ruby!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/negligence_phone_08.png",
+          "text": "2 of Ruby’s cookies fall!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/negligence_phone_09.png",
+          "text": "Kai still has 8 cookies. Ruby now has 0 cookies."
+        }
+      ]
+    },
+    "consent-strict_liability_alligator": {
+      "path": "slides/consent/strict_liability_alligator.pptx",
+      "condition": "consent",
+      "scenario_key": "strict_liability_alligator",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx",
+      "source_deck_sha256": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+      "sha256": "7d5b7e6498836ea4005755dc45a3aa6ad03be5ab24826ab56c47ab0198613af7",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/strict_liability_alligator_01.png",
+          "text": "This is Sam."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/strict_liability_alligator_02.png",
+          "text": "Sam has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/strict_liability_alligator_03.png",
+          "text": "Sam has an alligator."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/strict_liability_alligator_04.png",
+          "text": "This is Ella."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/strict_liability_alligator_05.png",
+          "text": "Ella has 2 cookies."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/strict_liability_alligator_06.png",
+          "text": "Sam puts his alligator inside the house."
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 7,
+          "image": "images/v3/strict_liability_alligator_07.png",
+          "text": "Sam locks the door and checks the lock."
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "strict_liability_alligator",
+          "slide_role": "knowledge",
+          "statement": "I know your alligator could escape from the house and eat my cookies.",
+          "image": "images/strict_liability_alligator_shared_knowledge.png"
+        },
+        {
+          "slide_number": 9,
+          "scenario_key": "strict_liability_alligator",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/strict_liability_alligator_consent_response.png"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/strict_liability_alligator_08.png",
+          "text": "Oh no! The alligator breaks out of the house!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/strict_liability_alligator_09.png",
+          "text": "The alligator eats 2 of Ella’s cookies!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/strict_liability_alligator_10.png",
+          "text": "Sam still has 8 cookies. Ella now has 0 cookies."
+        }
+      ]
+    },
+    "consent-strict_liability_wolf": {
+      "path": "slides/consent/strict_liability_wolf.pptx",
+      "condition": "consent",
+      "scenario_key": "strict_liability_wolf",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx",
+      "source_deck_sha256": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+      "sha256": "41d4697bed354aafe0b02f524d8282eeaa26bbf42534d6aeaeecd64134e14ff7",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/strict_liability_wolf_01.png",
+          "text": "This is Catherine."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/strict_liability_wolf_02.png",
+          "text": "Catherine has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/strict_liability_wolf_03.png",
+          "text": "Catherine has a pet wolf."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/strict_liability_wolf_04.png",
+          "text": "This is Andy."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/strict_liability_wolf_05.png",
+          "text": "Andy has 2 cookies."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/strict_liability_wolf_06.png",
+          "text": "Catherine puts her wolf inside the garage."
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 7,
+          "image": "images/v3/strict_liability_wolf_07.png",
+          "text": "Catherine locks the door and checks the lock."
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "strict_liability_wolf",
+          "slide_role": "knowledge",
+          "statement": "I know your wolf could escape from the garage and eat my cookies.",
+          "image": "images/strict_liability_wolf_shared_knowledge.png"
+        },
+        {
+          "slide_number": 9,
+          "scenario_key": "strict_liability_wolf",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/strict_liability_wolf_consent_response.png"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/strict_liability_wolf_08.png",
+          "text": "Oh no! The wolf breaks out of the garage!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/strict_liability_wolf_09.png",
+          "text": "The wolf eats 2 of Andy’s cookies!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/strict_liability_wolf_10.png",
+          "text": "Catherine still has 8 cookies. Andy now has 0 cookies."
+        }
+      ]
+    },
+    "consent-control_wind": {
+      "path": "slides/consent/control_wind.pptx",
+      "condition": "consent",
+      "scenario_key": "control_wind",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx",
+      "source_deck_sha256": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+      "sha256": "df096b1d79ee1d68681d18ba9dc02010d47632ad83485b5c4fc69fef7cd5f58a",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/control_wind_01.png",
+          "text": "This is Katie."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/control_wind_02.png",
+          "text": "Katie has 2 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/control_wind_03.png",
+          "text": "This is Tony."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/control_wind_04.png",
+          "text": "Tony has 8 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/control_wind_05.png",
+          "text": "Katie and Tony are having a picnic."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "control_wind",
+          "slide_role": "knowledge",
+          "statement": "I know the wind could blow my cookies away.",
+          "image": "images/control_wind_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "control_wind",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/control_wind_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/control_wind_06.png",
+          "text": "Oh no! A gust of wind blows."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/control_wind_07.png",
+          "text": "2 of Katie’s cookies blow away!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/control_wind_08.png",
+          "text": "Tony still has 8 cookies. Katie now has 0 cookies."
+        }
+      ]
+    },
+    "consent-control_squirrel": {
+      "path": "slides/consent/control_squirrel.pptx",
+      "condition": "consent",
+      "scenario_key": "control_squirrel",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx",
+      "source_deck_sha256": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+      "sha256": "85f72626401c02a9988fd5d1a45bc2411814e7a3fe4b4fcdc68b40b568fb2445",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/control_squirrel_01.png",
+          "text": "This is Nora."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/control_squirrel_02.png",
+          "text": "Nora has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/control_squirrel_03.png",
+          "text": "This is Eric."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/control_squirrel_04.png",
+          "text": "Eric has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "scenario_key": "control_squirrel",
+          "slide_role": "knowledge",
+          "statement": "I know a squirrel could eat my cookies.",
+          "image": "images/control_squirrel_shared_knowledge.png"
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "control_squirrel",
+          "slide_role": "response",
+          "statement": "I’m okay with that.",
+          "image": "images/control_squirrel_consent_response.png"
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 5,
+          "image": "images/v3/control_squirrel_05.png",
+          "text": "Eric is tying his shoelaces."
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/control_squirrel_06.png",
+          "text": "Oh no! A squirrel eats 2 of Eric’s cookies!"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/control_squirrel_07.png",
+          "text": "Nora still has 8 cookies. Eric now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-negligence_spill": {
+      "path": "slides/no_consent/negligence_spill.pptx",
+      "condition": "no_consent",
+      "scenario_key": "negligence_spill",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx",
+      "source_deck_sha256": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+      "sha256": "bc879a689a5e5721fbd3678eccede06473149eebf870849a0ff658391bbbb2cd",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/negligence_spill_01.png",
+          "text": "This is Finn."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/negligence_spill_02.png",
+          "text": "Finn has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/negligence_spill_03.png",
+          "text": "This is Cleo."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/negligence_spill_04.png",
+          "text": "Cleo has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/negligence_spill_05.png",
+          "text": "Finn spills water."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "negligence_spill",
+          "slide_role": "knowledge",
+          "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+          "image": "images/negligence_spill_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "negligence_spill",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/negligence_spill_no_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/negligence_spill_06.png",
+          "text": "Finn doesn’t clean it up and walks away."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/negligence_spill_07.png",
+          "text": "Finn doesn’t clean it up and walks away."
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/negligence_spill_08.png",
+          "text": "Cleo walks in."
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/negligence_spill_09.png",
+          "text": "Oh no! Cleo slips on the water!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/negligence_spill_10.png",
+          "text": "2 of Cleo’s cookies fall!"
+        },
+        {
+          "slide_number": 13,
+          "base_slide_number": 11,
+          "image": "images/v3/negligence_spill_11.png",
+          "text": "Finn still has 8 cookies. Cleo now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-intentional_hit": {
+      "path": "slides/no_consent/intentional_hit.pptx",
+      "condition": "no_consent",
+      "scenario_key": "intentional_hit",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx",
+      "source_deck_sha256": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+      "sha256": "7fbd15ae10ba3e4058f406681b3bc4bc8340e467dd9cb3adb1a7b9b6d676e6d0",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/intentional_hit_01.png",
+          "text": "This is Milo."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/intentional_hit_02.png",
+          "text": "Milo has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/intentional_hit_03.png",
+          "text": "This is Sasha."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/intentional_hit_04.png",
+          "text": "Sasha has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/intentional_hit_05.png",
+          "text": "Milo is angry."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/intentional_hit_06.png",
+          "text": "He walks over."
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "intentional_hit",
+          "slide_role": "knowledge",
+          "statement": "I know you’re going to knock my cookies onto the ground.",
+          "image": "images/intentional_hit_shared_knowledge.png"
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "intentional_hit",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/intentional_hit_no_consent_response.png"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/intentional_hit_07.png",
+          "text": "And hits 2 of Sasha’s cookies!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/intentional_hit_08.png",
+          "text": "Milo still has 8 cookies. Sasha now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-intentional_throw": {
+      "path": "slides/no_consent/intentional_throw.pptx",
+      "condition": "no_consent",
+      "scenario_key": "intentional_throw",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx",
+      "source_deck_sha256": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+      "sha256": "39fa19a9a228aa9feae74a51cfe298591557a23502688e2d289b324483cbff09",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/intentional_throw_01.png",
+          "text": "This is Zoe."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/intentional_throw_02.png",
+          "text": "Zoe has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/intentional_throw_03.png",
+          "text": "This is Rex."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/intentional_throw_04.png",
+          "text": "Rex has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/intentional_throw_05.png",
+          "text": "Zoe wants Rex to have fewer cookies."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "intentional_throw",
+          "slide_role": "knowledge",
+          "statement": "I know you’re going to throw my cookies away.",
+          "image": "images/intentional_throw_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "intentional_throw",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/intentional_throw_no_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/intentional_throw_06.png",
+          "text": "Oh no! Zoe throws 2 of Rex’s cookies!"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/intentional_throw_07.png",
+          "text": "Zoe still has 8 cookies. Rex now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-negligence_phone": {
+      "path": "slides/no_consent/negligence_phone.pptx",
+      "condition": "no_consent",
+      "scenario_key": "negligence_phone",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx",
+      "source_deck_sha256": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+      "sha256": "42619ab7e361977be43020fa2f9938cb918c47d80e5d00976c3c7492e954e50a",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/negligence_phone_01.png",
+          "text": "This is Kai."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/negligence_phone_02.png",
+          "text": "Kai has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/negligence_phone_03.png",
+          "text": "This is Ruby."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/negligence_phone_04.png",
+          "text": "Ruby has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/negligence_phone_05.png",
+          "text": "Kai is walking and staring at his phone."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "negligence_phone",
+          "slide_role": "knowledge",
+          "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
+          "image": "images/negligence_phone_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "negligence_phone",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/negligence_phone_no_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/negligence_phone_06.png",
+          "text": "Kai is walking and staring at his phone."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/negligence_phone_07.png",
+          "text": "Oh no! Kai bumps into Ruby!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/negligence_phone_08.png",
+          "text": "2 of Ruby’s cookies fall!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/negligence_phone_09.png",
+          "text": "Kai still has 8 cookies. Ruby now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-strict_liability_alligator": {
+      "path": "slides/no_consent/strict_liability_alligator.pptx",
+      "condition": "no_consent",
+      "scenario_key": "strict_liability_alligator",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx",
+      "source_deck_sha256": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+      "sha256": "7d7b0a85b1353dca690cdec85229c3008e785548008d3291ef9d9e70adad47a8",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/strict_liability_alligator_01.png",
+          "text": "This is Sam."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/strict_liability_alligator_02.png",
+          "text": "Sam has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/strict_liability_alligator_03.png",
+          "text": "Sam has an alligator."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/strict_liability_alligator_04.png",
+          "text": "This is Ella."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/strict_liability_alligator_05.png",
+          "text": "Ella has 2 cookies."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/strict_liability_alligator_06.png",
+          "text": "Sam puts his alligator inside the house."
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 7,
+          "image": "images/v3/strict_liability_alligator_07.png",
+          "text": "Sam locks the door and checks the lock."
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "strict_liability_alligator",
+          "slide_role": "knowledge",
+          "statement": "I know your alligator could escape from the house and eat my cookies.",
+          "image": "images/strict_liability_alligator_shared_knowledge.png"
+        },
+        {
+          "slide_number": 9,
+          "scenario_key": "strict_liability_alligator",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/strict_liability_alligator_no_consent_response.png"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/strict_liability_alligator_08.png",
+          "text": "Oh no! The alligator breaks out of the house!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/strict_liability_alligator_09.png",
+          "text": "The alligator eats 2 of Ella’s cookies!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/strict_liability_alligator_10.png",
+          "text": "Sam still has 8 cookies. Ella now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-strict_liability_wolf": {
+      "path": "slides/no_consent/strict_liability_wolf.pptx",
+      "condition": "no_consent",
+      "scenario_key": "strict_liability_wolf",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx",
+      "source_deck_sha256": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+      "sha256": "2747433e5c53d841d153704ff7c93c4137f77d74a9f2275f81bb2120701f6fc7",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/strict_liability_wolf_01.png",
+          "text": "This is Catherine."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/strict_liability_wolf_02.png",
+          "text": "Catherine has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/strict_liability_wolf_03.png",
+          "text": "Catherine has a pet wolf."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/strict_liability_wolf_04.png",
+          "text": "This is Andy."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/strict_liability_wolf_05.png",
+          "text": "Andy has 2 cookies."
+        },
+        {
+          "slide_number": 6,
+          "base_slide_number": 6,
+          "image": "images/v3/strict_liability_wolf_06.png",
+          "text": "Catherine puts her wolf inside the garage."
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 7,
+          "image": "images/v3/strict_liability_wolf_07.png",
+          "text": "Catherine locks the door and checks the lock."
+        },
+        {
+          "slide_number": 8,
+          "scenario_key": "strict_liability_wolf",
+          "slide_role": "knowledge",
+          "statement": "I know your wolf could escape from the garage and eat my cookies.",
+          "image": "images/strict_liability_wolf_shared_knowledge.png"
+        },
+        {
+          "slide_number": 9,
+          "scenario_key": "strict_liability_wolf",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/strict_liability_wolf_no_consent_response.png"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/strict_liability_wolf_08.png",
+          "text": "Oh no! The wolf breaks out of the garage!"
+        },
+        {
+          "slide_number": 11,
+          "base_slide_number": 9,
+          "image": "images/v3/strict_liability_wolf_09.png",
+          "text": "The wolf eats 2 of Andy’s cookies!"
+        },
+        {
+          "slide_number": 12,
+          "base_slide_number": 10,
+          "image": "images/v3/strict_liability_wolf_10.png",
+          "text": "Catherine still has 8 cookies. Andy now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-control_wind": {
+      "path": "slides/no_consent/control_wind.pptx",
+      "condition": "no_consent",
+      "scenario_key": "control_wind",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx",
+      "source_deck_sha256": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+      "sha256": "d5f9d4332d815682a09a5de17c194b027037d4dc8152dbcecc2a91642e5bdd9b",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/control_wind_01.png",
+          "text": "This is Katie."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/control_wind_02.png",
+          "text": "Katie has 2 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/control_wind_03.png",
+          "text": "This is Tony."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/control_wind_04.png",
+          "text": "Tony has 8 cookies."
+        },
+        {
+          "slide_number": 5,
+          "base_slide_number": 5,
+          "image": "images/v3/control_wind_05.png",
+          "text": "Katie and Tony are having a picnic."
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "control_wind",
+          "slide_role": "knowledge",
+          "statement": "I know the wind could blow my cookies away.",
+          "image": "images/control_wind_shared_knowledge.png"
+        },
+        {
+          "slide_number": 7,
+          "scenario_key": "control_wind",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/control_wind_no_consent_response.png"
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/control_wind_06.png",
+          "text": "Oh no! A gust of wind blows."
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/control_wind_07.png",
+          "text": "2 of Katie’s cookies blow away!"
+        },
+        {
+          "slide_number": 10,
+          "base_slide_number": 8,
+          "image": "images/v3/control_wind_08.png",
+          "text": "Tony still has 8 cookies. Katie now has 0 cookies."
+        }
+      ]
+    },
+    "no_consent-control_squirrel": {
+      "path": "slides/no_consent/control_squirrel.pptx",
+      "condition": "no_consent",
+      "scenario_key": "control_squirrel",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx",
+      "source_deck_sha256": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+      "sha256": "432ebf14508bedfc756dbb5a73a7317afe9c46be3744ff832cc114f7275ea8be",
+      "slides": [
+        {
+          "slide_number": 1,
+          "base_slide_number": 1,
+          "image": "images/v3/control_squirrel_01.png",
+          "text": "This is Nora."
+        },
+        {
+          "slide_number": 2,
+          "base_slide_number": 2,
+          "image": "images/v3/control_squirrel_02.png",
+          "text": "Nora has 8 cookies."
+        },
+        {
+          "slide_number": 3,
+          "base_slide_number": 3,
+          "image": "images/v3/control_squirrel_03.png",
+          "text": "This is Eric."
+        },
+        {
+          "slide_number": 4,
+          "base_slide_number": 4,
+          "image": "images/v3/control_squirrel_04.png",
+          "text": "Eric has 2 cookies."
+        },
+        {
+          "slide_number": 5,
+          "scenario_key": "control_squirrel",
+          "slide_role": "knowledge",
+          "statement": "I know a squirrel could eat my cookies.",
+          "image": "images/control_squirrel_shared_knowledge.png"
+        },
+        {
+          "slide_number": 6,
+          "scenario_key": "control_squirrel",
+          "slide_role": "response",
+          "statement": "I’m not okay with that.",
+          "image": "images/control_squirrel_no_consent_response.png"
+        },
+        {
+          "slide_number": 7,
+          "base_slide_number": 5,
+          "image": "images/v3/control_squirrel_05.png",
+          "text": "Eric is tying his shoelaces."
+        },
+        {
+          "slide_number": 8,
+          "base_slide_number": 6,
+          "image": "images/v3/control_squirrel_06.png",
+          "text": "Oh no! A squirrel eats 2 of Eric’s cookies!"
+        },
+        {
+          "slide_number": 9,
+          "base_slide_number": 7,
+          "image": "images/v3/control_squirrel_07.png",
+          "text": "Nora still has 8 cookies. Eric now has 0 cookies."
+        }
+      ]
+    }
+  },
+  "images": {
+    "images/negligence_spill_shared_knowledge.png": {
+      "scenario_key": "negligence_spill",
+      "slide_role": "knowledge",
+      "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+      "caption": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
+      "speaker": "Cleo",
+      "listener": "Finn",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx",
+      "source_deck_sha256": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+      "source_scene_slide": 8,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "e263448bcdb971a967ccd40c9a9e823f7b3f8b1100e2a0af0659cfab6d411c0e"
+    },
+    "images/negligence_spill_consent_response.png": {
+      "scenario_key": "negligence_spill",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Cleo tells Finn, “I’m okay with that.”",
+      "speaker": "Cleo",
+      "listener": "Finn",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx",
+      "source_deck_sha256": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+      "source_scene_slide": 8,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "f63b9b7ae1c645b5c41bfb6fc2a4c0100040142e514b27e22de3d9674948bf73"
+    },
+    "images/intentional_hit_shared_knowledge.png": {
+      "scenario_key": "intentional_hit",
+      "slide_role": "knowledge",
+      "statement": "I know you’re going to knock my cookies onto the ground.",
+      "caption": "Sasha tells Milo, “I know you’re going to knock my cookies onto the ground.”",
+      "speaker": "Sasha",
+      "listener": "Milo",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx",
+      "source_deck_sha256": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+      "source_scene_slide": 6,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "9861c48c59f5ee5207bd69a3acfc20fdaa411ceb0208b0dad1ee04e6a3ea9b4a"
+    },
+    "images/intentional_hit_consent_response.png": {
+      "scenario_key": "intentional_hit",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Sasha tells Milo, “I’m okay with that.”",
+      "speaker": "Sasha",
+      "listener": "Milo",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx",
+      "source_deck_sha256": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+      "source_scene_slide": 6,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "0a988364b4053f55dfae73480c54ca9da6d427ef1e7697b7a67d6f52ce9a6951"
+    },
+    "images/intentional_throw_shared_knowledge.png": {
+      "scenario_key": "intentional_throw",
+      "slide_role": "knowledge",
+      "statement": "I know you’re going to throw my cookies away.",
+      "caption": "Rex tells Zoe, “I know you’re going to throw my cookies away.”",
+      "speaker": "Rex",
+      "listener": "Zoe",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx",
+      "source_deck_sha256": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "8aa6443591d2704de7a68419662029a7ce758024025a58ca6b436298f67e63c6"
+    },
+    "images/intentional_throw_consent_response.png": {
+      "scenario_key": "intentional_throw",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Rex tells Zoe, “I’m okay with that.”",
+      "speaker": "Rex",
+      "listener": "Zoe",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx",
+      "source_deck_sha256": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "e2c957dd38fbd107987a7d7b0716322ca8322e88f8e94af88a0fc3613d7fe349"
+    },
+    "images/negligence_phone_shared_knowledge.png": {
+      "scenario_key": "negligence_phone",
+      "slide_role": "knowledge",
+      "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
+      "caption": "Ruby tells Kai, “I know you could bump into me while looking at your phone and knock my cookies onto the ground.”",
+      "speaker": "Ruby",
+      "listener": "Kai",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx",
+      "source_deck_sha256": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "3359087318ef12b09d677bd831b24782b8066575c9ee2ea55d9aecfc9041a430"
+    },
+    "images/negligence_phone_consent_response.png": {
+      "scenario_key": "negligence_phone",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Ruby tells Kai, “I’m okay with that.”",
+      "speaker": "Ruby",
+      "listener": "Kai",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx",
+      "source_deck_sha256": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "a1e0725a19f8a4e49532ae372934256d64b75ee098d7c6d996663656541b7824"
+    },
+    "images/strict_liability_alligator_shared_knowledge.png": {
+      "scenario_key": "strict_liability_alligator",
+      "slide_role": "knowledge",
+      "statement": "I know your alligator could escape from the house and eat my cookies.",
+      "caption": "Ella tells Sam, “I know your alligator could escape from the house and eat my cookies.”",
+      "speaker": "Ella",
+      "listener": "Sam",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx",
+      "source_deck_sha256": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "6edc4ea6d0062f76081745e66cff5e7f754ea9d2604deec44d3205f334eaac5a"
+    },
+    "images/strict_liability_alligator_consent_response.png": {
+      "scenario_key": "strict_liability_alligator",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Ella tells Sam, “I’m okay with that.”",
+      "speaker": "Ella",
+      "listener": "Sam",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx",
+      "source_deck_sha256": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "42dba507fbcaa8d8b9496233782f40453bca051923c6789c117f9ae5b4ffbf91"
+    },
+    "images/strict_liability_wolf_shared_knowledge.png": {
+      "scenario_key": "strict_liability_wolf",
+      "slide_role": "knowledge",
+      "statement": "I know your wolf could escape from the garage and eat my cookies.",
+      "caption": "Andy tells Catherine, “I know your wolf could escape from the garage and eat my cookies.”",
+      "speaker": "Andy",
+      "listener": "Catherine",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx",
+      "source_deck_sha256": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "af90157ce5695a62703d5654ca025a7c13006762fd1eda4e6821490d88a94557"
+    },
+    "images/strict_liability_wolf_consent_response.png": {
+      "scenario_key": "strict_liability_wolf",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Andy tells Catherine, “I’m okay with that.”",
+      "speaker": "Andy",
+      "listener": "Catherine",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx",
+      "source_deck_sha256": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "0c418f3feb7501f6340d0be38d6fcc3ef4ad7997512edc65a6a923ce796ecb09"
+    },
+    "images/control_wind_shared_knowledge.png": {
+      "scenario_key": "control_wind",
+      "slide_role": "knowledge",
+      "statement": "I know the wind could blow my cookies away.",
+      "caption": "Katie tells Tony, “I know the wind could blow my cookies away.”",
+      "speaker": "Katie",
+      "listener": "Tony",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx",
+      "source_deck_sha256": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "a365aed3cc25d7346dfb245f3af7c18ec184a05561011082e4ec890609312078"
+    },
+    "images/control_wind_consent_response.png": {
+      "scenario_key": "control_wind",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Katie tells Tony, “I’m okay with that.”",
+      "speaker": "Katie",
+      "listener": "Tony",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx",
+      "source_deck_sha256": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "be4e8f02591486f91a2c0bebdd86346d4087b963b382cf13569465af3c4b978d"
+    },
+    "images/control_squirrel_shared_knowledge.png": {
+      "scenario_key": "control_squirrel",
+      "slide_role": "knowledge",
+      "statement": "I know a squirrel could eat my cookies.",
+      "caption": "Eric tells Nora, “I know a squirrel could eat my cookies.”",
+      "speaker": "Eric",
+      "listener": "Nora",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx",
+      "source_deck_sha256": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 36,
+      "sha256": "9fdf7a600abb4f034366799b9fc22e26135e151c4a91589f66019537806f7b6a"
+    },
+    "images/control_squirrel_consent_response.png": {
+      "scenario_key": "control_squirrel",
+      "slide_role": "response",
+      "statement": "I’m okay with that.",
+      "caption": "Eric tells Nora, “I’m okay with that.”",
+      "speaker": "Eric",
+      "listener": "Nora",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx",
+      "source_deck_sha256": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "05eff8963235994b708f9d473dbb112993b95ede01ee938e6267e82dc2ae283a"
+    },
+    "images/negligence_spill_no_consent_response.png": {
+      "scenario_key": "negligence_spill",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Cleo tells Finn, “I’m not okay with that.”",
+      "speaker": "Cleo",
+      "listener": "Finn",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_spill.pptx",
+      "source_deck_sha256": "d9dd18f31f7c77533205f0d63a12a286eea43693182f76ccdd674b08a0c758eb",
+      "source_scene_slide": 8,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "4022873899c0207558ec246a4fe2f6fa9d95536b4bf2d3c5c6e9a3f76bbc2dd1"
+    },
+    "images/intentional_hit_no_consent_response.png": {
+      "scenario_key": "intentional_hit",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Sasha tells Milo, “I’m not okay with that.”",
+      "speaker": "Sasha",
+      "listener": "Milo",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_hit.pptx",
+      "source_deck_sha256": "d992880788bf6faf83304ddd777f42f12b7478619728c37102c0ce311b4f5ecf",
+      "source_scene_slide": 6,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "07a8b3f3bece8381b8db3fab60530cc2d278fa9858c61ba1e7e28dd9ae313a9e"
+    },
+    "images/intentional_throw_no_consent_response.png": {
+      "scenario_key": "intentional_throw",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Rex tells Zoe, “I’m not okay with that.”",
+      "speaker": "Rex",
+      "listener": "Zoe",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/intentional_throw.pptx",
+      "source_deck_sha256": "d59fbc8203b7211be5ecd55c8d4ab2341aebcb0f05f4a9598ac4c62176b74074",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "ba3fa358f8002df3f079b0657e7983cf6c011dcc1f51fea8242b16c5b7e0028c"
+    },
+    "images/negligence_phone_no_consent_response.png": {
+      "scenario_key": "negligence_phone",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Ruby tells Kai, “I’m not okay with that.”",
+      "speaker": "Ruby",
+      "listener": "Kai",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/negligence_phone.pptx",
+      "source_deck_sha256": "13aafbf1d9f00427e9860c1e07fac3e4bd7614052d9ce5cafb4437f6df211894",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "a89c7a19ab84ea3d67f1a4b4fe59fde5b1c8105ef95502b88a29132ddbe136da"
+    },
+    "images/strict_liability_alligator_no_consent_response.png": {
+      "scenario_key": "strict_liability_alligator",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Ella tells Sam, “I’m not okay with that.”",
+      "speaker": "Ella",
+      "listener": "Sam",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_alligator.pptx",
+      "source_deck_sha256": "1d9c5d429ab242acacbeb10f0957fb57b79d2f495193bc1f9c136d9a3ab8a874",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "304dbad66fa2d1128a54800a47d7364bfaac196b8ca64585c2dd5bd3cee71130"
+    },
+    "images/strict_liability_wolf_no_consent_response.png": {
+      "scenario_key": "strict_liability_wolf",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Andy tells Catherine, “I’m not okay with that.”",
+      "speaker": "Andy",
+      "listener": "Catherine",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/strict_liability_wolf.pptx",
+      "source_deck_sha256": "7c3eed500ae80a585bfa479d4d8f94e31b23dfb79d17c309db41ec3c67bfd893",
+      "source_scene_slide": 7,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "7f01a424dbd1c4ef85d4755cb9b929f385e8f5bd5c1f24e7f167075d5a47743b"
+    },
+    "images/control_wind_no_consent_response.png": {
+      "scenario_key": "control_wind",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Katie tells Tony, “I’m not okay with that.”",
+      "speaker": "Katie",
+      "listener": "Tony",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_wind.pptx",
+      "source_deck_sha256": "b9f948470942e9c5ea2e0f87dba53648930ff2200d7e0dd51f98ba9d2eacab6a",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "c30d2ab380747e3fced6c6856e0e8babd547b34564ec1da7e07e70815bab9fdd"
+    },
+    "images/control_squirrel_no_consent_response.png": {
+      "scenario_key": "control_squirrel",
+      "slide_role": "response",
+      "statement": "I’m not okay with that.",
+      "caption": "Eric tells Nora, “I’m not okay with that.”",
+      "speaker": "Eric",
+      "listener": "Nora",
+      "source_deck": "code/experiments/experiment1/adults/slides/pilot-v3/control_squirrel.pptx",
+      "source_deck_sha256": "0181530264af5e5bf43383baf099e8f09c40fccfbee6e247a64c140746bc74c4",
+      "source_scene_slide": 5,
+      "caption_frame": {
+        "left": 80,
+        "top": 604,
+        "width": 1120,
+        "height": 96
+      },
+      "font_family": "Arial",
+      "font_size_px": 40,
+      "sha256": "75c3449ead8b57fa08900c4e54e92b500ecf16b4a76a45ff9e8d052f5bb2f2a5"
+    }
+  }
+}

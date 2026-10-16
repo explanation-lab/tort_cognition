@@ -75,7 +75,7 @@ var TortPilot = (() => {
     addStyles();
     const {experiment, audience, scenarios, texts, clips, demoTiming = {}, imageVersions = {}, assetRoot = '', review = false, mute = false} = options;
     const child = audience === 'children';
-    const prefix = `tort_pilot_v3_exp${experiment}_${audience}_`;
+    const prefix = options.sessionNamespace || `tort_pilot_v3_exp${experiment}_${audience}_`;
     const judgmentOrder = stored(prefix+'judgment_order', () => Math.random() < .5 ? 'fault_first' : 'carelessness_first', v => ['fault_first','carelessness_first'].includes(v));
     const victimSide = stored(prefix+'victim_side', () => Math.random() < .5 ? 'left' : 'right', v => ['left','right'].includes(v));
     const ids = scenarios.map(s => s.scenario_id);
@@ -83,7 +83,7 @@ var TortPilot = (() => {
     const ordered = order.map(id => scenarios.find(s => s.scenario_id === id));
     const characterOrder = victimSide === 'left' ? ['V','P','JAR'] : ['JAR','P','V'];
     const ratingOrder = victimSide === 'left' ? ['v','p'] : ['p','v'];
-    const assignments = {judgment_order:judgmentOrder, victim_side:victimSide, trash_on_left:victimSide==='right', character_order:characterOrder.join(','), scenario_presentation_order:order.join(','), experiment, audience, study_version:'pilot_v3_carelessness', outcome:'zero'};
+    const assignments = {judgment_order:judgmentOrder, victim_side:victimSide, trash_on_left:victimSide==='right', character_order:characterOrder.join(','), scenario_presentation_order:order.join(','), experiment, audience, study_version:options.studyVersion || 'pilot_v3_carelessness', outcome:'zero'};
     const completed = new Map();
     const path = name => assetRoot+name+(child&&imageVersions[name]?'?v='+imageVersions[name]:'');
     const imageCache = new Map();

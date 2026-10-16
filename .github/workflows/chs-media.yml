@@ -1,7 +1,15 @@
-name: Host approved child media and adult pilot
+name: Host studies and optional consent review
 
 on:
   workflow_dispatch:
+    inputs:
+      consent_review:
+        description: Include the temporary adult consent review
+        type: choice
+        options:
+          - include
+          - exclude
+        default: include
 
 permissions:
   contents: read
@@ -16,8 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/configure-pages@v5
-      - name: Stage approved child media and adult pilot
-        run: python3 code/tools/stage-chs-assets.py
+      - name: Stage existing studies and optional consent review
+        env:
+          CONSENT_REVIEW: ${{ inputs.consent_review || 'include' }}
+        run: python3 code/tools/stage-chs-assets.py --consent-review "$CONSENT_REVIEW"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: code/tools/generated/chs-pages
