@@ -19,7 +19,8 @@ async function run(condition,judgment,side){
  store[prefix+'judgment_order']=JSON.stringify(judgment);store[prefix+'victim_side']=JSON.stringify(side);
  const source=fs.readFileSync(entry+'/study.js','utf8').replace("await import(CLIENT_PATH)","({default:mockClient})");
  vm.runInContext(source,context);await new Promise(setImmediate);
- assert.equal(context.TORT_ADULT_CONDITION,condition);assert.equal(context.pilot.scenarios.length,8);assert.equal(context.timeline.length,52);
+ assert.equal(context.TORT_ADULT_CONDITION,condition);assert.equal(context.pilot.scenarios.length,8);assert.equal(context.timeline.length,44);
+ await checkPilot1Flow(context,judgment,side);
  const tick=()=>{for(let i=0;i<2;i++){const batch=timers.splice(0);batch.forEach(f=>f());}};
  const pointer=(el,type,x,y)=>{const event=new w.MouseEvent(type,{bubbles:true,cancelable:true,clientX:x,clientY:y,button:0});Object.defineProperties(event,{pointerId:{value:1},pointerType:{value:'mouse'}});el.dispatchEvent(event);};
  const drag=to=>{const el=doc.querySelector('#p-cookie-0'),r=doc.querySelector('#'+to+'-plate').getBoundingClientRect();pointer(el,'pointerdown',20,20);pointer(el,'pointermove',r.left+90,r.top+90);pointer(el,'pointerup',r.left+90,r.top+90);};
@@ -38,7 +39,6 @@ async function run(condition,judgment,side){
    doc.querySelector('#jspsych-target').innerHTML=trial.stimulus;
    if(trial._debugLabel==='Consent Form'){assert(trial.stimulus.includes('$1.50'));assert(trial.stimulus.includes('5-minute'));assert(!/Qualtrics|15 minutes|\$2\.00/.test(trial.stimulus));trial.on_finish({});psych.finishTrial({response:0});}
    else if(trial._debugLabel==='Demographics'){trial.on_load();doc.querySelector('#demo-age').value='30';for(const [name,value]of[['gender','Female'],['race','Asian'],['ethnicity','Non-Hispanic']])doc.querySelector(`input[name="${name}"][value="${value}"]`).checked=true;doc.querySelector('#demo-state').value='New York';doc.querySelector('#demo-submit-btn').click();}
-   else if(trial.data.phase==='consent_recall'){const response=(trial.data.presentation_position-1)%3;const data={...trial.data,response};trial.on_finish(data);psych.finishTrial(data);}
    else if(trial._debugLabel==='Feedback'){trial.on_load();doc.querySelector('#feedback-input').value='Synthetic QA';doc.querySelector('#feedback-submit-btn').click();}
    else psych.finishTrial({response:0});
   }
@@ -50,14 +50,37 @@ async function run(condition,judgment,side){
  const summary=rows.filter(r=>r.is_case_summary);assert.equal(summary.length,8);assert(summary.every(r=>r.fault_rating_p===0&&r.fault_rating_v===100&&r.carelessness_rating_p===0&&r.carelessness_rating_v===100));
  assert(summary.every(r=>r.cookies_kept_by_p+r.cookies_from_p_to_c+r.cookies_from_p_to_v===8));
  assert.equal(rows.filter(r=>r.trial_role==='demographic').length,1);
- const recalls=rows.filter(r=>r.phase==='consent_recall');assert.equal(recalls.length,8);
- for(const r of recalls){const expected=condition==='consent'?'yes':'no';assert.equal(r.expected_consent_recall_response,expected);assert.equal(r.consent_recall_correct,r.consent_recall_response===expected);}
+ assert(!rows.some(r=>r.phase==='consent_recall'||r.trial_role==='manipulation_check'));
+ assert(rows.every(r=>!Object.keys(r).some(k=>k.includes('consent_recall'))));
  for(const r of summary){const scenario=context.TORT_CONSENT_CONDITIONS[condition].scenarios.find(s=>s.scenario_key===r.scenario_key);assert.equal(r.story_slide_rts.length,scenario.slides.length);assert.equal(r.victim_statement,scenario.victim_statement);assert.equal(r.consent_response_text,condition==='consent'?'I’m okay with that.':'I’m not okay with that.');assert.equal(r.story_slide_ids.length,scenario.slides.length);}
  assert.equal(store[prefix+'victim_side'],JSON.stringify(side));
  assert(!Object.keys(store).some(k=>k.startsWith('tort_pilot_v3_exp')));
 
  assert(Buffer.byteLength(JSON.stringify(captured[0]))<900000);
  dom.window.close();return{condition,judgment,side,rows:captured[0].rows};
+}
+async function checkPilot1Flow(consentContext,judgment,side){
+ const baselineEntry=root+'/code/experiments/experiment1/adults/between-subjects';
+ const dom=new JSDOM('<div id="jspsych-target"></div>',{url:'https://example.invalid/pilot1/?study=synthetic&mode=sandbox'}),w=dom.window;
+ const condition='victim_not_careless',prefix='tort_pilot_v3_exp1_adults_';
+ const client={study:{conditions:['victim_not_careless','victim_careless'],experimentVersion:'adult-between-1.0.0'},launch:{studyKey:'synthetic',mode:'sandbox',condition,participant:{sessionId:'parity'}}};
+ const store={tort_adult_between_attempt:JSON.stringify([client.launch.studyKey,client.launch.mode,client.launch.participant,condition]),
+  [prefix+'judgment_order']:JSON.stringify(judgment),[prefix+'victim_side']:JSON.stringify(side),
+  [prefix+'scenario_order']:JSON.stringify(consentContext.pilot.assignments.scenario_presentation_order.split(',').map(Number))};
+ const context={document:w.document,window:w,location:w.location,URLSearchParams,
+  sessionStorage:{getItem:k=>store[k]??null,setItem:(k,v)=>store[k]=v,removeItem:k=>delete store[k]},
+  jsPsychModule:{ParameterType:{FUNCTION:'FUNCTION'}},jsPsychHtmlButtonResponse:function(){},
+  initJsPsych:()=>({data:{addProperties(){}},run(){}}),performance:{now:()=>0},setTimeout,clearTimeout,Image:w.Image,Math,console,
+  mockClient:()=>Promise.resolve(client)};
+ vm.createContext(context);
+ for(const file of [root+'/code/tools/hosting/adult-pilot-runtime.js',root+'/code/shared/js/pilot-adult-forms.js',baselineEntry+'/configuration.js'])vm.runInContext(fs.readFileSync(file,'utf8'),context);
+ vm.runInContext(fs.readFileSync(baselineEntry+'/study.js','utf8').replace("await import('./explanation-lab-client.js')","({default:mockClient})"),context);
+ await new Promise(setImmediate);
+ const flow=timeline=>JSON.parse(JSON.stringify(timeline.map(t=>({label:t._debugLabel,phase:t.data.phase,role:t.data.trial_role,
+  scenario:t.data.scenario_key||null,practice:!!t.data.is_practice,stimulus:t.stimulus,choices:t.choices,
+  screen:t.screen?.toString()}))));
+ assert.deepEqual(flow(consentContext.timeline),flow(context.timeline),'The full question flow must match Pilot 1');
+ dom.window.close();
 }
 async function checkStartup(){
  async function startup({query='?study=synthetic&mode=sandbox',review=false,studyConditions=['consent','no_consent'],version='adult-consent-1.0.0',condition='consent',store={}}={}){
@@ -132,5 +155,5 @@ function checkMaterials(){
 (async()=>{checkMaterials();await checkStartup();const results=[];for(const condition of ['consent','no_consent'])for(const judgment of ['fault_first','carelessness_first'])for(const side of ['left','right'])results.push(await run(condition,judgment,side));
  const {verifyObservedCondition}=await import(pathToFileURL(entry+'/explanation-lab-client.js'));
  for(const r of results)assert.equal(verifyObservedCondition(r.rows,{assignmentType:'between_participant',integrationMode:'converted',conditions:['consent','no_consent']},r.condition).status,'matched');
- const out=root+'/code/tools/generated';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/adult-consent-synthetic.json',JSON.stringify(results));console.log(JSON.stringify({syntheticSessions:results.length,conditions:2,allPassed:true,completeSaveAwaited:true,rowsPerSession:results.map(r=>r.rows.length)}));
+ const out=root+'/code/tools/generated';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/adult-consent-synthetic.json',JSON.stringify(results));console.log(JSON.stringify({syntheticSessions:results.length,conditions:2,allPassed:true,pilot1QuestionFlowMatched:true,addedQuestions:0,completeSaveAwaited:true,rowsPerSession:results.map(r=>r.rows.length)}));
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -35,7 +35,7 @@ The latest edits move the spill statements after Cleo walks in and the squirrel 
 
 Existing actor intentions, animal containment/lock checks, victim behavior, 8/2 starting counts and 8/0 outcomes are preserved. Both conditions receive the same knowledge statement, artwork, positioning, and sequence; only “not” differs in the response. The added slides duplicate the original scene and its white bottom caption box (1120 × 96 at 80, 604). Captions use centered Arial Bold: 27 pt for the longer knowledge statements and the original 30 pt for responses. This keeps the full approved wording inside the original box. `background_base_slide` in `materials.json` identifies the copied scene for each case.
 
-Original cookie allocation, fault, and carelessness measures are preserved. A Yes / No / Don’t remember consent recall item follows both judgments in each case, with no correctness feedback. Main judgments retain the existing counterbalancing; story order is randomized. Review sessions and participant attempts have their own session namespace, separate from the existing carelessness studies.
+The participant question flow must match Pilot 1 exactly: original cookie allocation, fault, carelessness, practice, demographics and feedback, with no added questions or checks in either condition. Only the approved story slides vary consent. The previously added consent questions were removed at the researcher's request. Main judgments retain the existing counterbalancing; story order is randomized. Review sessions and participant attempts have their own session namespace, separate from the existing carelessness studies.
 
 The wind and squirrel cases assess stated acceptance of a natural loss. The other cases involve consent to a loss involving another person's conduct. Foreknowledge is identical across conditions; adding it may affect victim-carelessness ratings relative to the original baseline.
 
@@ -59,4 +59,4 @@ This pilot has its own Console registration and does not change the earlier care
 
 ## Checks
 
-Run `node code/tools/check-adult-consent.cjs`. It checks exact matched wording and source preservation, asset/deck mappings, every condition/order/side combination, full completion and saved metadata, recall scoring, session isolation, and rejection of mismatched launches. Existing behavioral checks also apply to the two optional shared runtime settings.
+Run `node code/tools/check-adult-consent.cjs`. It checks the complete 44-screen question flow against Pilot 1 in every condition/order/side combination, with no additional question trials or saved check responses. It also checks exact matched wording and source preservation, asset/deck mappings, full completion and saved metadata, session isolation, and rejection of mismatched launches. Existing behavioral checks also apply to the two optional shared runtime settings.

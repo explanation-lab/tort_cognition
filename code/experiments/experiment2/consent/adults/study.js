@@ -65,8 +65,7 @@ const CLIENT_PATH = './explanation-lab-client.js';
   });
   jsPsych.data.addProperties(properties);
   const forms = buildPilotAdultForms(jsPsych,()=>{participantConsented=true;});
-  // Keep the current pilot's participation terms. A future launch must confirm
-  // its advertised duration and payment against this longer version.
+  // Preserve Pilot 1's participation terms and question flow.
   forms.consentScreen.stimulus=forms.consentScreen.stimulus
     .replace('You will be paid $2.00 for your time and efforts (based on a rate of $8 per hour for this approximately 15-minute study).',
       'You will be paid $1.50 for your time and efforts in this approximately 5-minute study.')
@@ -76,9 +75,6 @@ const CLIENT_PATH = './explanation-lab-client.js';
   forms.consentScreen.data={...properties,trial_role:'consent'};
   forms.demographicsScreen.data={...forms.demographicsScreen.data,...properties,trial_role:'demographic'};
   forms.feedbackScreen.data={...forms.feedbackScreen.data,...properties,is_demographic:false,trial_role:'feedback'};
-  const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const taskTimeline = [];
-  const lastJudgment = pilot.assignments.judgment_order==='fault_first'?'carelessness':'fault';
   for (const trial of pilot.timeline) {
     const scenario = config.scenarios.find(s=>s.scenario_key===trial.data.scenario_key);
     const caseProperties = scenario ? {
@@ -89,25 +85,10 @@ const CLIENT_PATH = './explanation-lab-client.js';
     Object.assign(trial.data,properties,caseProperties,{trial_role:trial.data.is_practice?'practice':
       trial.data.phase==='story'?'story':'response',item_id:trial.data.scenario_key||null,
       measure:trial.data.phase});
-    taskTimeline.push(trial);
-    if (scenario && !trial.data.is_practice && trial.data.phase===lastJudgment) {
-      taskTimeline.push({
-        type:jsPsychHtmlButtonResponse,
-        stimulus:`<div class="pilot"><p class="prompt">Before the cookies were lost, did ${escape(scenario.v_name)} say that was okay?</p></div>`,
-        choices:['Yes','No','Don’t remember'],
-        data:{...trial.data,trial_role:'manipulation_check',phase:'consent_recall',measure:'consent_recall',
-          expected_consent_recall_response:condition==='consent'?'yes':'no'},
-        on_finish(data) {
-          data.consent_recall_response=['yes','no','dont_remember'][data.response]??null;
-          data.consent_recall_correct=data.consent_recall_response===data.expected_consent_recall_response;
-        },
-        _debugLabel:`${scenario.scenario_key}: consent recall`,
-      });
-    }
   }
   const endScreen={type:jsPsychHtmlButtonResponse,stimulus:'<h2>Thank you!</h2>',choices:['Finish'],
     data:{...properties,trial_role:'debrief'},_debugLabel:'Finish'};
-  const timeline=[forms.consentScreen,...taskTimeline,forms.demographicsScreen,forms.feedbackScreen,endScreen];
+  const timeline=[forms.consentScreen,...pilot.timeline,forms.demographicsScreen,forms.feedbackScreen,endScreen];
   Object.assign(globalThis,{pilot,jsPsych,timeline,TORT_ADULT_CONDITION:condition});
   if (review) globalThis.dispatchEvent(new Event('tort-consent-ready'));
   else jsPsych.run(timeline);
