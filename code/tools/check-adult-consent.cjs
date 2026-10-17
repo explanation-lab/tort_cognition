@@ -90,6 +90,13 @@ function checkMaterials(){
  const material=JSON.parse(fs.readFileSync(path.dirname(entry)+'/materials.json','utf8'));
  const baseline=JSON.parse(fs.readFileSync(root+'/docs/scenarios.json','utf8')).scenarios.filter(s=>s.experiment===1);
  const manifest=JSON.parse(fs.readFileSync(entry+'/assets-manifest.json','utf8'));
+ const setup=JSON.parse(fs.readFileSync(entry+'/explanation-lab.config.json','utf8'));
+ assert.equal(setup.assignmentType,'between_participant');
+ assert.equal(setup.experimentVersion,'adult-consent-1.0.0');
+ assert.deepEqual(setup.launchConditions,['consent','no_consent']);
+ assert.deepEqual(setup.demographicFields,['age','gender','race','ethnicity','state']);
+ assert.equal(setup.conversionOutcome,'ready');
+ assert(setup.demographicsConfirmed&&setup.packageFingerprint);
  const edited=manifest.source_mode==='edited_case_decks';
  assert.equal(Object.keys(manifest.images).length,edited?baseline.reduce((n,s)=>n+2*(s.slides.length+2),0):24);
  for(const item of material.cases){
@@ -123,7 +130,7 @@ function checkMaterials(){
  assert(!fs.readFileSync(entry+'/index.html','utf8').includes('review.js'));
 }
 (async()=>{checkMaterials();await checkStartup();const results=[];for(const condition of ['consent','no_consent'])for(const judgment of ['fault_first','carelessness_first'])for(const side of ['left','right'])results.push(await run(condition,judgment,side));
- const {verifyObservedCondition}=await import(pathToFileURL(root+'/code/experiments/experiment1/adults/between-subjects/explanation-lab-client.js'));
+ const {verifyObservedCondition}=await import(pathToFileURL(entry+'/explanation-lab-client.js'));
  for(const r of results)assert.equal(verifyObservedCondition(r.rows,{assignmentType:'between_participant',integrationMode:'converted',conditions:['consent','no_consent']},r.condition).status,'matched');
  const out=root+'/code/tools/generated';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/adult-consent-synthetic.json',JSON.stringify(results));console.log(JSON.stringify({syntheticSessions:results.length,conditions:2,allPassed:true,completeSaveAwaited:true,rowsPerSession:results.map(r=>r.rows.length)}));
 })().catch(e=>{console.error(e);process.exitCode=1});

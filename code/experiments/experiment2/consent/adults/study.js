@@ -1,7 +1,9 @@
 /* Adult consent study. Participant assignments come from the Study Console. */
 const EXPERIMENT_VERSION = 'adult-consent-1.0.0';
+const CONDITION_ASSIGNMENT = 'between_participant';
 const AVAILABLE_CONDITIONS = ['consent', 'no_consent'];
-const CLIENT_PATH = '../../../experiment1/adults/between-subjects/explanation-lab-client.js';
+const INTERNAL_FACTORS = ['harm_type', 'judgment_order', 'scenario_id', 'victim_side'];
+const CLIENT_PATH = './explanation-lab-client.js';
 
 (async () => {
   const params = new URLSearchParams(location.search);
@@ -19,7 +21,7 @@ const CLIENT_PATH = '../../../experiment1/adults/between-subjects/explanation-la
       throw new Error('This launch link belongs to a different study or study version.');
     }
   }
-  const condition = review ? params.get('condition') || 'consent' : explanationLab.launch.condition;
+  const condition = review ? (window.EXPLANATION_LAB_CONDITION || params.get('condition')) || 'consent' : explanationLab.launch.condition;
   if (!AVAILABLE_CONDITIONS.includes(condition)) throw new Error('Unknown consent condition: '+condition);
   const config = globalThis.TORT_CONSENT_CONDITIONS[condition];
   if (!review) {
@@ -34,7 +36,7 @@ const CLIENT_PATH = '../../../experiment1/adults/between-subjects/explanation-la
   }
   const pilot = TortPilot.create({...config,review,mute:true});
   const properties = {...pilot.assignments,
-    condition,consent_condition:condition,condition_assignment:'between_participant',
+    condition,consent_condition:condition,condition_assignment:CONDITION_ASSIGNMENT,
     material_experiment:1,base_material_experiment:1,base_material_condition:'victim_not_careless',
     experiment_version:EXPERIMENT_VERSION,study_version:EXPERIMENT_VERSION,
     materials_revision:config.materialsRevision||null,

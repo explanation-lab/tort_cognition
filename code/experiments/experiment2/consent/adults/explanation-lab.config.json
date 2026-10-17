@@ -1,0 +1,38 @@
+{
+  "format": "explanation-lab-study-config",
+  "manifestVersion": "1.2.0",
+  "schemaVersion": "2.0.0",
+  "convertedAt": "2026-10-17T16:39:55.924Z",
+  "sourceZip": "adult-consent-native-source.zip",
+  "jsPsychVersion": "7.3.4",
+  "experimentVersion": "adult-consent-1.0.0",
+  "clientVersion": "1.5.1",
+  "assignmentType": "between_participant",
+  "launchAssignmentParameter": "condition",
+  "launchConditions": [
+    "consent",
+    "no_consent"
+  ],
+  "conditions": [
+    "consent",
+    "no_consent"
+  ],
+  "internalFactors": [
+    "harm_type",
+    "judgment_order",
+    "scenario_id",
+    "victim_side"
+  ],
+  "internalConditionCells": [],
+  "demographicsConfirmed": true,
+  "demographicFields": [
+    "age",
+    "gender",
+    "race",
+    "ethnicity",
+    "state"
+  ],
+  "conversionOutcome": "ready",
+  "packageFingerprint": "34a467b9b8f21c2d358a4762310aae7f2d65e805eca0816fb0211203d52a42bb",
+  "originalBackupPaths": []
+}

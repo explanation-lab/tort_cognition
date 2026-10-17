@@ -10,6 +10,13 @@ on:
           - include
           - exclude
         default: include
+      consent_pilot:
+        description: Include the adult consent participant study
+        type: choice
+        options:
+          - include
+          - exclude
+        default: include
 
 permissions:
   contents: read
@@ -27,7 +34,8 @@ jobs:
       - name: Stage existing studies and optional consent review
         env:
           CONSENT_REVIEW: ${{ inputs.consent_review || 'include' }}
-        run: python3 code/tools/stage-chs-assets.py --consent-review "$CONSENT_REVIEW"
+          CONSENT_PILOT: ${{ inputs.consent_pilot || 'include' }}
+        run: python3 code/tools/stage-chs-assets.py --consent-review "$CONSENT_REVIEW" --consent-pilot "$CONSENT_PILOT"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: code/tools/generated/chs-pages

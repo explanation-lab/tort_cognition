@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'code/experiments/experiment1/children'
 OUTPUT = ROOT / 'code/tools/generated/chs-pages'
 
-def stage(consent_review=True):
+def stage(consent_review=True, consent_pilot=True):
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
     records = []
@@ -63,18 +63,20 @@ def stage(consent_review=True):
         adult_records.append({'path': str(relative), 'sha256': hashlib.sha256(content).hexdigest()})
     (OUTPUT / 'adult-pilot-manifest.json').write_text(json.dumps({'files': adult_records}, indent=2) + '\n')
     review_records = []
+    review = ROOT / 'code/experiments/experiment2/consent/adults'
+    if consent_review or consent_pilot:
+        asset_manifest = json.loads((review / 'assets-manifest.json').read_text())
+        if asset_manifest.get('source_mode') == 'edited_case_decks':
+            consent_images = [review / name for name in
+                              list(asset_manifest['images']) + asset_manifest['support_images']]
+        else:
+            consent_images = [p for p in (review / 'images').rglob('*')
+                              if p.is_file() and p.suffix.lower() in {'.png', '.jpg', '.jpeg'}]
     if consent_review:
-        review = ROOT / 'code/experiments/experiment2/consent/adults'
         review_paths = [review / name for name in [
             'materials-preview.html', 'pilot-preview.html', 'configuration.js',
             'study.js', 'review.js', 'consent-runtime.js', 'assets-manifest.json']]
-        asset_manifest = json.loads((review / 'assets-manifest.json').read_text())
-        if asset_manifest.get('source_mode') == 'edited_case_decks':
-            review_paths.extend(review / name for name in
-                                list(asset_manifest['images']) + asset_manifest['support_images'])
-        else:
-            review_paths.extend(p for p in (review / 'images').rglob('*')
-                                if p.is_file() and p.suffix.lower() in {'.png', '.jpg', '.jpeg'})
+        review_paths.extend(consent_images)
         review_paths.extend(review / deck['path'] for deck in asset_manifest['decks'].values())
         for source in sorted(review_paths):
             if not source.is_file() or source.is_symlink():
@@ -85,14 +87,35 @@ def stage(consent_review=True):
             shutil.copyfile(source, target)
             review_records.append({'path': str(relative), 'bytes': source.stat().st_size,
                                    'sha256': hashlib.sha256(source.read_bytes()).hexdigest()})
-        # Participant index.html is deliberately absent from this review publication.
+        # The participant entry is controlled separately from collaborator review.
         (OUTPUT / 'consent-review-manifest.json').write_text(json.dumps({
             'review_only': True, 'response_submission': False, 'files': review_records,
         }, indent=2) + '\n')
+    pilot_records = []
+    if consent_pilot:
+        pilot_paths = [review / name for name in [
+            'index.html', 'study.js', 'configuration.js', 'consent-runtime.js',
+            'explanation-lab.config.json', 'explanation-lab-client.js']]
+        for source in sorted(pilot_paths + consent_images):
+            if not source.is_file() or source.is_symlink():
+                raise ValueError(f'Unexpected consent pilot input: {source}')
+            relative = source.relative_to(ROOT)
+            target = OUTPUT / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
+            pilot_records.append({'path': str(relative), 'bytes': source.stat().st_size,
+                                  'sha256': hashlib.sha256(source.read_bytes()).hexdigest()})
+        (OUTPUT / 'consent-pilot-manifest.json').write_text(json.dumps({
+            'assignment_type': 'between_participant', 'collection_control': 'study_console',
+            'files': pilot_records,
+        }, indent=2) + '\n')
     print(json.dumps({'child_files': len(records), 'adult_files': len(adult_records),
-                      'consent_review_files': len(review_records), 'output': str(OUTPUT)}))
+                      'consent_review_files': len(review_records), 'consent_pilot_files': len(pilot_records),
+                      'output': str(OUTPUT)}))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--consent-review', choices=['include', 'exclude'], default='include')
-    stage(parser.parse_args().consent_review == 'include')
+    parser.add_argument('--consent-pilot', choices=['include', 'exclude'], default='include')
+    args = parser.parse_args()
+    stage(args.consent_review == 'include', args.consent_pilot == 'include')
