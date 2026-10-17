@@ -6,7 +6,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
     "assetRoot": "",
     "sessionNamespace": "tort_adult_consent_v1_consent_",
     "studyVersion": "adult-consent-1.0.0",
-    "materialsRevision": "436bd840a774",
+    "materialsRevision": "db1630cd45a4",
     "scenarios": [
       {
         "p_name": "Finn",
@@ -19,7 +19,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "v_initial": 2,
         "v_after_harm": 0,
         "harm_amount": 2,
-        "event_text": "Before the loss, Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies. I’m okay with that.” Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed.",
+        "event_text": "Before the loss, Cleo tells Finn, “I know I could slip on the water you left on the floor and drop my cookies. I’m okay with that.” Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed.",
         "event_title": "Finn Spills Water — Cleo Slips",
         "scenario_id": 2,
         "scenario_key": "negligence_spill",
@@ -90,10 +90,10 @@ globalThis.TORT_CONSENT_CONDITIONS = {
           },
           {
             "slide_number": 9,
-            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
-            "image": "images/review/consent/negligence_spill_09.png?v=a43f1b1563e7",
+            "text": "Cleo tells Finn, “I know I could slip on the water you left on the floor and drop my cookies.”",
+            "image": "images/review/consent/negligence_spill_09.png?v=780fd707bdf2",
             "slide_role": "knowledge",
-            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+            "statement": "I know I could slip on the water you left on the floor and drop my cookies.",
             "speaker": "Cleo",
             "listener": "Finn",
             "slide_id": "negligence_spill:knowledge"
@@ -136,9 +136,9 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "reminder_image": "images/review/consent/negligence_spill_13.png?v=91fe9e077409",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
-        "consent_knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
+        "consent_knowledge_text": "I know I could slip on the water you left on the floor and drop my cookies.",
         "consent_response_text": "I’m okay with that.",
-        "victim_statement": "I know I could slip on the water you leave on the floor and drop my cookies. I’m okay with that.",
+        "victim_statement": "I know I could slip on the water you left on the floor and drop my cookies. I’m okay with that.",
         "base_material_experiment": 1,
         "base_material_condition": "victim_not_careless",
         "base_event_text": "Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed."
@@ -999,7 +999,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
     "assetRoot": "",
     "sessionNamespace": "tort_adult_consent_v1_no_consent_",
     "studyVersion": "adult-consent-1.0.0",
-    "materialsRevision": "436bd840a774",
+    "materialsRevision": "db1630cd45a4",
     "scenarios": [
       {
         "p_name": "Finn",
@@ -1012,7 +1012,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "v_initial": 2,
         "v_after_harm": 0,
         "harm_amount": 2,
-        "event_text": "Before the loss, Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies. I’m not okay with that.” Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed.",
+        "event_text": "Before the loss, Cleo tells Finn, “I know I could slip on the water you left on the floor and drop my cookies. I’m not okay with that.” Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed.",
         "event_title": "Finn Spills Water — Cleo Slips",
         "scenario_id": 2,
         "scenario_key": "negligence_spill",
@@ -1083,10 +1083,10 @@ globalThis.TORT_CONSENT_CONDITIONS = {
           },
           {
             "slide_number": 9,
-            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
-            "image": "images/review/no_consent/negligence_spill_09.png?v=a43f1b1563e7",
+            "text": "Cleo tells Finn, “I know I could slip on the water you left on the floor and drop my cookies.”",
+            "image": "images/review/no_consent/negligence_spill_09.png?v=780fd707bdf2",
             "slide_role": "knowledge",
-            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+            "statement": "I know I could slip on the water you left on the floor and drop my cookies.",
             "speaker": "Cleo",
             "listener": "Finn",
             "slide_id": "negligence_spill:knowledge"
@@ -1129,9 +1129,9 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "reminder_image": "images/review/no_consent/negligence_spill_13.png?v=91fe9e077409",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
-        "consent_knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
+        "consent_knowledge_text": "I know I could slip on the water you left on the floor and drop my cookies.",
         "consent_response_text": "I’m not okay with that.",
-        "victim_statement": "I know I could slip on the water you leave on the floor and drop my cookies. I’m not okay with that.",
+        "victim_statement": "I know I could slip on the water you left on the floor and drop my cookies. I’m not okay with that.",
         "base_material_experiment": 1,
         "base_material_condition": "victim_not_careless",
         "base_event_text": "Finn spills water and doesn't clean it up. Cleo slips on the wet floor and 2 of Cleo's cookies are destroyed."

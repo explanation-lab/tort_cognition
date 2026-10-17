@@ -2,7 +2,7 @@
   "format": "explanation-lab-study-config",
   "manifestVersion": "1.2.0",
   "schemaVersion": "2.0.0",
-  "convertedAt": "2026-10-17T16:39:55.924Z",
+  "convertedAt": "2026-10-17T17:14:29.922Z",
   "sourceZip": "adult-consent-native-source.zip",
   "jsPsychVersion": "7.3.4",
   "experimentVersion": "adult-consent-1.0.0",
@@ -33,6 +33,6 @@
     "state"
   ],
   "conversionOutcome": "ready",
-  "packageFingerprint": "34a467b9b8f21c2d358a4762310aae7f2d65e805eca0816fb0211203d52a42bb",
+  "packageFingerprint": "e64ccefe5a24a2a3bfd35317c2f76664f6caf0e2c2274e8c26d2cae396d827b6",
   "originalBackupPaths": []
 }
