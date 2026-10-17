@@ -6,6 +6,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
     "assetRoot": "",
     "sessionNamespace": "tort_adult_consent_v1_consent_",
     "studyVersion": "adult-consent-1.0.0",
+    "materialsRevision": "436bd840a774",
     "scenarios": [
       {
         "p_name": "Finn",
@@ -25,103 +26,114 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/negligence_spill_01.png",
             "text": "This is Finn.",
+            "image": "images/review/consent/negligence_spill_01.png?v=adab17f04e29",
             "base_slide_number": 1,
+            "base_image": "images/v3/negligence_spill_01.png",
             "slide_id": "negligence_spill:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/negligence_spill_02.png",
             "text": "Finn has 8 cookies.",
+            "image": "images/review/consent/negligence_spill_02.png?v=e688fe68cb07",
             "base_slide_number": 2,
+            "base_image": "images/v3/negligence_spill_02.png",
             "slide_id": "negligence_spill:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/negligence_spill_03.png",
             "text": "This is Cleo.",
+            "image": "images/review/consent/negligence_spill_03.png?v=31d81830f016",
             "base_slide_number": 3,
+            "base_image": "images/v3/negligence_spill_03.png",
             "slide_id": "negligence_spill:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/negligence_spill_04.png",
             "text": "Cleo has 2 cookies.",
+            "image": "images/review/consent/negligence_spill_04.png?v=3d62b97509e0",
             "base_slide_number": 4,
+            "base_image": "images/v3/negligence_spill_04.png",
             "slide_id": "negligence_spill:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/negligence_spill_05.png",
             "text": "Finn spills water.",
+            "image": "images/review/consent/negligence_spill_05.png?v=58bfe6275031",
             "base_slide_number": 5,
+            "base_image": "images/v3/negligence_spill_05.png",
             "slide_id": "negligence_spill:base:5"
           },
           {
-            "slide_id": "negligence_spill:knowledge",
-            "slide_role": "knowledge",
-            "speaker": "Cleo",
-            "listener": "Finn",
-            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
-            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
-            "image": "images/negligence_spill_shared_knowledge.png?v=e263448bcdb9",
-            "slide_number": 6
-          },
-          {
-            "slide_id": "negligence_spill:response",
-            "slide_role": "response",
-            "speaker": "Cleo",
-            "listener": "Finn",
-            "statement": "I’m okay with that.",
-            "text": "Cleo tells Finn, “I’m okay with that.”",
-            "image": "images/negligence_spill_consent_response.png?v=f63b9b7ae1c6",
-            "slide_number": 7
-          },
-          {
-            "slide_number": 8,
-            "image": "images/v3/negligence_spill_06.png",
+            "slide_number": 6,
             "text": "Finn doesn’t clean it up and walks away.",
+            "image": "images/review/consent/negligence_spill_06.png?v=6791bd86f6b5",
             "base_slide_number": 6,
+            "base_image": "images/v3/negligence_spill_06.png",
             "slide_id": "negligence_spill:base:6"
           },
           {
-            "slide_number": 9,
-            "image": "images/v3/negligence_spill_07.png",
+            "slide_number": 7,
             "text": "Finn doesn’t clean it up and walks away.",
+            "image": "images/review/consent/negligence_spill_07.png?v=9feec11be46b",
             "base_slide_number": 7,
+            "base_image": "images/v3/negligence_spill_07.png",
             "slide_id": "negligence_spill:base:7"
           },
           {
-            "slide_number": 10,
-            "image": "images/v3/negligence_spill_08.png",
+            "slide_number": 8,
             "text": "Cleo walks in.",
+            "image": "images/review/consent/negligence_spill_08.png?v=af22f0ff495f",
             "base_slide_number": 8,
+            "base_image": "images/v3/negligence_spill_08.png",
             "slide_id": "negligence_spill:base:8"
           },
           {
+            "slide_number": 9,
+            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
+            "image": "images/review/consent/negligence_spill_09.png?v=a43f1b1563e7",
+            "slide_role": "knowledge",
+            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+            "speaker": "Cleo",
+            "listener": "Finn",
+            "slide_id": "negligence_spill:knowledge"
+          },
+          {
+            "slide_number": 10,
+            "text": "Cleo tells Finn, “I’m okay with that.”",
+            "image": "images/review/consent/negligence_spill_10.png?v=f63b9b7ae1c6",
+            "slide_role": "response",
+            "statement": "I’m okay with that.",
+            "speaker": "Cleo",
+            "listener": "Finn",
+            "slide_id": "negligence_spill:response"
+          },
+          {
             "slide_number": 11,
-            "image": "images/v3/negligence_spill_09.png",
             "text": "Oh no! Cleo slips on the water!",
+            "image": "images/review/consent/negligence_spill_11.png?v=c1c76f0709a3",
             "base_slide_number": 9,
+            "base_image": "images/v3/negligence_spill_09.png",
             "slide_id": "negligence_spill:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/negligence_spill_10.png",
             "text": "2 of Cleo’s cookies fall!",
+            "image": "images/review/consent/negligence_spill_12.png?v=69b771ebddb7",
             "base_slide_number": 10,
+            "base_image": "images/v3/negligence_spill_10.png",
             "slide_id": "negligence_spill:base:10"
           },
           {
             "slide_number": 13,
-            "image": "images/v3/negligence_spill_11.png",
             "text": "Finn still has 8 cookies. Cleo now has 0 cookies.",
+            "image": "images/review/consent/negligence_spill_13.png?v=91fe9e077409",
             "base_slide_number": 11,
+            "base_image": "images/v3/negligence_spill_11.png",
             "slide_id": "negligence_spill:base:11"
           }
         ],
-        "reminder_image": "images/v3/negligence_spill_11.png",
+        "reminder_image": "images/review/consent/negligence_spill_13.png?v=91fe9e077409",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
         "consent_knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
@@ -149,82 +161,90 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/intentional_hit_01.png",
             "text": "This is Milo.",
+            "image": "images/review/consent/intentional_hit_01.png?v=f16422716ffa",
             "base_slide_number": 1,
+            "base_image": "images/v3/intentional_hit_01.png",
             "slide_id": "intentional_hit:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/intentional_hit_02.png",
             "text": "Milo has 8 cookies.",
+            "image": "images/review/consent/intentional_hit_02.png?v=3fa4404224bb",
             "base_slide_number": 2,
+            "base_image": "images/v3/intentional_hit_02.png",
             "slide_id": "intentional_hit:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/intentional_hit_03.png",
             "text": "This is Sasha.",
+            "image": "images/review/consent/intentional_hit_03.png?v=a69839fac940",
             "base_slide_number": 3,
+            "base_image": "images/v3/intentional_hit_03.png",
             "slide_id": "intentional_hit:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/intentional_hit_04.png",
             "text": "Sasha has 2 cookies.",
+            "image": "images/review/consent/intentional_hit_04.png?v=338040f04cbd",
             "base_slide_number": 4,
+            "base_image": "images/v3/intentional_hit_04.png",
             "slide_id": "intentional_hit:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/intentional_hit_05.png",
             "text": "Milo is angry.",
+            "image": "images/review/consent/intentional_hit_05.png?v=160249d0dac8",
             "base_slide_number": 5,
+            "base_image": "images/v3/intentional_hit_05.png",
             "slide_id": "intentional_hit:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/intentional_hit_06.png",
             "text": "He walks over.",
+            "image": "images/review/consent/intentional_hit_06.png?v=2729619965b8",
             "base_slide_number": 6,
+            "base_image": "images/v3/intentional_hit_06.png",
             "slide_id": "intentional_hit:base:6"
           },
           {
-            "slide_id": "intentional_hit:knowledge",
+            "slide_number": 7,
+            "text": "Sasha tells Milo, “I know you’re going to knock my cookies onto the ground.”",
+            "image": "images/review/consent/intentional_hit_07.png?v=80f39e9189ff",
             "slide_role": "knowledge",
+            "statement": "I know you’re going to knock my cookies onto the ground.",
             "speaker": "Sasha",
             "listener": "Milo",
-            "statement": "I know you’re going to knock my cookies onto the ground.",
-            "text": "Sasha tells Milo, “I know you’re going to knock my cookies onto the ground.”",
-            "image": "images/intentional_hit_shared_knowledge.png?v=9861c48c59f5",
-            "slide_number": 7
+            "slide_id": "intentional_hit:knowledge"
           },
           {
-            "slide_id": "intentional_hit:response",
+            "slide_number": 8,
+            "text": "Sasha tells Milo, “I’m okay with that.”",
+            "image": "images/review/consent/intentional_hit_08.png?v=0a988364b405",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Sasha",
             "listener": "Milo",
-            "statement": "I’m okay with that.",
-            "text": "Sasha tells Milo, “I’m okay with that.”",
-            "image": "images/intentional_hit_consent_response.png?v=0a988364b405",
-            "slide_number": 8
+            "slide_id": "intentional_hit:response"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/intentional_hit_07.png",
-            "text": "And hits 2 of Sasha’s cookies!",
+            "text": "Milo hits 2 of Sasha’s cookies!",
+            "image": "images/review/consent/intentional_hit_09.png?v=e996ff98f875",
             "base_slide_number": 7,
+            "base_image": "images/v3/intentional_hit_07.png",
             "slide_id": "intentional_hit:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/intentional_hit_08.png",
             "text": "Milo still has 8 cookies. Sasha now has 0 cookies.",
+            "image": "images/review/consent/intentional_hit_10.png?v=3bb593df35b4",
             "base_slide_number": 8,
+            "base_image": "images/v3/intentional_hit_08.png",
             "slide_id": "intentional_hit:base:8"
           }
         ],
-        "reminder_image": "images/v3/intentional_hit_08.png",
+        "reminder_image": "images/review/consent/intentional_hit_10.png?v=3bb593df35b4",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
         "consent_knowledge_text": "I know you’re going to knock my cookies onto the ground.",
@@ -245,87 +265,94 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "v_initial": 2,
         "v_after_harm": 0,
         "harm_amount": 2,
-        "event_text": "Before the loss, Rex tells Zoe, “I know you’re going to throw my cookies away. I’m okay with that.” Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies.",
+        "event_text": "Before the loss, Rex tells Zoe, “I know you’re going to throw my cookies. I’m okay with that.” Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies.",
         "event_title": "Zoe Throws Rex's Cookies Away",
         "scenario_id": 6,
         "scenario_key": "intentional_throw",
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/intentional_throw_01.png",
             "text": "This is Zoe.",
+            "image": "images/review/consent/intentional_throw_01.png?v=0caea1513f1b",
             "base_slide_number": 1,
+            "base_image": "images/v3/intentional_throw_01.png",
             "slide_id": "intentional_throw:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/intentional_throw_02.png",
             "text": "Zoe has 8 cookies.",
+            "image": "images/review/consent/intentional_throw_02.png?v=609868145d69",
             "base_slide_number": 2,
+            "base_image": "images/v3/intentional_throw_02.png",
             "slide_id": "intentional_throw:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/intentional_throw_03.png",
             "text": "This is Rex.",
+            "image": "images/review/consent/intentional_throw_03.png?v=89abc8495809",
             "base_slide_number": 3,
+            "base_image": "images/v3/intentional_throw_03.png",
             "slide_id": "intentional_throw:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/intentional_throw_04.png",
             "text": "Rex has 2 cookies.",
+            "image": "images/review/consent/intentional_throw_04.png?v=b2ffb4177a79",
             "base_slide_number": 4,
+            "base_image": "images/v3/intentional_throw_04.png",
             "slide_id": "intentional_throw:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/intentional_throw_05.png",
             "text": "Zoe wants Rex to have fewer cookies.",
+            "image": "images/review/consent/intentional_throw_05.png?v=2beaf14b398e",
             "base_slide_number": 5,
+            "base_image": "images/v3/intentional_throw_05.png",
             "slide_id": "intentional_throw:base:5"
           },
           {
-            "slide_id": "intentional_throw:knowledge",
+            "slide_number": 6,
+            "text": "Rex tells Zoe, “I know you’re going to throw my cookies.”",
+            "image": "images/review/consent/intentional_throw_06.png?v=57a6e38a9724",
             "slide_role": "knowledge",
+            "statement": "I know you’re going to throw my cookies.",
             "speaker": "Rex",
             "listener": "Zoe",
-            "statement": "I know you’re going to throw my cookies away.",
-            "text": "Rex tells Zoe, “I know you’re going to throw my cookies away.”",
-            "image": "images/intentional_throw_shared_knowledge.png?v=8aa6443591d2",
-            "slide_number": 6
+            "slide_id": "intentional_throw:knowledge"
           },
           {
-            "slide_id": "intentional_throw:response",
+            "slide_number": 7,
+            "text": "Rex tells Zoe, “I’m okay with that.”",
+            "image": "images/review/consent/intentional_throw_07.png?v=e2c957dd38fb",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Rex",
             "listener": "Zoe",
-            "statement": "I’m okay with that.",
-            "text": "Rex tells Zoe, “I’m okay with that.”",
-            "image": "images/intentional_throw_consent_response.png?v=e2c957dd38fb",
-            "slide_number": 7
+            "slide_id": "intentional_throw:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/intentional_throw_06.png",
             "text": "Oh no! Zoe throws 2 of Rex’s cookies!",
+            "image": "images/review/consent/intentional_throw_08.png?v=0d404423216a",
             "base_slide_number": 6,
+            "base_image": "images/v3/intentional_throw_06.png",
             "slide_id": "intentional_throw:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/intentional_throw_07.png",
             "text": "Zoe still has 8 cookies. Rex now has 0 cookies.",
+            "image": "images/review/consent/intentional_throw_09.png?v=9fa5324fe7b2",
             "base_slide_number": 7,
+            "base_image": "images/v3/intentional_throw_07.png",
             "slide_id": "intentional_throw:base:7"
           }
         ],
-        "reminder_image": "images/v3/intentional_throw_07.png",
+        "reminder_image": "images/review/consent/intentional_throw_09.png?v=9fa5324fe7b2",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
-        "consent_knowledge_text": "I know you’re going to throw my cookies away.",
+        "consent_knowledge_text": "I know you’re going to throw my cookies.",
         "consent_response_text": "I’m okay with that.",
-        "victim_statement": "I know you’re going to throw my cookies away. I’m okay with that.",
+        "victim_statement": "I know you’re going to throw my cookies. I’m okay with that.",
         "base_material_experiment": 1,
         "base_material_condition": "victim_not_careless",
         "base_event_text": "Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies."
@@ -348,89 +375,98 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/negligence_phone_01.png",
             "text": "This is Kai.",
+            "image": "images/review/consent/negligence_phone_01.png?v=49719d630533",
             "base_slide_number": 1,
+            "base_image": "images/v3/negligence_phone_01.png",
             "slide_id": "negligence_phone:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/negligence_phone_02.png",
             "text": "Kai has 8 cookies.",
+            "image": "images/review/consent/negligence_phone_02.png?v=23490e6fde67",
             "base_slide_number": 2,
+            "base_image": "images/v3/negligence_phone_02.png",
             "slide_id": "negligence_phone:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/negligence_phone_03.png",
             "text": "This is Ruby.",
+            "image": "images/review/consent/negligence_phone_03.png?v=b0143eececa8",
             "base_slide_number": 3,
+            "base_image": "images/v3/negligence_phone_03.png",
             "slide_id": "negligence_phone:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/negligence_phone_04.png",
             "text": "Ruby has 2 cookies.",
+            "image": "images/review/consent/negligence_phone_04.png?v=3c7389036987",
             "base_slide_number": 4,
+            "base_image": "images/v3/negligence_phone_04.png",
             "slide_id": "negligence_phone:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/negligence_phone_05.png",
             "text": "Kai is walking and staring at his phone.",
+            "image": "images/review/consent/negligence_phone_05.png?v=d786a5dd8536",
             "base_slide_number": 5,
+            "base_image": "images/v3/negligence_phone_05.png",
             "slide_id": "negligence_phone:base:5"
           },
           {
-            "slide_id": "negligence_phone:knowledge",
+            "slide_number": 6,
+            "text": "Ruby tells Kai, “I know you could bump into me while looking at your phone and knock my cookies onto the ground.”",
+            "image": "images/review/consent/negligence_phone_06.png?v=3359087318ef",
             "slide_role": "knowledge",
+            "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
             "speaker": "Ruby",
             "listener": "Kai",
-            "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
-            "text": "Ruby tells Kai, “I know you could bump into me while looking at your phone and knock my cookies onto the ground.”",
-            "image": "images/negligence_phone_shared_knowledge.png?v=3359087318ef",
-            "slide_number": 6
+            "slide_id": "negligence_phone:knowledge"
           },
           {
-            "slide_id": "negligence_phone:response",
+            "slide_number": 7,
+            "text": "Ruby tells Kai, “I’m okay with that.”",
+            "image": "images/review/consent/negligence_phone_07.png?v=a1e0725a19f8",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Ruby",
             "listener": "Kai",
-            "statement": "I’m okay with that.",
-            "text": "Ruby tells Kai, “I’m okay with that.”",
-            "image": "images/negligence_phone_consent_response.png?v=a1e0725a19f8",
-            "slide_number": 7
+            "slide_id": "negligence_phone:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/negligence_phone_06.png",
             "text": "Kai is walking and staring at his phone.",
+            "image": "images/review/consent/negligence_phone_08.png?v=b97055c1793a",
             "base_slide_number": 6,
+            "base_image": "images/v3/negligence_phone_06.png",
             "slide_id": "negligence_phone:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/negligence_phone_07.png",
             "text": "Oh no! Kai bumps into Ruby!",
+            "image": "images/review/consent/negligence_phone_09.png?v=fdefb13edca7",
             "base_slide_number": 7,
+            "base_image": "images/v3/negligence_phone_07.png",
             "slide_id": "negligence_phone:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/negligence_phone_08.png",
             "text": "2 of Ruby’s cookies fall!",
+            "image": "images/review/consent/negligence_phone_10.png?v=f524b509bb74",
             "base_slide_number": 8,
+            "base_image": "images/v3/negligence_phone_08.png",
             "slide_id": "negligence_phone:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/negligence_phone_09.png",
             "text": "Kai still has 8 cookies. Ruby now has 0 cookies.",
+            "image": "images/review/consent/negligence_phone_11.png?v=dcbfdc65ffd0",
             "base_slide_number": 9,
+            "base_image": "images/v3/negligence_phone_09.png",
             "slide_id": "negligence_phone:base:9"
           }
         ],
-        "reminder_image": "images/v3/negligence_phone_09.png",
+        "reminder_image": "images/review/consent/negligence_phone_11.png?v=dcbfdc65ffd0",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
         "consent_knowledge_text": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
@@ -458,96 +494,106 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/strict_liability_alligator_01.png",
             "text": "This is Sam.",
+            "image": "images/review/consent/strict_liability_alligator_01.png?v=c76a316b83e0",
             "base_slide_number": 1,
+            "base_image": "images/v3/strict_liability_alligator_01.png",
             "slide_id": "strict_liability_alligator:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/strict_liability_alligator_02.png",
             "text": "Sam has 8 cookies.",
+            "image": "images/review/consent/strict_liability_alligator_02.png?v=0e6ca6c9ed12",
             "base_slide_number": 2,
+            "base_image": "images/v3/strict_liability_alligator_02.png",
             "slide_id": "strict_liability_alligator:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/strict_liability_alligator_03.png",
             "text": "Sam has an alligator.",
+            "image": "images/review/consent/strict_liability_alligator_03.png?v=35739439266a",
             "base_slide_number": 3,
+            "base_image": "images/v3/strict_liability_alligator_03.png",
             "slide_id": "strict_liability_alligator:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/strict_liability_alligator_04.png",
             "text": "This is Ella.",
+            "image": "images/review/consent/strict_liability_alligator_04.png?v=4a614e827656",
             "base_slide_number": 4,
+            "base_image": "images/v3/strict_liability_alligator_04.png",
             "slide_id": "strict_liability_alligator:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/strict_liability_alligator_05.png",
             "text": "Ella has 2 cookies.",
+            "image": "images/review/consent/strict_liability_alligator_05.png?v=1c2d6019f5db",
             "base_slide_number": 5,
+            "base_image": "images/v3/strict_liability_alligator_05.png",
             "slide_id": "strict_liability_alligator:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/strict_liability_alligator_06.png",
             "text": "Sam puts his alligator inside the house.",
+            "image": "images/review/consent/strict_liability_alligator_06.png?v=6f2757015480",
             "base_slide_number": 6,
+            "base_image": "images/v3/strict_liability_alligator_06.png",
             "slide_id": "strict_liability_alligator:base:6"
           },
           {
             "slide_number": 7,
-            "image": "images/v3/strict_liability_alligator_07.png",
             "text": "Sam locks the door and checks the lock.",
+            "image": "images/review/consent/strict_liability_alligator_07.png?v=709d07675e56",
             "base_slide_number": 7,
+            "base_image": "images/v3/strict_liability_alligator_07.png",
             "slide_id": "strict_liability_alligator:base:7"
           },
           {
-            "slide_id": "strict_liability_alligator:knowledge",
+            "slide_number": 8,
+            "text": "Ella tells Sam, “I know your alligator could escape from the house and eat my cookies.”",
+            "image": "images/review/consent/strict_liability_alligator_08.png?v=c089f6254d52",
             "slide_role": "knowledge",
+            "statement": "I know your alligator could escape from the house and eat my cookies.",
             "speaker": "Ella",
             "listener": "Sam",
-            "statement": "I know your alligator could escape from the house and eat my cookies.",
-            "text": "Ella tells Sam, “I know your alligator could escape from the house and eat my cookies.”",
-            "image": "images/strict_liability_alligator_shared_knowledge.png?v=6edc4ea6d006",
-            "slide_number": 8
+            "slide_id": "strict_liability_alligator:knowledge"
           },
           {
-            "slide_id": "strict_liability_alligator:response",
+            "slide_number": 9,
+            "text": "Ella tells Sam, “I’m okay with that.”",
+            "image": "images/review/consent/strict_liability_alligator_09.png?v=42dba507fbca",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Ella",
             "listener": "Sam",
-            "statement": "I’m okay with that.",
-            "text": "Ella tells Sam, “I’m okay with that.”",
-            "image": "images/strict_liability_alligator_consent_response.png?v=42dba507fbca",
-            "slide_number": 9
+            "slide_id": "strict_liability_alligator:response"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/strict_liability_alligator_08.png",
             "text": "Oh no! The alligator breaks out of the house!",
+            "image": "images/review/consent/strict_liability_alligator_10.png?v=8dfda5ebeb15",
             "base_slide_number": 8,
+            "base_image": "images/v3/strict_liability_alligator_08.png",
             "slide_id": "strict_liability_alligator:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/strict_liability_alligator_09.png",
             "text": "The alligator eats 2 of Ella’s cookies!",
+            "image": "images/review/consent/strict_liability_alligator_11.png?v=a41d586c1474",
             "base_slide_number": 9,
+            "base_image": "images/v3/strict_liability_alligator_09.png",
             "slide_id": "strict_liability_alligator:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/strict_liability_alligator_10.png",
             "text": "Sam still has 8 cookies. Ella now has 0 cookies.",
+            "image": "images/review/consent/strict_liability_alligator_12.png?v=a3b0a594cb9a",
             "base_slide_number": 10,
+            "base_image": "images/v3/strict_liability_alligator_10.png",
             "slide_id": "strict_liability_alligator:base:10"
           }
         ],
-        "reminder_image": "images/v3/strict_liability_alligator_10.png",
+        "reminder_image": "images/review/consent/strict_liability_alligator_12.png?v=a3b0a594cb9a",
         "story_cookie_artwork_count": 7,
         "containment": "locked_house",
         "material_status": "revised_draft_for_review",
@@ -577,96 +623,106 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/strict_liability_wolf_01.png",
             "text": "This is Catherine.",
+            "image": "images/review/consent/strict_liability_wolf_01.png?v=3fa388b7851f",
             "base_slide_number": 1,
+            "base_image": "images/v3/strict_liability_wolf_01.png",
             "slide_id": "strict_liability_wolf:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/strict_liability_wolf_02.png",
             "text": "Catherine has 8 cookies.",
+            "image": "images/review/consent/strict_liability_wolf_02.png?v=c3ba5699e7d3",
             "base_slide_number": 2,
+            "base_image": "images/v3/strict_liability_wolf_02.png",
             "slide_id": "strict_liability_wolf:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/strict_liability_wolf_03.png",
             "text": "Catherine has a pet wolf.",
+            "image": "images/review/consent/strict_liability_wolf_03.png?v=e4e06e2cd4c2",
             "base_slide_number": 3,
+            "base_image": "images/v3/strict_liability_wolf_03.png",
             "slide_id": "strict_liability_wolf:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/strict_liability_wolf_04.png",
             "text": "This is Andy.",
+            "image": "images/review/consent/strict_liability_wolf_04.png?v=73a72d4fc383",
             "base_slide_number": 4,
+            "base_image": "images/v3/strict_liability_wolf_04.png",
             "slide_id": "strict_liability_wolf:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/strict_liability_wolf_05.png",
             "text": "Andy has 2 cookies.",
+            "image": "images/review/consent/strict_liability_wolf_05.png?v=8d18fe4e20d6",
             "base_slide_number": 5,
+            "base_image": "images/v3/strict_liability_wolf_05.png",
             "slide_id": "strict_liability_wolf:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/strict_liability_wolf_06.png",
             "text": "Catherine puts her wolf inside the garage.",
+            "image": "images/review/consent/strict_liability_wolf_06.png?v=586e08c5c088",
             "base_slide_number": 6,
+            "base_image": "images/v3/strict_liability_wolf_06.png",
             "slide_id": "strict_liability_wolf:base:6"
           },
           {
             "slide_number": 7,
-            "image": "images/v3/strict_liability_wolf_07.png",
             "text": "Catherine locks the door and checks the lock.",
+            "image": "images/review/consent/strict_liability_wolf_07.png?v=18465ee836b4",
             "base_slide_number": 7,
+            "base_image": "images/v3/strict_liability_wolf_07.png",
             "slide_id": "strict_liability_wolf:base:7"
           },
           {
-            "slide_id": "strict_liability_wolf:knowledge",
+            "slide_number": 8,
+            "text": "Andy tells Catherine, “I know your wolf could escape from the garage and eat my cookies.”",
+            "image": "images/review/consent/strict_liability_wolf_08.png?v=3c6edc5f63d5",
             "slide_role": "knowledge",
+            "statement": "I know your wolf could escape from the garage and eat my cookies.",
             "speaker": "Andy",
             "listener": "Catherine",
-            "statement": "I know your wolf could escape from the garage and eat my cookies.",
-            "text": "Andy tells Catherine, “I know your wolf could escape from the garage and eat my cookies.”",
-            "image": "images/strict_liability_wolf_shared_knowledge.png?v=af90157ce569",
-            "slide_number": 8
+            "slide_id": "strict_liability_wolf:knowledge"
           },
           {
-            "slide_id": "strict_liability_wolf:response",
+            "slide_number": 9,
+            "text": "Andy tells Catherine, “I’m okay with that.”",
+            "image": "images/review/consent/strict_liability_wolf_09.png?v=0c418f3feb75",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Andy",
             "listener": "Catherine",
-            "statement": "I’m okay with that.",
-            "text": "Andy tells Catherine, “I’m okay with that.”",
-            "image": "images/strict_liability_wolf_consent_response.png?v=0c418f3feb75",
-            "slide_number": 9
+            "slide_id": "strict_liability_wolf:response"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/strict_liability_wolf_08.png",
             "text": "Oh no! The wolf breaks out of the garage!",
+            "image": "images/review/consent/strict_liability_wolf_10.png?v=24bb6be51807",
             "base_slide_number": 8,
+            "base_image": "images/v3/strict_liability_wolf_08.png",
             "slide_id": "strict_liability_wolf:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/strict_liability_wolf_09.png",
             "text": "The wolf eats 2 of Andy’s cookies!",
+            "image": "images/review/consent/strict_liability_wolf_11.png?v=c6fb2cbe5c9f",
             "base_slide_number": 9,
+            "base_image": "images/v3/strict_liability_wolf_09.png",
             "slide_id": "strict_liability_wolf:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/strict_liability_wolf_10.png",
             "text": "Catherine still has 8 cookies. Andy now has 0 cookies.",
+            "image": "images/review/consent/strict_liability_wolf_12.png?v=c09c0dc40087",
             "base_slide_number": 10,
+            "base_image": "images/v3/strict_liability_wolf_10.png",
             "slide_id": "strict_liability_wolf:base:10"
           }
         ],
-        "reminder_image": "images/v3/strict_liability_wolf_10.png",
+        "reminder_image": "images/review/consent/strict_liability_wolf_12.png?v=c09c0dc40087",
         "story_cookie_artwork_count": 7,
         "containment": "locked_garage",
         "material_status": "revised_draft_for_review",
@@ -696,82 +752,90 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/control_wind_01.png",
             "text": "This is Katie.",
+            "image": "images/review/consent/control_wind_01.png?v=5f998c1a6a26",
             "base_slide_number": 1,
+            "base_image": "images/v3/control_wind_01.png",
             "slide_id": "control_wind:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/control_wind_02.png",
             "text": "Katie has 2 cookies.",
+            "image": "images/review/consent/control_wind_02.png?v=c9b1c437adee",
             "base_slide_number": 2,
+            "base_image": "images/v3/control_wind_02.png",
             "slide_id": "control_wind:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/control_wind_03.png",
             "text": "This is Tony.",
+            "image": "images/review/consent/control_wind_03.png?v=1f9b9391e097",
             "base_slide_number": 3,
+            "base_image": "images/v3/control_wind_03.png",
             "slide_id": "control_wind:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/control_wind_04.png",
             "text": "Tony has 8 cookies.",
+            "image": "images/review/consent/control_wind_04.png?v=859b8076919e",
             "base_slide_number": 4,
+            "base_image": "images/v3/control_wind_04.png",
             "slide_id": "control_wind:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/control_wind_05.png",
             "text": "Katie and Tony are having a picnic.",
+            "image": "images/review/consent/control_wind_05.png?v=ee222f8f7312",
             "base_slide_number": 5,
+            "base_image": "images/v3/control_wind_05.png",
             "slide_id": "control_wind:base:5"
           },
           {
-            "slide_id": "control_wind:knowledge",
+            "slide_number": 6,
+            "text": "Katie tells Tony, “I know the wind could blow my cookies away.”",
+            "image": "images/review/consent/control_wind_06.png?v=b7afe27506ee",
             "slide_role": "knowledge",
+            "statement": "I know the wind could blow my cookies away.",
             "speaker": "Katie",
             "listener": "Tony",
-            "statement": "I know the wind could blow my cookies away.",
-            "text": "Katie tells Tony, “I know the wind could blow my cookies away.”",
-            "image": "images/control_wind_shared_knowledge.png?v=a365aed3cc25",
-            "slide_number": 6
+            "slide_id": "control_wind:knowledge"
           },
           {
-            "slide_id": "control_wind:response",
+            "slide_number": 7,
+            "text": "Katie tells Tony, “I’m okay with that.”",
+            "image": "images/review/consent/control_wind_07.png?v=be4e8f025914",
             "slide_role": "response",
+            "statement": "I’m okay with that.",
             "speaker": "Katie",
             "listener": "Tony",
-            "statement": "I’m okay with that.",
-            "text": "Katie tells Tony, “I’m okay with that.”",
-            "image": "images/control_wind_consent_response.png?v=be4e8f025914",
-            "slide_number": 7
+            "slide_id": "control_wind:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/control_wind_06.png",
             "text": "Oh no! A gust of wind blows.",
+            "image": "images/review/consent/control_wind_08.png?v=127f73c7f4d6",
             "base_slide_number": 6,
+            "base_image": "images/v3/control_wind_06.png",
             "slide_id": "control_wind:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/control_wind_07.png",
             "text": "2 of Katie’s cookies blow away!",
+            "image": "images/review/consent/control_wind_09.png?v=a791ebc83c71",
             "base_slide_number": 7,
+            "base_image": "images/v3/control_wind_07.png",
             "slide_id": "control_wind:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/control_wind_08.png",
             "text": "Tony still has 8 cookies. Katie now has 0 cookies.",
+            "image": "images/review/consent/control_wind_10.png?v=3d5e71124325",
             "base_slide_number": 8,
+            "base_image": "images/v3/control_wind_08.png",
             "slide_id": "control_wind:base:8"
           }
         ],
-        "reminder_image": "images/v3/control_wind_08.png",
+        "reminder_image": "images/review/consent/control_wind_10.png?v=3d5e71124325",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
         "consent_knowledge_text": "I know the wind could blow my cookies away.",
@@ -799,75 +863,82 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/control_squirrel_01.png",
             "text": "This is Nora.",
+            "image": "images/review/consent/control_squirrel_01.png?v=214295610543",
             "base_slide_number": 1,
+            "base_image": "images/v3/control_squirrel_01.png",
             "slide_id": "control_squirrel:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/control_squirrel_02.png",
             "text": "Nora has 8 cookies.",
+            "image": "images/review/consent/control_squirrel_02.png?v=c6464445d064",
             "base_slide_number": 2,
+            "base_image": "images/v3/control_squirrel_02.png",
             "slide_id": "control_squirrel:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/control_squirrel_03.png",
             "text": "This is Eric.",
+            "image": "images/review/consent/control_squirrel_03.png?v=a20baa2e9cab",
             "base_slide_number": 3,
+            "base_image": "images/v3/control_squirrel_03.png",
             "slide_id": "control_squirrel:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/control_squirrel_04.png",
             "text": "Eric has 2 cookies.",
+            "image": "images/review/consent/control_squirrel_04.png?v=fb6b52fc7815",
             "base_slide_number": 4,
+            "base_image": "images/v3/control_squirrel_04.png",
             "slide_id": "control_squirrel:base:4"
           },
           {
-            "slide_id": "control_squirrel:knowledge",
-            "slide_role": "knowledge",
-            "speaker": "Eric",
-            "listener": "Nora",
-            "statement": "I know a squirrel could eat my cookies.",
-            "text": "Eric tells Nora, “I know a squirrel could eat my cookies.”",
-            "image": "images/control_squirrel_shared_knowledge.png?v=9fdf7a600abb",
-            "slide_number": 5
-          },
-          {
-            "slide_id": "control_squirrel:response",
-            "slide_role": "response",
-            "speaker": "Eric",
-            "listener": "Nora",
-            "statement": "I’m okay with that.",
-            "text": "Eric tells Nora, “I’m okay with that.”",
-            "image": "images/control_squirrel_consent_response.png?v=05eff8963235",
-            "slide_number": 6
-          },
-          {
-            "slide_number": 7,
-            "image": "images/v3/control_squirrel_05.png",
+            "slide_number": 5,
             "text": "Eric is tying his shoelaces.",
+            "image": "images/review/consent/control_squirrel_05.png?v=3581dee8bdb6",
             "base_slide_number": 5,
+            "base_image": "images/v3/control_squirrel_05.png",
             "slide_id": "control_squirrel:base:5"
           },
           {
+            "slide_number": 6,
+            "text": "Eric tells Nora, “I know a squirrel could eat my cookies.”",
+            "image": "images/review/consent/control_squirrel_06.png?v=00340e25a237",
+            "slide_role": "knowledge",
+            "statement": "I know a squirrel could eat my cookies.",
+            "speaker": "Eric",
+            "listener": "Nora",
+            "slide_id": "control_squirrel:knowledge"
+          },
+          {
+            "slide_number": 7,
+            "text": "Eric tells Nora, “I’m okay with that.”",
+            "image": "images/review/consent/control_squirrel_07.png?v=05eff8963235",
+            "slide_role": "response",
+            "statement": "I’m okay with that.",
+            "speaker": "Eric",
+            "listener": "Nora",
+            "slide_id": "control_squirrel:response"
+          },
+          {
             "slide_number": 8,
-            "image": "images/v3/control_squirrel_06.png",
             "text": "Oh no! A squirrel eats 2 of Eric’s cookies!",
+            "image": "images/review/consent/control_squirrel_08.png?v=a779c47c6082",
             "base_slide_number": 6,
+            "base_image": "images/v3/control_squirrel_06.png",
             "slide_id": "control_squirrel:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/control_squirrel_07.png",
             "text": "Nora still has 8 cookies. Eric now has 0 cookies.",
+            "image": "images/review/consent/control_squirrel_09.png?v=6e7c6d677de9",
             "base_slide_number": 7,
+            "base_image": "images/v3/control_squirrel_07.png",
             "slide_id": "control_squirrel:base:7"
           }
         ],
-        "reminder_image": "images/v3/control_squirrel_07.png",
+        "reminder_image": "images/review/consent/control_squirrel_09.png?v=6e7c6d677de9",
         "story_cookie_artwork_count": 7,
         "consent_condition": "consent",
         "consent_knowledge_text": "I know a squirrel could eat my cookies.",
@@ -928,6 +999,7 @@ globalThis.TORT_CONSENT_CONDITIONS = {
     "assetRoot": "",
     "sessionNamespace": "tort_adult_consent_v1_no_consent_",
     "studyVersion": "adult-consent-1.0.0",
+    "materialsRevision": "436bd840a774",
     "scenarios": [
       {
         "p_name": "Finn",
@@ -947,103 +1019,114 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/negligence_spill_01.png",
             "text": "This is Finn.",
+            "image": "images/review/no_consent/negligence_spill_01.png?v=adab17f04e29",
             "base_slide_number": 1,
+            "base_image": "images/v3/negligence_spill_01.png",
             "slide_id": "negligence_spill:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/negligence_spill_02.png",
             "text": "Finn has 8 cookies.",
+            "image": "images/review/no_consent/negligence_spill_02.png?v=e688fe68cb07",
             "base_slide_number": 2,
+            "base_image": "images/v3/negligence_spill_02.png",
             "slide_id": "negligence_spill:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/negligence_spill_03.png",
             "text": "This is Cleo.",
+            "image": "images/review/no_consent/negligence_spill_03.png?v=31d81830f016",
             "base_slide_number": 3,
+            "base_image": "images/v3/negligence_spill_03.png",
             "slide_id": "negligence_spill:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/negligence_spill_04.png",
             "text": "Cleo has 2 cookies.",
+            "image": "images/review/no_consent/negligence_spill_04.png?v=3d62b97509e0",
             "base_slide_number": 4,
+            "base_image": "images/v3/negligence_spill_04.png",
             "slide_id": "negligence_spill:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/negligence_spill_05.png",
             "text": "Finn spills water.",
+            "image": "images/review/no_consent/negligence_spill_05.png?v=58bfe6275031",
             "base_slide_number": 5,
+            "base_image": "images/v3/negligence_spill_05.png",
             "slide_id": "negligence_spill:base:5"
           },
           {
-            "slide_id": "negligence_spill:knowledge",
-            "slide_role": "knowledge",
-            "speaker": "Cleo",
-            "listener": "Finn",
-            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
-            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
-            "image": "images/negligence_spill_shared_knowledge.png?v=e263448bcdb9",
-            "slide_number": 6
-          },
-          {
-            "slide_id": "negligence_spill:response",
-            "slide_role": "response",
-            "speaker": "Cleo",
-            "listener": "Finn",
-            "statement": "I’m not okay with that.",
-            "text": "Cleo tells Finn, “I’m not okay with that.”",
-            "image": "images/negligence_spill_no_consent_response.png?v=4022873899c0",
-            "slide_number": 7
-          },
-          {
-            "slide_number": 8,
-            "image": "images/v3/negligence_spill_06.png",
+            "slide_number": 6,
             "text": "Finn doesn’t clean it up and walks away.",
+            "image": "images/review/no_consent/negligence_spill_06.png?v=6791bd86f6b5",
             "base_slide_number": 6,
+            "base_image": "images/v3/negligence_spill_06.png",
             "slide_id": "negligence_spill:base:6"
           },
           {
-            "slide_number": 9,
-            "image": "images/v3/negligence_spill_07.png",
+            "slide_number": 7,
             "text": "Finn doesn’t clean it up and walks away.",
+            "image": "images/review/no_consent/negligence_spill_07.png?v=9feec11be46b",
             "base_slide_number": 7,
+            "base_image": "images/v3/negligence_spill_07.png",
             "slide_id": "negligence_spill:base:7"
           },
           {
-            "slide_number": 10,
-            "image": "images/v3/negligence_spill_08.png",
+            "slide_number": 8,
             "text": "Cleo walks in.",
+            "image": "images/review/no_consent/negligence_spill_08.png?v=af22f0ff495f",
             "base_slide_number": 8,
+            "base_image": "images/v3/negligence_spill_08.png",
             "slide_id": "negligence_spill:base:8"
           },
           {
+            "slide_number": 9,
+            "text": "Cleo tells Finn, “I know I could slip on the water you leave on the floor and drop my cookies.”",
+            "image": "images/review/no_consent/negligence_spill_09.png?v=a43f1b1563e7",
+            "slide_role": "knowledge",
+            "statement": "I know I could slip on the water you leave on the floor and drop my cookies.",
+            "speaker": "Cleo",
+            "listener": "Finn",
+            "slide_id": "negligence_spill:knowledge"
+          },
+          {
+            "slide_number": 10,
+            "text": "Cleo tells Finn, “I’m not okay with that.”",
+            "image": "images/review/no_consent/negligence_spill_10.png?v=4022873899c0",
+            "slide_role": "response",
+            "statement": "I’m not okay with that.",
+            "speaker": "Cleo",
+            "listener": "Finn",
+            "slide_id": "negligence_spill:response"
+          },
+          {
             "slide_number": 11,
-            "image": "images/v3/negligence_spill_09.png",
             "text": "Oh no! Cleo slips on the water!",
+            "image": "images/review/no_consent/negligence_spill_11.png?v=c1c76f0709a3",
             "base_slide_number": 9,
+            "base_image": "images/v3/negligence_spill_09.png",
             "slide_id": "negligence_spill:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/negligence_spill_10.png",
             "text": "2 of Cleo’s cookies fall!",
+            "image": "images/review/no_consent/negligence_spill_12.png?v=69b771ebddb7",
             "base_slide_number": 10,
+            "base_image": "images/v3/negligence_spill_10.png",
             "slide_id": "negligence_spill:base:10"
           },
           {
             "slide_number": 13,
-            "image": "images/v3/negligence_spill_11.png",
             "text": "Finn still has 8 cookies. Cleo now has 0 cookies.",
+            "image": "images/review/no_consent/negligence_spill_13.png?v=91fe9e077409",
             "base_slide_number": 11,
+            "base_image": "images/v3/negligence_spill_11.png",
             "slide_id": "negligence_spill:base:11"
           }
         ],
-        "reminder_image": "images/v3/negligence_spill_11.png",
+        "reminder_image": "images/review/no_consent/negligence_spill_13.png?v=91fe9e077409",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
         "consent_knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
@@ -1071,82 +1154,90 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/intentional_hit_01.png",
             "text": "This is Milo.",
+            "image": "images/review/no_consent/intentional_hit_01.png?v=f16422716ffa",
             "base_slide_number": 1,
+            "base_image": "images/v3/intentional_hit_01.png",
             "slide_id": "intentional_hit:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/intentional_hit_02.png",
             "text": "Milo has 8 cookies.",
+            "image": "images/review/no_consent/intentional_hit_02.png?v=d71ca59b94ee",
             "base_slide_number": 2,
+            "base_image": "images/v3/intentional_hit_02.png",
             "slide_id": "intentional_hit:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/intentional_hit_03.png",
             "text": "This is Sasha.",
+            "image": "images/review/no_consent/intentional_hit_03.png?v=a69839fac940",
             "base_slide_number": 3,
+            "base_image": "images/v3/intentional_hit_03.png",
             "slide_id": "intentional_hit:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/intentional_hit_04.png",
             "text": "Sasha has 2 cookies.",
+            "image": "images/review/no_consent/intentional_hit_04.png?v=338040f04cbd",
             "base_slide_number": 4,
+            "base_image": "images/v3/intentional_hit_04.png",
             "slide_id": "intentional_hit:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/intentional_hit_05.png",
             "text": "Milo is angry.",
+            "image": "images/review/no_consent/intentional_hit_05.png?v=160249d0dac8",
             "base_slide_number": 5,
+            "base_image": "images/v3/intentional_hit_05.png",
             "slide_id": "intentional_hit:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/intentional_hit_06.png",
             "text": "He walks over.",
+            "image": "images/review/no_consent/intentional_hit_06.png?v=2729619965b8",
             "base_slide_number": 6,
+            "base_image": "images/v3/intentional_hit_06.png",
             "slide_id": "intentional_hit:base:6"
           },
           {
-            "slide_id": "intentional_hit:knowledge",
+            "slide_number": 7,
+            "text": "Sasha tells Milo, “I know you’re going to knock my cookies onto the ground.”",
+            "image": "images/review/no_consent/intentional_hit_07.png?v=80f39e9189ff",
             "slide_role": "knowledge",
+            "statement": "I know you’re going to knock my cookies onto the ground.",
             "speaker": "Sasha",
             "listener": "Milo",
-            "statement": "I know you’re going to knock my cookies onto the ground.",
-            "text": "Sasha tells Milo, “I know you’re going to knock my cookies onto the ground.”",
-            "image": "images/intentional_hit_shared_knowledge.png?v=9861c48c59f5",
-            "slide_number": 7
+            "slide_id": "intentional_hit:knowledge"
           },
           {
-            "slide_id": "intentional_hit:response",
+            "slide_number": 8,
+            "text": "Sasha tells Milo, “I’m not okay with that.”",
+            "image": "images/review/no_consent/intentional_hit_08.png?v=07a8b3f3bece",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Sasha",
             "listener": "Milo",
-            "statement": "I’m not okay with that.",
-            "text": "Sasha tells Milo, “I’m not okay with that.”",
-            "image": "images/intentional_hit_no_consent_response.png?v=07a8b3f3bece",
-            "slide_number": 8
+            "slide_id": "intentional_hit:response"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/intentional_hit_07.png",
-            "text": "And hits 2 of Sasha’s cookies!",
+            "text": "Milo hits 2 of Sasha’s cookies!",
+            "image": "images/review/no_consent/intentional_hit_09.png?v=e996ff98f875",
             "base_slide_number": 7,
+            "base_image": "images/v3/intentional_hit_07.png",
             "slide_id": "intentional_hit:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/intentional_hit_08.png",
             "text": "Milo still has 8 cookies. Sasha now has 0 cookies.",
+            "image": "images/review/no_consent/intentional_hit_10.png?v=3bb593df35b4",
             "base_slide_number": 8,
+            "base_image": "images/v3/intentional_hit_08.png",
             "slide_id": "intentional_hit:base:8"
           }
         ],
-        "reminder_image": "images/v3/intentional_hit_08.png",
+        "reminder_image": "images/review/no_consent/intentional_hit_10.png?v=3bb593df35b4",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
         "consent_knowledge_text": "I know you’re going to knock my cookies onto the ground.",
@@ -1167,87 +1258,94 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "v_initial": 2,
         "v_after_harm": 0,
         "harm_amount": 2,
-        "event_text": "Before the loss, Rex tells Zoe, “I know you’re going to throw my cookies away. I’m not okay with that.” Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies.",
+        "event_text": "Before the loss, Rex tells Zoe, “I know you’re going to throw my cookies. I’m not okay with that.” Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies.",
         "event_title": "Zoe Throws Rex's Cookies Away",
         "scenario_id": 6,
         "scenario_key": "intentional_throw",
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/intentional_throw_01.png",
             "text": "This is Zoe.",
+            "image": "images/review/no_consent/intentional_throw_01.png?v=0caea1513f1b",
             "base_slide_number": 1,
+            "base_image": "images/v3/intentional_throw_01.png",
             "slide_id": "intentional_throw:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/intentional_throw_02.png",
             "text": "Zoe has 8 cookies.",
+            "image": "images/review/no_consent/intentional_throw_02.png?v=609868145d69",
             "base_slide_number": 2,
+            "base_image": "images/v3/intentional_throw_02.png",
             "slide_id": "intentional_throw:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/intentional_throw_03.png",
             "text": "This is Rex.",
+            "image": "images/review/no_consent/intentional_throw_03.png?v=89abc8495809",
             "base_slide_number": 3,
+            "base_image": "images/v3/intentional_throw_03.png",
             "slide_id": "intentional_throw:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/intentional_throw_04.png",
             "text": "Rex has 2 cookies.",
+            "image": "images/review/no_consent/intentional_throw_04.png?v=b2ffb4177a79",
             "base_slide_number": 4,
+            "base_image": "images/v3/intentional_throw_04.png",
             "slide_id": "intentional_throw:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/intentional_throw_05.png",
             "text": "Zoe wants Rex to have fewer cookies.",
+            "image": "images/review/no_consent/intentional_throw_05.png?v=2beaf14b398e",
             "base_slide_number": 5,
+            "base_image": "images/v3/intentional_throw_05.png",
             "slide_id": "intentional_throw:base:5"
           },
           {
-            "slide_id": "intentional_throw:knowledge",
+            "slide_number": 6,
+            "text": "Rex tells Zoe, “I know you’re going to throw my cookies.”",
+            "image": "images/review/no_consent/intentional_throw_06.png?v=57a6e38a9724",
             "slide_role": "knowledge",
+            "statement": "I know you’re going to throw my cookies.",
             "speaker": "Rex",
             "listener": "Zoe",
-            "statement": "I know you’re going to throw my cookies away.",
-            "text": "Rex tells Zoe, “I know you’re going to throw my cookies away.”",
-            "image": "images/intentional_throw_shared_knowledge.png?v=8aa6443591d2",
-            "slide_number": 6
+            "slide_id": "intentional_throw:knowledge"
           },
           {
-            "slide_id": "intentional_throw:response",
+            "slide_number": 7,
+            "text": "Rex tells Zoe, “I’m not okay with that.”",
+            "image": "images/review/no_consent/intentional_throw_07.png?v=ba3fa358f800",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Rex",
             "listener": "Zoe",
-            "statement": "I’m not okay with that.",
-            "text": "Rex tells Zoe, “I’m not okay with that.”",
-            "image": "images/intentional_throw_no_consent_response.png?v=ba3fa358f800",
-            "slide_number": 7
+            "slide_id": "intentional_throw:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/intentional_throw_06.png",
             "text": "Oh no! Zoe throws 2 of Rex’s cookies!",
+            "image": "images/review/no_consent/intentional_throw_08.png?v=0d404423216a",
             "base_slide_number": 6,
+            "base_image": "images/v3/intentional_throw_06.png",
             "slide_id": "intentional_throw:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/intentional_throw_07.png",
             "text": "Zoe still has 8 cookies. Rex now has 0 cookies.",
+            "image": "images/review/no_consent/intentional_throw_09.png?v=9fa5324fe7b2",
             "base_slide_number": 7,
+            "base_image": "images/v3/intentional_throw_07.png",
             "slide_id": "intentional_throw:base:7"
           }
         ],
-        "reminder_image": "images/v3/intentional_throw_07.png",
+        "reminder_image": "images/review/no_consent/intentional_throw_09.png?v=9fa5324fe7b2",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
-        "consent_knowledge_text": "I know you’re going to throw my cookies away.",
+        "consent_knowledge_text": "I know you’re going to throw my cookies.",
         "consent_response_text": "I’m not okay with that.",
-        "victim_statement": "I know you’re going to throw my cookies away. I’m not okay with that.",
+        "victim_statement": "I know you’re going to throw my cookies. I’m not okay with that.",
         "base_material_experiment": 1,
         "base_material_condition": "victim_not_careless",
         "base_event_text": "Zoe wants Rex to have fewer cookies. She deliberately throws away 2 of Rex's cookies."
@@ -1270,89 +1368,98 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/negligence_phone_01.png",
             "text": "This is Kai.",
+            "image": "images/review/no_consent/negligence_phone_01.png?v=49719d630533",
             "base_slide_number": 1,
+            "base_image": "images/v3/negligence_phone_01.png",
             "slide_id": "negligence_phone:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/negligence_phone_02.png",
             "text": "Kai has 8 cookies.",
+            "image": "images/review/no_consent/negligence_phone_02.png?v=23490e6fde67",
             "base_slide_number": 2,
+            "base_image": "images/v3/negligence_phone_02.png",
             "slide_id": "negligence_phone:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/negligence_phone_03.png",
             "text": "This is Ruby.",
+            "image": "images/review/no_consent/negligence_phone_03.png?v=b0143eececa8",
             "base_slide_number": 3,
+            "base_image": "images/v3/negligence_phone_03.png",
             "slide_id": "negligence_phone:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/negligence_phone_04.png",
             "text": "Ruby has 2 cookies.",
+            "image": "images/review/no_consent/negligence_phone_04.png?v=3c7389036987",
             "base_slide_number": 4,
+            "base_image": "images/v3/negligence_phone_04.png",
             "slide_id": "negligence_phone:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/negligence_phone_05.png",
             "text": "Kai is walking and staring at his phone.",
+            "image": "images/review/no_consent/negligence_phone_05.png?v=d786a5dd8536",
             "base_slide_number": 5,
+            "base_image": "images/v3/negligence_phone_05.png",
             "slide_id": "negligence_phone:base:5"
           },
           {
-            "slide_id": "negligence_phone:knowledge",
+            "slide_number": 6,
+            "text": "Ruby tells Kai, “I know you could bump into me while looking at your phone and knock my cookies onto the ground.”",
+            "image": "images/review/no_consent/negligence_phone_06.png?v=3359087318ef",
             "slide_role": "knowledge",
+            "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
             "speaker": "Ruby",
             "listener": "Kai",
-            "statement": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
-            "text": "Ruby tells Kai, “I know you could bump into me while looking at your phone and knock my cookies onto the ground.”",
-            "image": "images/negligence_phone_shared_knowledge.png?v=3359087318ef",
-            "slide_number": 6
+            "slide_id": "negligence_phone:knowledge"
           },
           {
-            "slide_id": "negligence_phone:response",
+            "slide_number": 7,
+            "text": "Ruby tells Kai, “I’m not okay with that.”",
+            "image": "images/review/no_consent/negligence_phone_07.png?v=a89c7a19ab84",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Ruby",
             "listener": "Kai",
-            "statement": "I’m not okay with that.",
-            "text": "Ruby tells Kai, “I’m not okay with that.”",
-            "image": "images/negligence_phone_no_consent_response.png?v=a89c7a19ab84",
-            "slide_number": 7
+            "slide_id": "negligence_phone:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/negligence_phone_06.png",
             "text": "Kai is walking and staring at his phone.",
+            "image": "images/review/no_consent/negligence_phone_08.png?v=b97055c1793a",
             "base_slide_number": 6,
+            "base_image": "images/v3/negligence_phone_06.png",
             "slide_id": "negligence_phone:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/negligence_phone_07.png",
             "text": "Oh no! Kai bumps into Ruby!",
+            "image": "images/review/no_consent/negligence_phone_09.png?v=fdefb13edca7",
             "base_slide_number": 7,
+            "base_image": "images/v3/negligence_phone_07.png",
             "slide_id": "negligence_phone:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/negligence_phone_08.png",
             "text": "2 of Ruby’s cookies fall!",
+            "image": "images/review/no_consent/negligence_phone_10.png?v=f524b509bb74",
             "base_slide_number": 8,
+            "base_image": "images/v3/negligence_phone_08.png",
             "slide_id": "negligence_phone:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/negligence_phone_09.png",
             "text": "Kai still has 8 cookies. Ruby now has 0 cookies.",
+            "image": "images/review/no_consent/negligence_phone_11.png?v=dcbfdc65ffd0",
             "base_slide_number": 9,
+            "base_image": "images/v3/negligence_phone_09.png",
             "slide_id": "negligence_phone:base:9"
           }
         ],
-        "reminder_image": "images/v3/negligence_phone_09.png",
+        "reminder_image": "images/review/no_consent/negligence_phone_11.png?v=dcbfdc65ffd0",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
         "consent_knowledge_text": "I know you could bump into me while looking at your phone and knock my cookies onto the ground.",
@@ -1380,96 +1487,106 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/strict_liability_alligator_01.png",
             "text": "This is Sam.",
+            "image": "images/review/no_consent/strict_liability_alligator_01.png?v=c76a316b83e0",
             "base_slide_number": 1,
+            "base_image": "images/v3/strict_liability_alligator_01.png",
             "slide_id": "strict_liability_alligator:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/strict_liability_alligator_02.png",
             "text": "Sam has 8 cookies.",
+            "image": "images/review/no_consent/strict_liability_alligator_02.png?v=0e6ca6c9ed12",
             "base_slide_number": 2,
+            "base_image": "images/v3/strict_liability_alligator_02.png",
             "slide_id": "strict_liability_alligator:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/strict_liability_alligator_03.png",
             "text": "Sam has an alligator.",
+            "image": "images/review/no_consent/strict_liability_alligator_03.png?v=35739439266a",
             "base_slide_number": 3,
+            "base_image": "images/v3/strict_liability_alligator_03.png",
             "slide_id": "strict_liability_alligator:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/strict_liability_alligator_04.png",
             "text": "This is Ella.",
+            "image": "images/review/no_consent/strict_liability_alligator_04.png?v=4a614e827656",
             "base_slide_number": 4,
+            "base_image": "images/v3/strict_liability_alligator_04.png",
             "slide_id": "strict_liability_alligator:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/strict_liability_alligator_05.png",
             "text": "Ella has 2 cookies.",
+            "image": "images/review/no_consent/strict_liability_alligator_05.png?v=1c2d6019f5db",
             "base_slide_number": 5,
+            "base_image": "images/v3/strict_liability_alligator_05.png",
             "slide_id": "strict_liability_alligator:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/strict_liability_alligator_06.png",
             "text": "Sam puts his alligator inside the house.",
+            "image": "images/review/no_consent/strict_liability_alligator_06.png?v=6f2757015480",
             "base_slide_number": 6,
+            "base_image": "images/v3/strict_liability_alligator_06.png",
             "slide_id": "strict_liability_alligator:base:6"
           },
           {
             "slide_number": 7,
-            "image": "images/v3/strict_liability_alligator_07.png",
             "text": "Sam locks the door and checks the lock.",
+            "image": "images/review/no_consent/strict_liability_alligator_07.png?v=709d07675e56",
             "base_slide_number": 7,
+            "base_image": "images/v3/strict_liability_alligator_07.png",
             "slide_id": "strict_liability_alligator:base:7"
           },
           {
-            "slide_id": "strict_liability_alligator:knowledge",
+            "slide_number": 8,
+            "text": "Ella tells Sam, “I know your alligator could escape from the house and eat my cookies.”",
+            "image": "images/review/no_consent/strict_liability_alligator_08.png?v=c089f6254d52",
             "slide_role": "knowledge",
+            "statement": "I know your alligator could escape from the house and eat my cookies.",
             "speaker": "Ella",
             "listener": "Sam",
-            "statement": "I know your alligator could escape from the house and eat my cookies.",
-            "text": "Ella tells Sam, “I know your alligator could escape from the house and eat my cookies.”",
-            "image": "images/strict_liability_alligator_shared_knowledge.png?v=6edc4ea6d006",
-            "slide_number": 8
+            "slide_id": "strict_liability_alligator:knowledge"
           },
           {
-            "slide_id": "strict_liability_alligator:response",
+            "slide_number": 9,
+            "text": "Ella tells Sam, “I’m not okay with that.”",
+            "image": "images/review/no_consent/strict_liability_alligator_09.png?v=304dbad66fa2",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Ella",
             "listener": "Sam",
-            "statement": "I’m not okay with that.",
-            "text": "Ella tells Sam, “I’m not okay with that.”",
-            "image": "images/strict_liability_alligator_no_consent_response.png?v=304dbad66fa2",
-            "slide_number": 9
+            "slide_id": "strict_liability_alligator:response"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/strict_liability_alligator_08.png",
             "text": "Oh no! The alligator breaks out of the house!",
+            "image": "images/review/no_consent/strict_liability_alligator_10.png?v=8dfda5ebeb15",
             "base_slide_number": 8,
+            "base_image": "images/v3/strict_liability_alligator_08.png",
             "slide_id": "strict_liability_alligator:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/strict_liability_alligator_09.png",
             "text": "The alligator eats 2 of Ella’s cookies!",
+            "image": "images/review/no_consent/strict_liability_alligator_11.png?v=a41d586c1474",
             "base_slide_number": 9,
+            "base_image": "images/v3/strict_liability_alligator_09.png",
             "slide_id": "strict_liability_alligator:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/strict_liability_alligator_10.png",
             "text": "Sam still has 8 cookies. Ella now has 0 cookies.",
+            "image": "images/review/no_consent/strict_liability_alligator_12.png?v=a3b0a594cb9a",
             "base_slide_number": 10,
+            "base_image": "images/v3/strict_liability_alligator_10.png",
             "slide_id": "strict_liability_alligator:base:10"
           }
         ],
-        "reminder_image": "images/v3/strict_liability_alligator_10.png",
+        "reminder_image": "images/review/no_consent/strict_liability_alligator_12.png?v=a3b0a594cb9a",
         "story_cookie_artwork_count": 7,
         "containment": "locked_house",
         "material_status": "revised_draft_for_review",
@@ -1499,96 +1616,106 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/strict_liability_wolf_01.png",
             "text": "This is Catherine.",
+            "image": "images/review/no_consent/strict_liability_wolf_01.png?v=3fa388b7851f",
             "base_slide_number": 1,
+            "base_image": "images/v3/strict_liability_wolf_01.png",
             "slide_id": "strict_liability_wolf:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/strict_liability_wolf_02.png",
             "text": "Catherine has 8 cookies.",
+            "image": "images/review/no_consent/strict_liability_wolf_02.png?v=c3ba5699e7d3",
             "base_slide_number": 2,
+            "base_image": "images/v3/strict_liability_wolf_02.png",
             "slide_id": "strict_liability_wolf:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/strict_liability_wolf_03.png",
             "text": "Catherine has a pet wolf.",
+            "image": "images/review/no_consent/strict_liability_wolf_03.png?v=e4e06e2cd4c2",
             "base_slide_number": 3,
+            "base_image": "images/v3/strict_liability_wolf_03.png",
             "slide_id": "strict_liability_wolf:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/strict_liability_wolf_04.png",
             "text": "This is Andy.",
+            "image": "images/review/no_consent/strict_liability_wolf_04.png?v=73a72d4fc383",
             "base_slide_number": 4,
+            "base_image": "images/v3/strict_liability_wolf_04.png",
             "slide_id": "strict_liability_wolf:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/strict_liability_wolf_05.png",
             "text": "Andy has 2 cookies.",
+            "image": "images/review/no_consent/strict_liability_wolf_05.png?v=8d18fe4e20d6",
             "base_slide_number": 5,
+            "base_image": "images/v3/strict_liability_wolf_05.png",
             "slide_id": "strict_liability_wolf:base:5"
           },
           {
             "slide_number": 6,
-            "image": "images/v3/strict_liability_wolf_06.png",
             "text": "Catherine puts her wolf inside the garage.",
+            "image": "images/review/no_consent/strict_liability_wolf_06.png?v=586e08c5c088",
             "base_slide_number": 6,
+            "base_image": "images/v3/strict_liability_wolf_06.png",
             "slide_id": "strict_liability_wolf:base:6"
           },
           {
             "slide_number": 7,
-            "image": "images/v3/strict_liability_wolf_07.png",
             "text": "Catherine locks the door and checks the lock.",
+            "image": "images/review/no_consent/strict_liability_wolf_07.png?v=18465ee836b4",
             "base_slide_number": 7,
+            "base_image": "images/v3/strict_liability_wolf_07.png",
             "slide_id": "strict_liability_wolf:base:7"
           },
           {
-            "slide_id": "strict_liability_wolf:knowledge",
+            "slide_number": 8,
+            "text": "Andy tells Catherine, “I know your wolf could escape from the garage and eat my cookies.”",
+            "image": "images/review/no_consent/strict_liability_wolf_08.png?v=3c6edc5f63d5",
             "slide_role": "knowledge",
+            "statement": "I know your wolf could escape from the garage and eat my cookies.",
             "speaker": "Andy",
             "listener": "Catherine",
-            "statement": "I know your wolf could escape from the garage and eat my cookies.",
-            "text": "Andy tells Catherine, “I know your wolf could escape from the garage and eat my cookies.”",
-            "image": "images/strict_liability_wolf_shared_knowledge.png?v=af90157ce569",
-            "slide_number": 8
+            "slide_id": "strict_liability_wolf:knowledge"
           },
           {
-            "slide_id": "strict_liability_wolf:response",
+            "slide_number": 9,
+            "text": "Andy tells Catherine, “I’m not okay with that.”",
+            "image": "images/review/no_consent/strict_liability_wolf_09.png?v=7f01a424dbd1",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Andy",
             "listener": "Catherine",
-            "statement": "I’m not okay with that.",
-            "text": "Andy tells Catherine, “I’m not okay with that.”",
-            "image": "images/strict_liability_wolf_no_consent_response.png?v=7f01a424dbd1",
-            "slide_number": 9
+            "slide_id": "strict_liability_wolf:response"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/strict_liability_wolf_08.png",
             "text": "Oh no! The wolf breaks out of the garage!",
+            "image": "images/review/no_consent/strict_liability_wolf_10.png?v=24bb6be51807",
             "base_slide_number": 8,
+            "base_image": "images/v3/strict_liability_wolf_08.png",
             "slide_id": "strict_liability_wolf:base:8"
           },
           {
             "slide_number": 11,
-            "image": "images/v3/strict_liability_wolf_09.png",
             "text": "The wolf eats 2 of Andy’s cookies!",
+            "image": "images/review/no_consent/strict_liability_wolf_11.png?v=c6fb2cbe5c9f",
             "base_slide_number": 9,
+            "base_image": "images/v3/strict_liability_wolf_09.png",
             "slide_id": "strict_liability_wolf:base:9"
           },
           {
             "slide_number": 12,
-            "image": "images/v3/strict_liability_wolf_10.png",
             "text": "Catherine still has 8 cookies. Andy now has 0 cookies.",
+            "image": "images/review/no_consent/strict_liability_wolf_12.png?v=c09c0dc40087",
             "base_slide_number": 10,
+            "base_image": "images/v3/strict_liability_wolf_10.png",
             "slide_id": "strict_liability_wolf:base:10"
           }
         ],
-        "reminder_image": "images/v3/strict_liability_wolf_10.png",
+        "reminder_image": "images/review/no_consent/strict_liability_wolf_12.png?v=c09c0dc40087",
         "story_cookie_artwork_count": 7,
         "containment": "locked_garage",
         "material_status": "revised_draft_for_review",
@@ -1618,82 +1745,90 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/control_wind_01.png",
             "text": "This is Katie.",
+            "image": "images/review/no_consent/control_wind_01.png?v=5f998c1a6a26",
             "base_slide_number": 1,
+            "base_image": "images/v3/control_wind_01.png",
             "slide_id": "control_wind:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/control_wind_02.png",
             "text": "Katie has 2 cookies.",
+            "image": "images/review/no_consent/control_wind_02.png?v=c7b45311c524",
             "base_slide_number": 2,
+            "base_image": "images/v3/control_wind_02.png",
             "slide_id": "control_wind:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/control_wind_03.png",
             "text": "This is Tony.",
+            "image": "images/review/no_consent/control_wind_03.png?v=1f9b9391e097",
             "base_slide_number": 3,
+            "base_image": "images/v3/control_wind_03.png",
             "slide_id": "control_wind:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/control_wind_04.png",
             "text": "Tony has 8 cookies.",
+            "image": "images/review/no_consent/control_wind_04.png?v=c5b4698b5f66",
             "base_slide_number": 4,
+            "base_image": "images/v3/control_wind_04.png",
             "slide_id": "control_wind:base:4"
           },
           {
             "slide_number": 5,
-            "image": "images/v3/control_wind_05.png",
             "text": "Katie and Tony are having a picnic.",
+            "image": "images/review/no_consent/control_wind_05.png?v=ee222f8f7312",
             "base_slide_number": 5,
+            "base_image": "images/v3/control_wind_05.png",
             "slide_id": "control_wind:base:5"
           },
           {
-            "slide_id": "control_wind:knowledge",
+            "slide_number": 6,
+            "text": "Katie tells Tony, “I know the wind could blow my cookies away.”",
+            "image": "images/review/no_consent/control_wind_06.png?v=b7afe27506ee",
             "slide_role": "knowledge",
+            "statement": "I know the wind could blow my cookies away.",
             "speaker": "Katie",
             "listener": "Tony",
-            "statement": "I know the wind could blow my cookies away.",
-            "text": "Katie tells Tony, “I know the wind could blow my cookies away.”",
-            "image": "images/control_wind_shared_knowledge.png?v=a365aed3cc25",
-            "slide_number": 6
+            "slide_id": "control_wind:knowledge"
           },
           {
-            "slide_id": "control_wind:response",
+            "slide_number": 7,
+            "text": "Katie tells Tony, “I’m not okay with that.”",
+            "image": "images/review/no_consent/control_wind_07.png?v=c30d2ab38074",
             "slide_role": "response",
+            "statement": "I’m not okay with that.",
             "speaker": "Katie",
             "listener": "Tony",
-            "statement": "I’m not okay with that.",
-            "text": "Katie tells Tony, “I’m not okay with that.”",
-            "image": "images/control_wind_no_consent_response.png?v=c30d2ab38074",
-            "slide_number": 7
+            "slide_id": "control_wind:response"
           },
           {
             "slide_number": 8,
-            "image": "images/v3/control_wind_06.png",
             "text": "Oh no! A gust of wind blows.",
+            "image": "images/review/no_consent/control_wind_08.png?v=127f73c7f4d6",
             "base_slide_number": 6,
+            "base_image": "images/v3/control_wind_06.png",
             "slide_id": "control_wind:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/control_wind_07.png",
             "text": "2 of Katie’s cookies blow away!",
+            "image": "images/review/no_consent/control_wind_09.png?v=a791ebc83c71",
             "base_slide_number": 7,
+            "base_image": "images/v3/control_wind_07.png",
             "slide_id": "control_wind:base:7"
           },
           {
             "slide_number": 10,
-            "image": "images/v3/control_wind_08.png",
             "text": "Tony still has 8 cookies. Katie now has 0 cookies.",
+            "image": "images/review/no_consent/control_wind_10.png?v=3d5e71124325",
             "base_slide_number": 8,
+            "base_image": "images/v3/control_wind_08.png",
             "slide_id": "control_wind:base:8"
           }
         ],
-        "reminder_image": "images/v3/control_wind_08.png",
+        "reminder_image": "images/review/no_consent/control_wind_10.png?v=3d5e71124325",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
         "consent_knowledge_text": "I know the wind could blow my cookies away.",
@@ -1721,75 +1856,82 @@ globalThis.TORT_CONSENT_CONDITIONS = {
         "slides": [
           {
             "slide_number": 1,
-            "image": "images/v3/control_squirrel_01.png",
             "text": "This is Nora.",
+            "image": "images/review/no_consent/control_squirrel_01.png?v=214295610543",
             "base_slide_number": 1,
+            "base_image": "images/v3/control_squirrel_01.png",
             "slide_id": "control_squirrel:base:1"
           },
           {
             "slide_number": 2,
-            "image": "images/v3/control_squirrel_02.png",
             "text": "Nora has 8 cookies.",
+            "image": "images/review/no_consent/control_squirrel_02.png?v=c6464445d064",
             "base_slide_number": 2,
+            "base_image": "images/v3/control_squirrel_02.png",
             "slide_id": "control_squirrel:base:2"
           },
           {
             "slide_number": 3,
-            "image": "images/v3/control_squirrel_03.png",
             "text": "This is Eric.",
+            "image": "images/review/no_consent/control_squirrel_03.png?v=a20baa2e9cab",
             "base_slide_number": 3,
+            "base_image": "images/v3/control_squirrel_03.png",
             "slide_id": "control_squirrel:base:3"
           },
           {
             "slide_number": 4,
-            "image": "images/v3/control_squirrel_04.png",
             "text": "Eric has 2 cookies.",
+            "image": "images/review/no_consent/control_squirrel_04.png?v=b1e164d3c82b",
             "base_slide_number": 4,
+            "base_image": "images/v3/control_squirrel_04.png",
             "slide_id": "control_squirrel:base:4"
           },
           {
-            "slide_id": "control_squirrel:knowledge",
-            "slide_role": "knowledge",
-            "speaker": "Eric",
-            "listener": "Nora",
-            "statement": "I know a squirrel could eat my cookies.",
-            "text": "Eric tells Nora, “I know a squirrel could eat my cookies.”",
-            "image": "images/control_squirrel_shared_knowledge.png?v=9fdf7a600abb",
-            "slide_number": 5
-          },
-          {
-            "slide_id": "control_squirrel:response",
-            "slide_role": "response",
-            "speaker": "Eric",
-            "listener": "Nora",
-            "statement": "I’m not okay with that.",
-            "text": "Eric tells Nora, “I’m not okay with that.”",
-            "image": "images/control_squirrel_no_consent_response.png?v=75c3449ead8b",
-            "slide_number": 6
-          },
-          {
-            "slide_number": 7,
-            "image": "images/v3/control_squirrel_05.png",
+            "slide_number": 5,
             "text": "Eric is tying his shoelaces.",
+            "image": "images/review/no_consent/control_squirrel_05.png?v=3581dee8bdb6",
             "base_slide_number": 5,
+            "base_image": "images/v3/control_squirrel_05.png",
             "slide_id": "control_squirrel:base:5"
           },
           {
+            "slide_number": 6,
+            "text": "Eric tells Nora, “I know a squirrel could eat my cookies.”",
+            "image": "images/review/no_consent/control_squirrel_06.png?v=00340e25a237",
+            "slide_role": "knowledge",
+            "statement": "I know a squirrel could eat my cookies.",
+            "speaker": "Eric",
+            "listener": "Nora",
+            "slide_id": "control_squirrel:knowledge"
+          },
+          {
+            "slide_number": 7,
+            "text": "Eric tells Nora, “I’m not okay with that.”",
+            "image": "images/review/no_consent/control_squirrel_07.png?v=75c3449ead8b",
+            "slide_role": "response",
+            "statement": "I’m not okay with that.",
+            "speaker": "Eric",
+            "listener": "Nora",
+            "slide_id": "control_squirrel:response"
+          },
+          {
             "slide_number": 8,
-            "image": "images/v3/control_squirrel_06.png",
             "text": "Oh no! A squirrel eats 2 of Eric’s cookies!",
+            "image": "images/review/no_consent/control_squirrel_08.png?v=a779c47c6082",
             "base_slide_number": 6,
+            "base_image": "images/v3/control_squirrel_06.png",
             "slide_id": "control_squirrel:base:6"
           },
           {
             "slide_number": 9,
-            "image": "images/v3/control_squirrel_07.png",
             "text": "Nora still has 8 cookies. Eric now has 0 cookies.",
+            "image": "images/review/no_consent/control_squirrel_09.png?v=6e7c6d677de9",
             "base_slide_number": 7,
+            "base_image": "images/v3/control_squirrel_07.png",
             "slide_id": "control_squirrel:base:7"
           }
         ],
-        "reminder_image": "images/v3/control_squirrel_07.png",
+        "reminder_image": "images/review/no_consent/control_squirrel_09.png?v=6e7c6d677de9",
         "story_cookie_artwork_count": 7,
         "consent_condition": "no_consent",
         "consent_knowledge_text": "I know a squirrel could eat my cookies.",

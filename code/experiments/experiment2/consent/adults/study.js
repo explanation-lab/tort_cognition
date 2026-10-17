@@ -37,6 +37,7 @@ const CLIENT_PATH = '../../../experiment1/adults/between-subjects/explanation-la
     condition,consent_condition:condition,condition_assignment:'between_participant',
     material_experiment:1,base_material_experiment:1,base_material_condition:'victim_not_careless',
     experiment_version:EXPERIMENT_VERSION,study_version:EXPERIMENT_VERSION,
+    materials_revision:config.materialsRevision||null,
     review_mode:review,valid_participant_data:!review};
   let participantConsented = false;
   const started = performance.now();

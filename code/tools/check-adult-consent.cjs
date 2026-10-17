@@ -90,7 +90,8 @@ function checkMaterials(){
  const material=JSON.parse(fs.readFileSync(path.dirname(entry)+'/materials.json','utf8'));
  const baseline=JSON.parse(fs.readFileSync(root+'/docs/scenarios.json','utf8')).scenarios.filter(s=>s.experiment===1);
  const manifest=JSON.parse(fs.readFileSync(entry+'/assets-manifest.json','utf8'));
- assert.equal(Object.keys(manifest.images).length,24);
+ const edited=manifest.source_mode==='edited_case_decks';
+ assert.equal(Object.keys(manifest.images).length,edited?baseline.reduce((n,s)=>n+2*(s.slides.length+2),0):24);
  for(const item of material.cases){
   const original=baseline.find(s=>s.scenario_key===item.scenario_key);
   const yes=context.TORT_CONSENT_CONDITIONS.consent.scenarios.find(s=>s.scenario_key===item.scenario_key);
@@ -98,22 +99,26 @@ function checkMaterials(){
   for(const [condition,scenario]of[['consent',yes],['no_consent',no]]){
    assert.equal(scenario.slides.length,original.slides.length+2);
    const old=scenario.slides.filter(s=>s.base_slide_number);
-   assert.deepEqual(old.map(s=>[s.base_slide_number,s.text,s.image]),original.slides.map(s=>[s.slide_number,s.text,s.image]));
+   if(edited){
+    assert.deepEqual(old.map(s=>[s.base_slide_number,s.base_image]),original.slides.map(s=>[s.slide_number,s.image]));
+    const saved=manifest.decks[condition+'-'+item.scenario_key].slides;
+    assert.deepEqual(JSON.parse(JSON.stringify(scenario.slides.map(s=>[s.text,s.image.split('?')[0],s.slide_number]))),saved.map(s=>[s.text,s.image,s.slide_number]));
+   }else assert.deepEqual(old.map(s=>[s.base_slide_number,s.text,s.image]),original.slides.map(s=>[s.slide_number,s.text,s.image]));
    const index=scenario.slides.findIndex(s=>s.slide_role==='knowledge');
    assert.equal(index,item.insert_after_base_slide);assert.equal(scenario.slides[index+1].slide_role,'response');
    assert.equal(scenario.slides[index].statement,item.knowledge_text);
    assert.equal(scenario.slides[index+1].statement,material.responses[condition]);
    assert.equal(scenario.slides[index].speaker,original.v_name);assert.equal(scenario.slides[index].listener,original.p_name);
-   assert.equal(scenario.reminder_image,original.reminder_image);
+   assert.equal(scenario.reminder_image,edited?scenario.slides.find(s=>s.base_image===original.reminder_image).image:original.reminder_image);
    for(const slide of scenario.slides){const p=path.resolve(entry,context.TORT_CONSENT_CONDITIONS[condition].assetRoot,slide.image.split('?')[0]);assert(fs.existsSync(p),'Missing image: '+p);}
   }
-  for(let i=0;i<yes.slides.length;i++){const a=JSON.parse(JSON.stringify(yes.slides[i])),b=JSON.parse(JSON.stringify(no.slides[i]));if(a.slide_role==='response'){assert.equal(a.statement,b.statement.replace(' not',''));continue;}assert.deepEqual(a,b);}
+  for(let i=0;i<yes.slides.length;i++){const a=JSON.parse(JSON.stringify(yes.slides[i])),b=JSON.parse(JSON.stringify(no.slides[i]));if(a.slide_role==='response'){assert.equal(a.statement,b.statement.replace(' not',''));continue;}if(edited){delete a.image;delete b.image;}assert.deepEqual(a,b);}
   assert.equal(hash(fs.readFileSync(root+'/'+original.deck)),original.deck_sha256);
  }
  for(const [name,image]of Object.entries(manifest.images))assert.equal(hash(fs.readFileSync(entry+'/'+name)),image.sha256);
  assert.equal(Object.keys(manifest.decks).length,16);
  for(const deck of Object.values(manifest.decks)){const original=baseline.find(s=>s.scenario_key===deck.scenario_key);assert.equal(deck.slides.length,original.slides.length+2);assert.equal(hash(fs.readFileSync(entry+'/'+deck.path)),deck.sha256);for(const slide of deck.slides)if(slide.slide_role)assert.equal(manifest.images[slide.image].statement,slide.statement);}
- for(const image of Object.values(manifest.images)){assert.deepEqual(image.caption_frame,{left:80,top:604,width:1120,height:96});assert.equal(image.font_family,'Arial');const item=material.cases.find(item=>item.scenario_key===image.scenario_key);assert.equal(image.source_scene_slide,item.background_base_slide);}
+ for(const image of Object.values(manifest.images)){if(edited){assert.equal(hash(fs.readFileSync(entry+'/'+image.source_deck)),image.source_deck_sha256);assert(image.source_slide>0);assert(image.caption.length>0);}else{assert.deepEqual(image.caption_frame,{left:80,top:604,width:1120,height:96});assert.equal(image.font_family,'Arial');const item=material.cases.find(item=>item.scenario_key===image.scenario_key);assert.equal(image.source_scene_slide,item.background_base_slide);}}
  for(const scenario of baseline)for(const slide of scenario.slides)assert.equal(hash(fs.readFileSync(entry+'/'+slide.image)),hash(fs.readFileSync(root+'/code/experiments/experiment1/adults/'+slide.image)));
  assert(!fs.readFileSync(entry+'/index.html','utf8').includes('review.js'));
 }

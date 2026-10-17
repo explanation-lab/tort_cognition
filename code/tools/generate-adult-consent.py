@@ -26,7 +26,9 @@ def generate():
     baseline = {s['scenario_key']: s for s in source if s['experiment'] == 1}
     texts = json.loads((ROOT / 'docs/narration/source.json').read_text())
     manifest_path = ADULT / 'assets-manifest.json'
-    assets = json.loads(manifest_path.read_text())['images'] if manifest_path.exists() else {}
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+    assets = manifest.get('images', {})
+    edited = manifest.get('source_mode') == 'edited_case_decks'
     names = {'images/michael.png', 'images/claire.png', 'images/pilot_cookie_jar_empty.png'}
     for scenario in baseline.values():
         names.update(slide['image'] for slide in scenario['slides'])
@@ -78,6 +80,19 @@ def generate():
                         })
             for index, slide in enumerate(slides, 1):
                 slide['slide_number'] = index
+            if edited:
+                # Saved PowerPoints define every rendered slide and its order.
+                # Never rebuild or overwrite those decks from the older baseline.
+                deck = manifest['decks'][condition + '-' + item['scenario_key']]
+                slides = deepcopy(deck['slides'])
+                for slide in slides:
+                    slide['slide_id'] = (f"{item['scenario_key']}:{slide['slide_role']}"
+                                         if slide.get('slide_role') else
+                                         f"{item['scenario_key']}:base:{slide['base_slide_number']}")
+                    slide['image'] += '?v=' + assets[slide['image']]['sha256'][:12]
+                reminder = next(s for s in slides
+                                if s.get('base_image') == original['reminder_image'])
+                scenario['reminder_image'] = reminder['image']
             scenario['slides'] = slides
             # The on-screen allocation reminder keeps its original image. Its
             # machine-readable description also records the prior statement.
@@ -92,6 +107,7 @@ def generate():
             'assetRoot': BASE_ASSET_ROOT,
             'sessionNamespace': f"tort_adult_consent_v1_{condition}_",
             'studyVersion': materials['study_version'],
+            'materialsRevision': manifest.get('materials_revision'),
             'scenarios': scenarios, 'texts': texts, 'clips': {},
         }
     ADULT.mkdir(parents=True, exist_ok=True)
@@ -107,29 +123,50 @@ def generate():
             if 'consent-' + key not in manifest['decks']:
                 continue
             scenario = baseline[key]
-            def image(role, condition='shared'):
-                name = f'images/{key}_{condition}_{role}.png'
+            def image(role, condition='consent'):
+                if edited:
+                    slide = next(s for s in manifest['decks'][condition + '-' + key]['slides']
+                                 if s.get('slide_role') == role)
+                    name, caption = slide['image'], slide['text']
+                else:
+                    name = f"images/{key}_{'shared' if role == 'knowledge' else condition}_{role}.png"
+                    caption = f"{scenario['v_name']}: {item['knowledge_text'] if role == 'knowledge' else materials['responses'][condition]}"
                 version = assets[name]['sha256'][:12]
                 return (f'<a href="{name}?v={version}" target="_blank">'
                         f'<img width="960" height="540" loading="lazy" src="{name}?v={version}" '
-                        f'alt="{escape(scenario["v_name"])}: {escape(item["knowledge_text"] if role == "knowledge" else materials["responses"][condition])}"></a>')
+                        f'alt="{escape(caption)}"></a>')
             before = scenario['slides'][item['insert_after_base_slide'] - 1]
             after = scenario['slides'][item['insert_after_base_slide']]
+            knowledge = '<figure class="knowledge"><figcaption>Same knowledge statement in both conditions</figcaption>' + image('knowledge') + '</figure>'
+            if edited:
+                current = manifest['decks']['consent-' + key]['slides']
+                position = next(i for i, s in enumerate(current) if s.get('slide_role') == 'knowledge')
+                before, after = current[position - 1], current[position + 2]
+                yes = next(s for s in current if s.get('slide_role') == 'knowledge')
+                no = next(s for s in manifest['decks']['no_consent-' + key]['slides'] if s.get('slide_role') == 'knowledge')
+                if assets[yes['image']]['sha256'] != assets[no['image']]['sha256']:
+                    knowledge = ('<div class="responses"><figure><figcaption>Knowledge statement: consent</figcaption>'
+                                 + image('knowledge', 'consent') + '</figure><figure><figcaption>Knowledge statement: no consent</figcaption>'
+                                 + image('knowledge', 'no_consent') + '</figure></div>')
+                before, after = [dict(s, image=s['image'] + '?v=' + assets[s['image']]['sha256'][:12])
+                                 for s in [before, after]]
+            yes_deck = manifest['decks']['consent-' + key]
+            no_deck = manifest['decks']['no_consent-' + key]
             sections.append(f'''<section id="{key}">
 <h2>{escape(scenario['event_title'])}</h2>
 <p><a href="pilot-preview.html?condition=consent&amp;case={key}&amp;autostart=1">Play consent case</a> · <a href="pilot-preview.html?condition=no_consent&amp;case={key}&amp;autostart=1">Play no-consent case</a></p>
-<figure class="knowledge"><figcaption>Same knowledge statement in both conditions</figcaption>{image('knowledge')}</figure>
+{knowledge}
 <div class="responses"><figure><figcaption>Consent</figcaption>{image('response','consent')}</figure><figure><figcaption>No consent</figcaption>{image('response','no_consent')}</figure></div>
-<p>Complete editable case: <a href="slides/consent/{key}.pptx">Consent PowerPoint</a> · <a href="slides/no_consent/{key}.pptx">No-consent PowerPoint</a></p>
-<details><summary>Original slides immediately before and after the new statements</summary><div class="responses"><figure><figcaption>Before</figcaption><img width="960" height="540" loading="lazy" src="{before['image']}" alt="{escape(before['text'])}"></figure><figure><figcaption>After</figcaption><img width="960" height="540" loading="lazy" src="{after['image']}" alt="{escape(after['text'])}"></figure></div></details>
+<p>Complete editable case: <a href="{yes_deck['path']}?v={yes_deck['sha256'][:12]}">Consent PowerPoint</a> · <a href="{no_deck['path']}?v={no_deck['sha256'][:12]}">No-consent PowerPoint</a></p>
+<details><summary>Story slides immediately before and after the statements</summary><div class="responses"><figure><figcaption>Before</figcaption><img width="960" height="540" loading="lazy" src="{before['image']}" alt="{escape(before['text'])}"></figure><figure><figcaption>After</figcaption><img width="960" height="540" loading="lazy" src="{after['image']}" alt="{escape(after['text'])}"></figure></div></details>
 </section>''')
         if sections:
             navigation = ' · '.join(f'<a href="#{item["scenario_key"]}">{escape(baseline[item["scenario_key"]]["v_name"])}</a>' for item in materials['cases'])
             (ADULT / 'materials-preview.html').write_text('''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Adult consent cases — slide review</title>
 <style>body{font:18px/1.5 system-ui;color:#263342;max-width:1140px;margin:36px auto;padding:0 20px}h1{font-size:30px}h2{font-size:25px}a{color:#14578c}nav{line-height:2}section{margin:46px 0 70px;border-top:1px solid #d8e0e7;padding-top:16px}figure{margin:12px 0}figcaption{font-size:16px;margin:8px 0;font-weight:600}img{width:100%;height:auto;display:block;outline:1px solid #d8e0e7}.knowledge{max-width:960px;margin:16px auto}.responses{display:grid;grid-template-columns:1fr 1fr;gap:20px}summary{cursor:pointer}details{margin:20px 0}@media(max-width:700px){.responses{grid-template-columns:1fr}body{font-size:16px}}</style></head><body>
-<h1>Adult consent cases: first slide draft</h1>
-<p>The new statements use copied original scenes and the original white caption box at the bottom. Review their placement and how each conversation fits the story. Click a slide to enlarge it.</p>
+<h1>Adult consent cases: slide review</h1>
+<p>Review the statements and how each conversation fits the story. Click a slide to enlarge it. The playable cases and PowerPoint downloads use the saved case decks.</p>
 <p><a href="pilot-preview.html?condition=consent">Full study preview</a></p>
 <nav>''' + navigation + '</nav>' + '\n'.join(sections) + '</body></html>\n')
     for name in ['index.html', 'pilot-preview.html']:

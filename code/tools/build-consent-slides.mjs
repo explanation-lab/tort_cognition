@@ -13,6 +13,8 @@ const study=path.join(root,'code/experiments/experiment2/consent');
 const adult=path.join(study,'adults');
 const build=path.join(root,'code/tools/generated/adult-consent-format');
 const material=JSON.parse(await fs.readFile(path.join(study,'materials.json'),'utf8'));
+if(material.artwork_status==='user_edited_case_decks_for_review')
+ throw Error('Saved PowerPoints contain manual edits. Use refresh-consent-review.py to preserve them.');
 const base=JSON.parse(await fs.readFile(path.join(root,'docs/scenarios.json'),'utf8')).scenarios.filter(s=>s.experiment===1);
 const skill=process.env.TORT_PRESENTATIONS_SKILL,python=process.env.TORT_RUNTIME_PYTHON;
 if(!skill||!python)throw Error('Set TORT_PRESENTATIONS_SKILL and TORT_RUNTIME_PYTHON to the bundled presentation skill and Python.');

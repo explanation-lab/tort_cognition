@@ -11,7 +11,7 @@
   "cases": [
     {
       "scenario_key": "negligence_spill",
-      "insert_after_base_slide": 5,
+      "insert_after_base_slide": 8,
       "knowledge_text": "I know I could slip on the water you leave on the floor and drop my cookies.",
       "background_base_slide": 8
     },
@@ -24,7 +24,7 @@
     {
       "scenario_key": "intentional_throw",
       "insert_after_base_slide": 5,
-      "knowledge_text": "I know you’re going to throw my cookies away.",
+      "knowledge_text": "I know you’re going to throw my cookies.",
       "background_base_slide": 5
     },
     {
@@ -53,10 +53,10 @@
     },
     {
       "scenario_key": "control_squirrel",
-      "insert_after_base_slide": 4,
+      "insert_after_base_slide": 5,
       "knowledge_text": "I know a squirrel could eat my cookies.",
       "background_base_slide": 5
     }
   ],
-  "artwork_status": "copied_scene_draft_for_review"
+  "artwork_status": "user_edited_case_decks_for_review"
 }

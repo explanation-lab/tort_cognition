@@ -68,9 +68,13 @@ def stage(consent_review=True):
         review_paths = [review / name for name in [
             'materials-preview.html', 'pilot-preview.html', 'configuration.js',
             'study.js', 'review.js', 'consent-runtime.js', 'assets-manifest.json']]
-        review_paths.extend(p for p in (review / 'images').rglob('*')
-                            if p.is_file() and p.suffix.lower() in {'.png', '.jpg', '.jpeg'})
         asset_manifest = json.loads((review / 'assets-manifest.json').read_text())
+        if asset_manifest.get('source_mode') == 'edited_case_decks':
+            review_paths.extend(review / name for name in
+                                list(asset_manifest['images']) + asset_manifest['support_images'])
+        else:
+            review_paths.extend(p for p in (review / 'images').rglob('*')
+                                if p.is_file() and p.suffix.lower() in {'.png', '.jpg', '.jpeg'})
         review_paths.extend(review / deck['path'] for deck in asset_manifest['decks'].values())
         for source in sorted(review_paths):
             if not source.is_file() or source.is_symlink():
