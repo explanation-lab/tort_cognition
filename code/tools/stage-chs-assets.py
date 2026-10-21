@@ -109,6 +109,22 @@ def stage(consent_review=True, consent_pilot=True):
             'assignment_type': 'between_participant', 'collection_control': 'study_console',
             'files': pilot_records,
         }, indent=2) + '\n')
+    # Add combined-child media without replacing any deployed study URL.
+    child_assets = ROOT / 'code/experiments/experiment1/children/assets'
+    combined_records = []
+    for source in sorted(child_assets.rglob('*')):
+        if not source.is_file():
+            continue
+        if source.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.m4a'} or source.is_symlink():
+            raise ValueError(f'Unexpected child media: {source}')
+        relative = source.relative_to(ROOT)
+        target = OUTPUT / relative
+        if target.exists():
+            raise ValueError(f'Would replace a prior hosted URL: {relative}')
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, target)
+        combined_records.append({'path':str(relative), 'sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
+    (OUTPUT / 'child-full-study-manifest.json').write_text(json.dumps({'files':combined_records},indent=2)+'\n')
     print(json.dumps({'child_files': len(records), 'adult_files': len(adult_records),
                       'consent_review_files': len(review_records), 'consent_pilot_files': len(pilot_records),
                       'output': str(OUTPUT)}))
