@@ -125,6 +125,17 @@ def stage(consent_review=True, consent_pilot=True):
         shutil.copyfile(source, target)
         combined_records.append({'path':str(relative), 'sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
     (OUTPUT / 'child-full-study-manifest.json').write_text(json.dumps({'files':combined_records},indent=2)+'\n')
+    child_consent_records = []
+    child_consent = ROOT / 'code/experiments/experiment2/children/assets'
+    for source in sorted(child_consent.rglob('*')):
+        if not source.is_file():continue
+        if source.is_symlink() or source.suffix not in ['.png','.m4a']:
+            raise ValueError(f'Unexpected child consent media: {source}')
+        relative=source.relative_to(ROOT);target=OUTPUT/relative
+        if target.exists():raise ValueError(f'Would replace a prior hosted URL: {relative}')
+        target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+        child_consent_records.append({'path':str(relative),'sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
+    (OUTPUT/'child-consent-study-manifest.json').write_text(json.dumps({'study':6147,'files':child_consent_records},indent=2)+'\n')
     print(json.dumps({'child_files': len(records), 'adult_files': len(adult_records),
                       'consent_review_files': len(review_records), 'consent_pilot_files': len(pilot_records),
                       'output': str(OUTPUT)}))
