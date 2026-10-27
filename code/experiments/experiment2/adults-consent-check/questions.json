@@ -1,0 +1,10 @@
+{
+  "intentional_hit": "Did Sasha consent to Milo hitting her cookies?",
+  "intentional_throw": "Did Rex consent to Zoe throwing his cookies onto the ground?",
+  "negligence_spill": "Did Cleo consent to slipping on the water Finn left on the floor and dropping her cookies?",
+  "negligence_phone": "Did Ruby consent to Kai bumping into her while looking at his phone and knocking her cookies onto the ground?",
+  "strict_liability_alligator": "Did Ella consent to Sam’s alligator eating her cookies?",
+  "strict_liability_wolf": "Did Andy consent to Catherine’s wolf eating his cookies?",
+  "control_wind": "Did Katie consent to the wind blowing her cookies away?",
+  "control_squirrel": "Did Eric consent to a squirrel eating his cookies?"
+}

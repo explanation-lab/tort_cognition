@@ -1,0 +1,960 @@
+{
+  "source": "code/experiments/experiment2/adults",
+  "files": [
+    {
+      "path": "images/Milo.png",
+      "source": "code/experiments/experiment2/adults/assets/images/Milo.png",
+      "sha256": "0a6f76aa37dd7cfb0d3b0bb93f110120ea3dd518a517fa83427751baf3aead21"
+    },
+    {
+      "path": "images/Ruby.png",
+      "source": "code/experiments/experiment2/adults/assets/images/Ruby.png",
+      "sha256": "81e91aa1a1ac8da2d191ba9a0cdfceb21e0e00ff1eeaffccce7d354ff1a48d16"
+    },
+    {
+      "path": "images/Sasha.png",
+      "source": "code/experiments/experiment2/adults/assets/images/Sasha.png",
+      "sha256": "1067b27e20c3cfb3a91b08d35dbda6cfc217ea56981c1d5df7ece227af6e079d"
+    },
+    {
+      "path": "images/andy.png",
+      "source": "code/experiments/experiment2/adults/assets/images/andy.png",
+      "sha256": "810fd0bfcc6e565142ce3e1b254aa835294a235a286791df4226d304518175a6"
+    },
+    {
+      "path": "images/catherine.png",
+      "source": "code/experiments/experiment2/adults/assets/images/catherine.png",
+      "sha256": "afecacc8758e538a8acf585723fc96e6006f7681669519ce3d5646a9c94d7567"
+    },
+    {
+      "path": "images/claire.png",
+      "source": "code/experiments/experiment2/adults/assets/images/claire.png",
+      "sha256": "30a7bac246b9c97a4dfa3ad4cedd16429fef77d12fd7a245ce0c18713320088b"
+    },
+    {
+      "path": "images/cleo_neutral.png",
+      "source": "code/experiments/experiment2/adults/assets/images/cleo_neutral.png",
+      "sha256": "25961ed8dccb62f54e20aac9b39de14ceca2df2f09100e5cb602edb0e8c1bb05"
+    },
+    {
+      "path": "images/ella.png",
+      "source": "code/experiments/experiment2/adults/assets/images/ella.png",
+      "sha256": "caf8a07e5ff09305ac6f715dd83d384ec9182471b43c278c00a300ad9d2ac80a"
+    },
+    {
+      "path": "images/eric.png",
+      "source": "code/experiments/experiment2/adults/assets/images/eric.png",
+      "sha256": "ae20cd5dc54084884456833b6ba6a8fcd9d3faf1c807c14a85a8f5479eaf9a5d"
+    },
+    {
+      "path": "images/finn_neutral.png",
+      "source": "code/experiments/experiment2/adults/assets/images/finn_neutral.png",
+      "sha256": "9297a8530eb63101b237d669bcd009a6d04ae4cc159069945062c675345ba37e"
+    },
+    {
+      "path": "images/kai.png",
+      "source": "code/experiments/experiment2/adults/assets/images/kai.png",
+      "sha256": "4a6ebb173af149b1e8a6f5f6f7a87cf688d9c74def204d79066d68d2108caad9"
+    },
+    {
+      "path": "images/katie.png",
+      "source": "code/experiments/experiment2/adults/assets/images/katie.png",
+      "sha256": "0d395cf5a4bcb303284aaefb68dae95eeb7dd2d64aa1c53c8d6e2ece09f72c02"
+    },
+    {
+      "path": "images/michael.png",
+      "source": "code/experiments/experiment2/adults/assets/images/michael.png",
+      "sha256": "15ae9133202adfcbd16049ced05af724b7f8ee22fd4ab6d66cfd896f9fe8682d"
+    },
+    {
+      "path": "images/nora.png",
+      "source": "code/experiments/experiment2/adults/assets/images/nora.png",
+      "sha256": "d3488aebae8efe6ab4223ef3e39081d8795585f44c0eb4a4c912e57cef0e3ff8"
+    },
+    {
+      "path": "images/pilot_cookie_jar_empty.png",
+      "source": "code/experiments/experiment2/adults/assets/images/pilot_cookie_jar_empty.png",
+      "sha256": "95f9ac1ddda0302f8940e627f39a9884043272e39baa32e6c229d217b71a9243"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_01.png",
+      "sha256": "214295610543490ddc249b2af01a4fce06453b19d7f693d6caaedcafc228ce95"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_02.png",
+      "sha256": "c6464445d06451df933e9fc6364b978cda8b44b233a69405860c87187ab2ee69"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_03.png",
+      "sha256": "a20baa2e9cabb8068b1be88584ecabcfacd8cc533fe9cc5ddc0b605b323cb704"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_04.png",
+      "sha256": "fb6b52fc78158adeae132f49ef0575d848b7265a1e489bffad73cecf0dea93ca"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_05.png",
+      "sha256": "3581dee8bdb6c40522528500484d3d76d282a362ef066dd89658e4ac3cfb6903"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_06.png",
+      "sha256": "00340e25a2373afb3bc3cc23ca4e857a00861fa21133fe6abb623aee256e6c5c"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_07.png",
+      "sha256": "05eff8963235994b708f9d473dbb112993b95ede01ee938e6267e82dc2ae283a"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_08.png",
+      "sha256": "a779c47c60823d3e03b3e03d61508f4f2bdd86a391f4735d831526d56fec3888"
+    },
+    {
+      "path": "images/review/consent/control_squirrel_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_squirrel_09.png",
+      "sha256": "6e7c6d677de964aad469d44b1367af14dd630aabc37f934edacdbd064d652d44"
+    },
+    {
+      "path": "images/review/consent/control_wind_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_01.png",
+      "sha256": "5f998c1a6a261f9b117128b102bbfda2c3a94a7aacd8c9ea9677f30d84b52696"
+    },
+    {
+      "path": "images/review/consent/control_wind_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_02.png",
+      "sha256": "c9b1c437adee96e974fca1396ee062154738db851de92980b3ccef6360b2e6ab"
+    },
+    {
+      "path": "images/review/consent/control_wind_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_03.png",
+      "sha256": "1f9b9391e097103230aeee9cbb1ba68a998d3648fa83af3e72f7ee7c517a15d1"
+    },
+    {
+      "path": "images/review/consent/control_wind_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_04.png",
+      "sha256": "859b8076919e68ac1e08135c43fc060294ee50663410b03e831ce3234ff0da31"
+    },
+    {
+      "path": "images/review/consent/control_wind_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_05.png",
+      "sha256": "ee222f8f7312137175cca99e0ac091cf1680527ec94d4d291da77f4a6ffb56b6"
+    },
+    {
+      "path": "images/review/consent/control_wind_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_06.png",
+      "sha256": "b7afe27506eee6fd25acb9b8f79f3315b9d6d3f7a29878a9b49b3367ca46df51"
+    },
+    {
+      "path": "images/review/consent/control_wind_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_07.png",
+      "sha256": "be4e8f02591486f91a2c0bebdd86346d4087b963b382cf13569465af3c4b978d"
+    },
+    {
+      "path": "images/review/consent/control_wind_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_08.png",
+      "sha256": "127f73c7f4d69c14aa4bdff416759271fe1333f515e41cf8596e99cbb806365c"
+    },
+    {
+      "path": "images/review/consent/control_wind_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_09.png",
+      "sha256": "a791ebc83c712890ca3415c02d8ece875d99c401f2220b1b2deeacf1064d7f45"
+    },
+    {
+      "path": "images/review/consent/control_wind_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/control_wind_10.png",
+      "sha256": "3d5e7112432599fa6097507fb16f6aa0705cac5013751523fd99354be732ed26"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_01.png",
+      "sha256": "f16422716ffaed9a7c5e0327335c7843037b363250290896a851887569b81be9"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_02.png",
+      "sha256": "3fa4404224bb7be47aa596cb0d00c452fe6d52776c713cc176ad65de2e904dfd"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_03.png",
+      "sha256": "a69839fac9404ee7d2b77c537709e2c7f42b78df2c58dc538115aa031af44a7c"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_04.png",
+      "sha256": "338040f04cbdc1c63234053e2279d849a06fe2a38444b4b92ebdc0a7a2b66163"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_05.png",
+      "sha256": "160249d0dac8a92189db9f58eb16631e681a14e429fcf0aff8f3bca2d53d80fb"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_06.png",
+      "sha256": "2729619965b8a7f57c5e77a5fda810fc689c979823b7ca3d3fcb2ff2a6f37c4b"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_07.png",
+      "sha256": "b377f29d38884040cc783f4be302642122958dc9b5d88dcd278d1a2c912063eb"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_08.png",
+      "sha256": "0a988364b4053f55dfae73480c54ca9da6d427ef1e7697b7a67d6f52ce9a6951"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_09.png",
+      "sha256": "e996ff98f87512ea1e628482410cd62dd963147757989076182519ff0fcc052e"
+    },
+    {
+      "path": "images/review/consent/intentional_hit_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_hit_10.png",
+      "sha256": "3bb593df35b494e311a3b70f77fecdb7ef151d106e48df0342a90d78e187aac9"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_01.png",
+      "sha256": "0caea1513f1bbfe9286712b5fcffbbec95ca3513a807a948589f2de271534dc1"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_02.png",
+      "sha256": "609868145d6913da807eeee48533b50750e8f37e2cede747ebd2b14aff85f86c"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_03.png",
+      "sha256": "89abc849580949a5e6473754bb3315794d705cf42ed088ddd24b27e7c5d28b9f"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_04.png",
+      "sha256": "b2ffb4177a796f8baaf6f6fb6ff6cb2ec54f6a3b2552470693fd5b6c2f9daa9a"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_05.png",
+      "sha256": "2beaf14b398e828e49672b9f9e92d8aca0a073e5b30e0f5a8a0aecd2b7f881ec"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_06.png",
+      "sha256": "22b48c9089c4c539547306f5dd2548ad4d25c8f428e43902c75cd4bb1c0f2fbe"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_07.png",
+      "sha256": "e2c957dd38fbd107987a7d7b0716322ca8322e88f8e94af88a0fc3613d7fe349"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_08.png",
+      "sha256": "0d404423216accb8ca8a14963d85ff0fc635d62ed9f58f95dd38c1bec6c6e4ae"
+    },
+    {
+      "path": "images/review/consent/intentional_throw_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/intentional_throw_09.png",
+      "sha256": "9fa5324fe7b2ead7159d349e76ead33d3e591d0609e98469c22fe7dde7c66ac9"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_01.png",
+      "sha256": "49719d630533c4983d01d952290f6ecae418b121be650e2b740fcf395e6c38be"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_02.png",
+      "sha256": "23490e6fde67ff7b9b97ccdc92035a90511e43c1ad111a45c079567ba5d203d1"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_03.png",
+      "sha256": "b0143eececa8245050f90bf4a32555bae4cf1d1a71c4a64564825042358b9efd"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_04.png",
+      "sha256": "3c7389036987f12ceea1cff31e3852d4d343adb3669823af32eddf82c3cc2e2f"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_05.png",
+      "sha256": "d786a5dd8536bfd920fc2beebe6abd2cb98590ffc5373a96cab245e8e7606a1e"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_06.png",
+      "sha256": "3359087318ef12b09d677bd831b24782b8066575c9ee2ea55d9aecfc9041a430"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_07.png",
+      "sha256": "a1e0725a19f8a4e49532ae372934256d64b75ee098d7c6d996663656541b7824"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_08.png",
+      "sha256": "b97055c1793acf72af48070d5655c25c17d5cfd89bf9eca197d6e9bdb3d04938"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_09.png",
+      "sha256": "fdefb13edca79cab422112068a0bb139ed4fa03efcdf2d817276b38dffb8abb4"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_10.png",
+      "sha256": "f524b509bb7418698b238b47657ad5d0164a1081ce919999820ed24d43a3123f"
+    },
+    {
+      "path": "images/review/consent/negligence_phone_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_phone_11.png",
+      "sha256": "dcbfdc65ffd0dbe66966ed58174474d193b09a83cbd39a11ee946064ebe0067c"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_01.png",
+      "sha256": "adab17f04e29a5edbb08bcc67a646466987bf7ee515dcc22693b58ccba2f8559"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_02.png",
+      "sha256": "e688fe68cb075c8077d00b7c7383f8334f23cc2826512755f7e0ab22ab37a006"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_03.png",
+      "sha256": "31d81830f016074621667bc7d6886da4ead8e180318d643935129bedf910f83f"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_04.png",
+      "sha256": "3d62b97509e01e16a4ad3ae4f2066b5c9d0e01fea4a46fc2a4811929ef07a98c"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_05.png",
+      "sha256": "58bfe6275031f595c3f5f174adf3fd6dbea52c4c331ca4ff027569aff1e6d56f"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_06.png",
+      "sha256": "6791bd86f6b55f76e27c4381ada0ab771d380a1d33e066e9dd961738557fad6f"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_07.png",
+      "sha256": "9feec11be46bda4875325b24d819103aca9d5ab46b80588c0947fb0d5affb1c9"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_08.png",
+      "sha256": "af22f0ff495f76d5c696a8efb54f0663dc6a6e1154d1fa95c06ff7650bbfe807"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_09.png",
+      "sha256": "780fd707bdf269d5437a2bbd648f22ad78b882e9a7f2181eb1e9188ff78a119a"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_10.png",
+      "sha256": "f63b9b7ae1c645b5c41bfb6fc2a4c0100040142e514b27e22de3d9674948bf73"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_11.png",
+      "sha256": "c1c76f0709a38b97b9e50c9e9c7cc2746ead2ebf5028e398bf396aba5f976ec5"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_12.png",
+      "sha256": "69b771ebddb7406fa61761c8c5a7a3de4ca943c87ec790ecd6de63950641f52c"
+    },
+    {
+      "path": "images/review/consent/negligence_spill_13.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/negligence_spill_13.png",
+      "sha256": "91fe9e077409b87499f85b7c6ac59f14cd7cc28f0ec5d054ae4a6ab218d77a1e"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_01.png",
+      "sha256": "c76a316b83e09a4dba7f97f70b257f2c2c6ab84a3a25cc81e4a3758cf735fb47"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_02.png",
+      "sha256": "0e6ca6c9ed12ab23081d7cd51687081349ac7b80b64f3f7e1edc1755bc58dd6e"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_03.png",
+      "sha256": "35739439266a6586df2005a0c9590ff058d76daa4db0777ce3649e3ddbe5f537"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_04.png",
+      "sha256": "4a614e82765615f2977b9076325825ecffe26f98c3bbc2488d9b64548859ef67"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_05.png",
+      "sha256": "1c2d6019f5db9919cb3b5bf5e44a595a3ff6e5249cc6a40859bc2cbd27629652"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_06.png",
+      "sha256": "6f275701548065c10d8fdecc517cec6d7c5cbe0bc77a85460228026b7e185454"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_07.png",
+      "sha256": "709d07675e569876567411cc3be456bd9611811c00e008e7aa7a51bb3bf6e9c9"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_08.png",
+      "sha256": "c089f6254d52ef4fe12e50fea2e74510fb5a6d7d5425816f45f4a973ea5d25b5"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_09.png",
+      "sha256": "42dba507fbcaa8d8b9496233782f40453bca051923c6789c117f9ae5b4ffbf91"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_10.png",
+      "sha256": "8dfda5ebeb150edbe98107b7bba175b2435d343020172ca0620b0427c327f53f"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_11.png",
+      "sha256": "a41d586c14741c6572755104531c00983325e90018dfcc3c7e44ad74626188f1"
+    },
+    {
+      "path": "images/review/consent/strict_liability_alligator_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_alligator_12.png",
+      "sha256": "a3b0a594cb9aa42197886fd1dcd6aa171df81576cd51220de82ae38458b05044"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_01.png",
+      "sha256": "3fa388b7851f2cd05792c033123aac18b8d6b0dcedece2ee83686e6329f78c1e"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_02.png",
+      "sha256": "c3ba5699e7d36aef8fad20db56139b6c6e087eef44f76a2e020d59677bbe492e"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_03.png",
+      "sha256": "e4e06e2cd4c21b57924d930104155ae24cf756e74b67fcf3aa3aef0105146b06"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_04.png",
+      "sha256": "73a72d4fc38390ed28126df2a2d52a6c12d6c73d58a5b0e8350564cbae75ba6e"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_05.png",
+      "sha256": "8d18fe4e20d6b0fefe75780f5b101c9bfca7a80a8363a8032a31c97451d7477b"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_06.png",
+      "sha256": "586e08c5c088cb067b6480c04766f248d4daa51e86d791e4b820e3c616dadb62"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_07.png",
+      "sha256": "18465ee836b4e28f30daac6c7ebea2cfdc8f67fc7bc2378cf4d2c786f6de0155"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_08.png",
+      "sha256": "3c6edc5f63d5bacd704bcb6da7e1981fdd17e18f85ac06f499eb52aeb25cd0dc"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_09.png",
+      "sha256": "0c418f3feb7501f6340d0be38d6fcc3ef4ad7997512edc65a6a923ce796ecb09"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_10.png",
+      "sha256": "24bb6be51807c1b934d50b7b6a097a175539781c82b00b871cb8c8a721995e8b"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_11.png",
+      "sha256": "c6fb2cbe5c9f8448647ef8b44f3a880f97948b1b84aec692e8e37173083a0e9d"
+    },
+    {
+      "path": "images/review/consent/strict_liability_wolf_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/consent/strict_liability_wolf_12.png",
+      "sha256": "c09c0dc40087e557cf790b5dfed53427d5ae09b25b39580b7b5426b74f19baca"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_01.png",
+      "sha256": "214295610543490ddc249b2af01a4fce06453b19d7f693d6caaedcafc228ce95"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_02.png",
+      "sha256": "c6464445d06451df933e9fc6364b978cda8b44b233a69405860c87187ab2ee69"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_03.png",
+      "sha256": "a20baa2e9cabb8068b1be88584ecabcfacd8cc533fe9cc5ddc0b605b323cb704"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_04.png",
+      "sha256": "b1e164d3c82bf8139515a66910079f91c5747a4295c04c4870c4ef90e101a3d6"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_05.png",
+      "sha256": "3581dee8bdb6c40522528500484d3d76d282a362ef066dd89658e4ac3cfb6903"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_06.png",
+      "sha256": "00340e25a2373afb3bc3cc23ca4e857a00861fa21133fe6abb623aee256e6c5c"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_07.png",
+      "sha256": "75c3449ead8b57fa08900c4e54e92b500ecf16b4a76a45ff9e8d052f5bb2f2a5"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_08.png",
+      "sha256": "a779c47c60823d3e03b3e03d61508f4f2bdd86a391f4735d831526d56fec3888"
+    },
+    {
+      "path": "images/review/no_consent/control_squirrel_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_squirrel_09.png",
+      "sha256": "6e7c6d677de964aad469d44b1367af14dd630aabc37f934edacdbd064d652d44"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_01.png",
+      "sha256": "5f998c1a6a261f9b117128b102bbfda2c3a94a7aacd8c9ea9677f30d84b52696"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_02.png",
+      "sha256": "c7b45311c524987d471658db9af197ec0dd74442fff14e41d0e15185b44f7c6c"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_03.png",
+      "sha256": "1f9b9391e097103230aeee9cbb1ba68a998d3648fa83af3e72f7ee7c517a15d1"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_04.png",
+      "sha256": "c5b4698b5f66c15bfe16bb9e063e6ba1b5f8cfe6e8b3ff5f37482a615d79206f"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_05.png",
+      "sha256": "ee222f8f7312137175cca99e0ac091cf1680527ec94d4d291da77f4a6ffb56b6"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_06.png",
+      "sha256": "b7afe27506eee6fd25acb9b8f79f3315b9d6d3f7a29878a9b49b3367ca46df51"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_07.png",
+      "sha256": "c30d2ab380747e3fced6c6856e0e8babd547b34564ec1da7e07e70815bab9fdd"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_08.png",
+      "sha256": "127f73c7f4d69c14aa4bdff416759271fe1333f515e41cf8596e99cbb806365c"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_09.png",
+      "sha256": "a791ebc83c712890ca3415c02d8ece875d99c401f2220b1b2deeacf1064d7f45"
+    },
+    {
+      "path": "images/review/no_consent/control_wind_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/control_wind_10.png",
+      "sha256": "3d5e7112432599fa6097507fb16f6aa0705cac5013751523fd99354be732ed26"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_01.png",
+      "sha256": "f16422716ffaed9a7c5e0327335c7843037b363250290896a851887569b81be9"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_02.png",
+      "sha256": "d71ca59b94ee7592aad530264d8bf9a7d05a288e7716f1eae4f6fa160c9b5cf4"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_03.png",
+      "sha256": "a69839fac9404ee7d2b77c537709e2c7f42b78df2c58dc538115aa031af44a7c"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_04.png",
+      "sha256": "338040f04cbdc1c63234053e2279d849a06fe2a38444b4b92ebdc0a7a2b66163"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_05.png",
+      "sha256": "160249d0dac8a92189db9f58eb16631e681a14e429fcf0aff8f3bca2d53d80fb"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_06.png",
+      "sha256": "2729619965b8a7f57c5e77a5fda810fc689c979823b7ca3d3fcb2ff2a6f37c4b"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_07.png",
+      "sha256": "b377f29d38884040cc783f4be302642122958dc9b5d88dcd278d1a2c912063eb"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_08.png",
+      "sha256": "07a8b3f3bece8381b8db3fab60530cc2d278fa9858c61ba1e7e28dd9ae313a9e"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_09.png",
+      "sha256": "e996ff98f87512ea1e628482410cd62dd963147757989076182519ff0fcc052e"
+    },
+    {
+      "path": "images/review/no_consent/intentional_hit_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_hit_10.png",
+      "sha256": "3bb593df35b494e311a3b70f77fecdb7ef151d106e48df0342a90d78e187aac9"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_01.png",
+      "sha256": "0caea1513f1bbfe9286712b5fcffbbec95ca3513a807a948589f2de271534dc1"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_02.png",
+      "sha256": "609868145d6913da807eeee48533b50750e8f37e2cede747ebd2b14aff85f86c"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_03.png",
+      "sha256": "89abc849580949a5e6473754bb3315794d705cf42ed088ddd24b27e7c5d28b9f"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_04.png",
+      "sha256": "b2ffb4177a796f8baaf6f6fb6ff6cb2ec54f6a3b2552470693fd5b6c2f9daa9a"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_05.png",
+      "sha256": "2beaf14b398e828e49672b9f9e92d8aca0a073e5b30e0f5a8a0aecd2b7f881ec"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_06.png",
+      "sha256": "22b48c9089c4c539547306f5dd2548ad4d25c8f428e43902c75cd4bb1c0f2fbe"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_07.png",
+      "sha256": "ba3fa358f8002df3f079b0657e7983cf6c011dcc1f51fea8242b16c5b7e0028c"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_08.png",
+      "sha256": "0d404423216accb8ca8a14963d85ff0fc635d62ed9f58f95dd38c1bec6c6e4ae"
+    },
+    {
+      "path": "images/review/no_consent/intentional_throw_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/intentional_throw_09.png",
+      "sha256": "9fa5324fe7b2ead7159d349e76ead33d3e591d0609e98469c22fe7dde7c66ac9"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_01.png",
+      "sha256": "49719d630533c4983d01d952290f6ecae418b121be650e2b740fcf395e6c38be"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_02.png",
+      "sha256": "23490e6fde67ff7b9b97ccdc92035a90511e43c1ad111a45c079567ba5d203d1"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_03.png",
+      "sha256": "b0143eececa8245050f90bf4a32555bae4cf1d1a71c4a64564825042358b9efd"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_04.png",
+      "sha256": "3c7389036987f12ceea1cff31e3852d4d343adb3669823af32eddf82c3cc2e2f"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_05.png",
+      "sha256": "d786a5dd8536bfd920fc2beebe6abd2cb98590ffc5373a96cab245e8e7606a1e"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_06.png",
+      "sha256": "3359087318ef12b09d677bd831b24782b8066575c9ee2ea55d9aecfc9041a430"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_07.png",
+      "sha256": "a89c7a19ab84ea3d67f1a4b4fe59fde5b1c8105ef95502b88a29132ddbe136da"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_08.png",
+      "sha256": "b97055c1793acf72af48070d5655c25c17d5cfd89bf9eca197d6e9bdb3d04938"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_09.png",
+      "sha256": "fdefb13edca79cab422112068a0bb139ed4fa03efcdf2d817276b38dffb8abb4"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_10.png",
+      "sha256": "f524b509bb7418698b238b47657ad5d0164a1081ce919999820ed24d43a3123f"
+    },
+    {
+      "path": "images/review/no_consent/negligence_phone_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_phone_11.png",
+      "sha256": "dcbfdc65ffd0dbe66966ed58174474d193b09a83cbd39a11ee946064ebe0067c"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_01.png",
+      "sha256": "adab17f04e29a5edbb08bcc67a646466987bf7ee515dcc22693b58ccba2f8559"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_02.png",
+      "sha256": "e688fe68cb075c8077d00b7c7383f8334f23cc2826512755f7e0ab22ab37a006"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_03.png",
+      "sha256": "31d81830f016074621667bc7d6886da4ead8e180318d643935129bedf910f83f"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_04.png",
+      "sha256": "3d62b97509e01e16a4ad3ae4f2066b5c9d0e01fea4a46fc2a4811929ef07a98c"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_05.png",
+      "sha256": "58bfe6275031f595c3f5f174adf3fd6dbea52c4c331ca4ff027569aff1e6d56f"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_06.png",
+      "sha256": "6791bd86f6b55f76e27c4381ada0ab771d380a1d33e066e9dd961738557fad6f"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_07.png",
+      "sha256": "9feec11be46bda4875325b24d819103aca9d5ab46b80588c0947fb0d5affb1c9"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_08.png",
+      "sha256": "af22f0ff495f76d5c696a8efb54f0663dc6a6e1154d1fa95c06ff7650bbfe807"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_09.png",
+      "sha256": "780fd707bdf269d5437a2bbd648f22ad78b882e9a7f2181eb1e9188ff78a119a"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_10.png",
+      "sha256": "4022873899c0207558ec246a4fe2f6fa9d95536b4bf2d3c5c6e9a3f76bbc2dd1"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_11.png",
+      "sha256": "c1c76f0709a38b97b9e50c9e9c7cc2746ead2ebf5028e398bf396aba5f976ec5"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_12.png",
+      "sha256": "69b771ebddb7406fa61761c8c5a7a3de4ca943c87ec790ecd6de63950641f52c"
+    },
+    {
+      "path": "images/review/no_consent/negligence_spill_13.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/negligence_spill_13.png",
+      "sha256": "91fe9e077409b87499f85b7c6ac59f14cd7cc28f0ec5d054ae4a6ab218d77a1e"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_01.png",
+      "sha256": "c76a316b83e09a4dba7f97f70b257f2c2c6ab84a3a25cc81e4a3758cf735fb47"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_02.png",
+      "sha256": "0e6ca6c9ed12ab23081d7cd51687081349ac7b80b64f3f7e1edc1755bc58dd6e"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_03.png",
+      "sha256": "35739439266a6586df2005a0c9590ff058d76daa4db0777ce3649e3ddbe5f537"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_04.png",
+      "sha256": "4a614e82765615f2977b9076325825ecffe26f98c3bbc2488d9b64548859ef67"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_05.png",
+      "sha256": "1c2d6019f5db9919cb3b5bf5e44a595a3ff6e5249cc6a40859bc2cbd27629652"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_06.png",
+      "sha256": "6f275701548065c10d8fdecc517cec6d7c5cbe0bc77a85460228026b7e185454"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_07.png",
+      "sha256": "709d07675e569876567411cc3be456bd9611811c00e008e7aa7a51bb3bf6e9c9"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_08.png",
+      "sha256": "c089f6254d52ef4fe12e50fea2e74510fb5a6d7d5425816f45f4a973ea5d25b5"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_09.png",
+      "sha256": "304dbad66fa2d1128a54800a47d7364bfaac196b8ca64585c2dd5bd3cee71130"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_10.png",
+      "sha256": "8dfda5ebeb150edbe98107b7bba175b2435d343020172ca0620b0427c327f53f"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_11.png",
+      "sha256": "a41d586c14741c6572755104531c00983325e90018dfcc3c7e44ad74626188f1"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_alligator_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_alligator_12.png",
+      "sha256": "a3b0a594cb9aa42197886fd1dcd6aa171df81576cd51220de82ae38458b05044"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_01.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_01.png",
+      "sha256": "3fa388b7851f2cd05792c033123aac18b8d6b0dcedece2ee83686e6329f78c1e"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_02.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_02.png",
+      "sha256": "c3ba5699e7d36aef8fad20db56139b6c6e087eef44f76a2e020d59677bbe492e"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_03.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_03.png",
+      "sha256": "e4e06e2cd4c21b57924d930104155ae24cf756e74b67fcf3aa3aef0105146b06"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_04.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_04.png",
+      "sha256": "73a72d4fc38390ed28126df2a2d52a6c12d6c73d58a5b0e8350564cbae75ba6e"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_05.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_05.png",
+      "sha256": "8d18fe4e20d6b0fefe75780f5b101c9bfca7a80a8363a8032a31c97451d7477b"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_06.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_06.png",
+      "sha256": "586e08c5c088cb067b6480c04766f248d4daa51e86d791e4b820e3c616dadb62"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_07.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_07.png",
+      "sha256": "18465ee836b4e28f30daac6c7ebea2cfdc8f67fc7bc2378cf4d2c786f6de0155"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_08.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_08.png",
+      "sha256": "3c6edc5f63d5bacd704bcb6da7e1981fdd17e18f85ac06f499eb52aeb25cd0dc"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_09.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_09.png",
+      "sha256": "7f01a424dbd1c4ef85d4755cb9b929f385e8f5bd5c1f24e7f167075d5a47743b"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_10.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_10.png",
+      "sha256": "24bb6be51807c1b934d50b7b6a097a175539781c82b00b871cb8c8a721995e8b"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_11.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_11.png",
+      "sha256": "c6fb2cbe5c9f8448647ef8b44f3a880f97948b1b84aec692e8e37173083a0e9d"
+    },
+    {
+      "path": "images/review/no_consent/strict_liability_wolf_12.png",
+      "source": "code/experiments/experiment2/adults/assets/images/review/no_consent/strict_liability_wolf_12.png",
+      "sha256": "c09c0dc40087e557cf790b5dfed53427d5ae09b25b39580b7b5426b74f19baca"
+    },
+    {
+      "path": "images/rex.png",
+      "source": "code/experiments/experiment2/adults/assets/images/rex.png",
+      "sha256": "e86233098b950d31fecb6f4d54ce7b42f9a06bb42a999ba2c40914e429a57498"
+    },
+    {
+      "path": "images/sam.png",
+      "source": "code/experiments/experiment2/adults/assets/images/sam.png",
+      "sha256": "57d89044ebb79635b80d822316851b8d135f953ce3b334f3de7c0064052cefcc"
+    },
+    {
+      "path": "images/tony.png",
+      "source": "code/experiments/experiment2/adults/assets/images/tony.png",
+      "sha256": "cd29187e21e1481e79dd30f533da36a6f66468722d08b83cedf83b6132f4722f"
+    },
+    {
+      "path": "images/zoe.png",
+      "source": "code/experiments/experiment2/adults/assets/images/zoe.png",
+      "sha256": "39b17d560136764128656aaef0f4bc203c3cfbe5e1b54f9b41fedec4dde7ed76"
+    }
+  ]
+}
