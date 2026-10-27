@@ -1,0 +1,37 @@
+{
+  "format": "explanation-lab-study-config",
+  "manifestVersion": "1.2.0",
+  "schemaVersion": "2.0.0",
+  "convertedAt": "2026-10-27T12:29:28.710Z",
+  "sourceZip": "adult-necessity-native-source.zip",
+  "jsPsychVersion": "7.3.4",
+  "experimentVersion": "adult-necessity-1.0.0",
+  "clientVersion": "1.5.1",
+  "assignmentType": "between_participant",
+  "launchAssignmentParameter": "condition",
+  "launchConditions": [
+    "necessity",
+    "no_necessity"
+  ],
+  "conditions": [
+    "necessity",
+    "no_necessity"
+  ],
+  "internalFactors": [
+    "judgment_order",
+    "scenario_id",
+    "victim_side"
+  ],
+  "internalConditionCells": [],
+  "demographicsConfirmed": true,
+  "demographicFields": [
+    "age",
+    "gender",
+    "race",
+    "ethnicity",
+    "state"
+  ],
+  "conversionOutcome": "ready",
+  "packageFingerprint": "37ec705d1d28f1b7223b2998459aaab91ba68f311681fc5b481fead1c903cd8f",
+  "originalBackupPaths": []
+}

@@ -1,4 +1,4 @@
-name: Host studies and optional consent review
+name: Host existing studies and adult necessity pilot
 
 on:
   workflow_dispatch:
@@ -36,6 +36,8 @@ jobs:
           CONSENT_REVIEW: ${{ inputs.consent_review || 'include' }}
           CONSENT_PILOT: ${{ inputs.consent_pilot || 'include' }}
         run: python3 code/tools/stage-chs-assets.py --consent-review "$CONSENT_REVIEW" --consent-pilot "$CONSENT_PILOT"
+      - name: Add adult necessity pilot without replacing hosted files
+        run: python3 code/tools/stage-adult-necessity.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: code/tools/generated/chs-pages
