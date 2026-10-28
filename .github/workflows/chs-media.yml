@@ -40,6 +40,8 @@ jobs:
         run: python3 code/tools/stage-adult-necessity.py
       - name: Add adult consent-check pilot without replacing hosted files
         run: python3 code/tools/stage-adult-consent-check.py
+      - name: Add adult necessity pilot 2 without replacing hosted files
+        run: python3 code/tools/stage-adult-necessity-pilot2.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: code/tools/generated/chs-pages
