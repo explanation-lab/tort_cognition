@@ -1,0 +1,8 @@
+
+  /* Child warm-up feedback: these classes are created only on child rating practice. */
+  .pilot .warmup-answer-label{font-size:16px;min-height:24px;color:#475569;max-width:min(36vw,480px)}
+  .pilot .warmup-needs-answer{outline:3px solid #2563eb;outline-offset:8px;border-radius:7px}
+  .pilot .warmup-target{position:absolute;width:42px;height:42px;border:3px solid #b45309;background:#fbbf2440;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:5}
+  .pilot .warmup-target:before{content:'↓';position:absolute;bottom:32px;left:5px;font:bold 36px/1 system-ui;color:#92400e;text-shadow:0 1px white}
+  .pilot .warmup-feedback{background:#eff6ff;border:1px solid #93c5fd;border-radius:12px;padding:12px 18px;margin:16px auto;max-width:800px;font-size:20px;color:#1e3a8a}
+  .pilot .warmup-feedback[hidden],.pilot .warmup-target[hidden]{display:none}

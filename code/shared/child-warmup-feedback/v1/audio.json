@@ -1,0 +1,93 @@
+[
+  {
+    "key": "warmup_feedback_both",
+    "filename": "warmup_feedback_both.m4a",
+    "text": "Give an answer for Michael and an answer for Claire.",
+    "durationSeconds": 4.16,
+    "sha256": "f4b3ae508edc97a842b12e4ba5743dcb7d4e1a705ea68b20ec7120e999b8050d"
+  },
+  {
+    "key": "warmup_feedback_choose_michael",
+    "filename": "warmup_feedback_choose_michael.m4a",
+    "text": "Now give an answer for Michael.",
+    "durationSeconds": 3.32,
+    "sha256": "9559bd0f63b8feb3d7e417cbe35964d8df5b5bca089f569b73ff8094606690fd"
+  },
+  {
+    "key": "warmup_feedback_choose_claire",
+    "filename": "warmup_feedback_choose_claire.m4a",
+    "text": "Now give an answer for Claire.",
+    "durationSeconds": 3.38,
+    "sha256": "3d9a75aab2fd62ed2c03bbf691c7cfd1a459e16c8f85b10668e013fcdd73f5ee"
+  },
+  {
+    "key": "warmup_feedback_try_michael",
+    "filename": "warmup_feedback_try_michael.m4a",
+    "text": "Have another try on Michael\u2019s bar.",
+    "durationSeconds": 3.04,
+    "sha256": "7905ce642a92e819e864f1c4b4787c28ab4e56cef942c554d2028d5ef278ab61"
+  },
+  {
+    "key": "warmup_feedback_try_claire",
+    "filename": "warmup_feedback_try_claire.m4a",
+    "text": "Have another try on Claire\u2019s bar.",
+    "durationSeconds": 3.15,
+    "sha256": "375891d2a9fd7b24c995cc4cfa4b7acbb7f3ce3b454623bd5b27a9010ac5cdf1"
+  },
+  {
+    "key": "warmup_feedback_fault_michael_lot",
+    "filename": "warmup_feedback_fault_michael_lot.m4a",
+    "text": "Click here to show that Michael is a lot at fault.",
+    "durationSeconds": 5.08,
+    "sha256": "d61d55d9a7cc672c4554f83f58d1d5463f0ff6fc7ff92ab7a42de2d1ee7c5d6a"
+  },
+  {
+    "key": "warmup_feedback_fault_claire_zero",
+    "filename": "warmup_feedback_fault_claire_zero.m4a",
+    "text": "Click the beginning of Claire\u2019s bar to show that Claire is not at fault.",
+    "durationSeconds": 6.11,
+    "sha256": "12d2322069c7fec94c268920a44b280232fec544e97df2585908f4673a4bd0ac"
+  },
+  {
+    "key": "warmup_feedback_fault_claire_little",
+    "filename": "warmup_feedback_fault_claire_little.m4a",
+    "text": "Click here to show that Claire is a little at fault.",
+    "durationSeconds": 5.17,
+    "sha256": "b410b140d8e63a1bb517cb720778681a0093f225f5a7411879f84ed89aececdc"
+  },
+  {
+    "key": "warmup_feedback_fault_michael_zero",
+    "filename": "warmup_feedback_fault_michael_zero.m4a",
+    "text": "Click the beginning of Michael\u2019s bar to show that Michael is not at fault.",
+    "durationSeconds": 6.35,
+    "sha256": "f2c706f88729cf15b93765a100afd66b7b4491158f7b21353427f3b0fb07aa86"
+  },
+  {
+    "key": "warmup_feedback_carelessness_michael_lot",
+    "filename": "warmup_feedback_carelessness_michael_lot.m4a",
+    "text": "Click here to show that Michael was very careless.",
+    "durationSeconds": 5.0,
+    "sha256": "c2593913e659d72ddce9941cc2a2316623c617ff518797d886d16ce8ddc84401"
+  },
+  {
+    "key": "warmup_feedback_carelessness_claire_zero",
+    "filename": "warmup_feedback_carelessness_claire_zero.m4a",
+    "text": "Click the beginning of Claire\u2019s bar to show that Claire was not careless.",
+    "durationSeconds": 6.4,
+    "sha256": "29fa4c5301cb0877ba8d8ce2ff4d59fdc6d105783a815eab69d41392569274b0"
+  },
+  {
+    "key": "warmup_feedback_carelessness_claire_little",
+    "filename": "warmup_feedback_carelessness_claire_little.m4a",
+    "text": "Click here to show that Claire was a little careless.",
+    "durationSeconds": 4.97,
+    "sha256": "42e0f9b95b60388aa902918868d66b34bde5408dbc3c4defa52eeb052c1f48df"
+  },
+  {
+    "key": "warmup_feedback_carelessness_michael_zero",
+    "filename": "warmup_feedback_carelessness_michael_zero.m4a",
+    "text": "Click the beginning of Michael\u2019s bar to show that Michael was not careless.",
+    "durationSeconds": 6.59,
+    "sha256": "f20a8a34e53ab32c32f76e90ddfd7fd207023a7509dc89fbd0ca254be92e2fe5"
+  }
+]
